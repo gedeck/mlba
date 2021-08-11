@@ -1,0 +1,7 @@
+Wine dataset contains properties of wine captured from three different wineries in the
+same region. There are 13 variables describing various properties of wine and 3 classes 
+This dataset can be used for classification with Type as a output variable OR can be used
+to perform clustering to without using Type variable to see the accuracy of prediction
+
+This data set can be found in the UCI Machine Learning Repository 
+(http://www.ics.uci.edu/~mlearn/MLSummary.html or ftp://ftp.ics.uci.edu/pub/machine-learning-databases/wine/)

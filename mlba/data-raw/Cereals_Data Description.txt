@@ -1,0 +1,20 @@
+Source: DATA ANALYSIS FOR STUDENT LEARNING (DASL)
+
+1. Name: Name of cereal
+2. mfr: Manufacturer of cereal where A = American Home Food Products; G = General Mills; K = Kelloggs; N = Nabisco; P = Post; Q = Quaker Oats; R = Ralston Purina
+3. type: cold or hot
+4. calories: calories per serving
+5. protein: grams of protein
+6. fat: grams of fat
+7. sodium: milligrams of sodium
+8. fiber: grams of dietary fiber
+9. carbo: grams of complex carbohydrates
+10. sugars: grams of sugars
+11. potass: milligrams of potassium
+12. vitamins: vitamins and minerals - 0, 25, or 100, indicating the typical percentage of FDA recommended
+13. shelf: display shelf (1, 2, or 3, counting from the floor)
+14. weight: weight in ounces of one serving
+15. cups: number of cups in one serving
+16. rating: a rating of the cereals calculated by Consumer Reports
+
+(c) 2016 Galit Shmueli and Peter Bruce
