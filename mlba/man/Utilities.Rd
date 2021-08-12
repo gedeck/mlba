@@ -6,7 +6,7 @@
 \title{Utilities}
 \format{
 A data frame with 22 observations and 9 variables:
-\describe {
+\describe{
 \item{Company}{}
 \item{Fixed_charge}{}
 \item{RoR}{}

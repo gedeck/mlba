@@ -62,11 +62,77 @@
 #' BostonHousing
 "BostonHousing"
 
+
+#' ebay Network
+#'
+#' Data
+#' @format A data frame with 200 observations and 5 variables:
+#' \describe{
+#' \item{Seller}{}
+#' \item{Bidder}{}
+#' \item{Weight}{}
+#' \item{Bidder.Volume}{}
+#' \item{Seller.Volume}{}
+#' }
+#'
+#' @examples
+#' eBayNetwork
+"eBayNetwork"
+
+
+#' ebay Treemap
+#'
+#' Data
+#' @format A data frame with 10078 observations and 5 variables:
+#' \describe{
+#' \item{High.Bid}{}
+#' \item{Seller.Feedback}{}
+#' \item{Category}{}
+#' \item{Sub.Category}{}
+#' \item{Brand}{}
+#' }
+#'
+#' @examples
+#' head(eBayTreemap)
+"eBayTreemap"
+
+
+#' GDP
+#'
+#' Data
+#' @format A data frame with 264 observations and 5 variables:
+#' \describe{
+#' \item{Country.Name}{}
+#' \item{Country.Code}{}
+#' \item{Indicator.Name}{}
+#' \item{Indicator.Code}{}
+#' \item{GDP2015}{}
+#' }
+#'
+#' @examples
+#' head(gdp)
+"gdp"
+
+
+#' statistics.com Students
+#'
+#' Data
+#' @format A data frame with 1696 observations and 2 variables:
+#' \describe{
+#' \item{latitude}{}
+#' \item{longitude}{}
+#' }
+#'
+#' @examples
+#' head(SCstudents)
+"SCstudents"
+
+
 #' Utilities
 #'
 #' Data
 #' @format A data frame with 22 observations and 9 variables:
-#' \describe {
+#' \describe{
 #' \item{Company}{}
 #' \item{Fixed_charge}{}
 #' \item{RoR}{}
