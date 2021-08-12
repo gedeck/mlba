@@ -21,6 +21,32 @@
 "accidents"
 
 
+#' Boston Housing
+#'
+#' Data
+#' @format A data frame with 5802 observations and 14 variables:
+#' \describe{
+#' \item{CRIM}{}
+#' \item{ZN}{}
+#' \item{INDUS}{}
+#' \item{CHAS}{}
+#' \item{NOX}{}
+#' \item{RM}{}
+#' \item{AGE}{}
+#' \item{DIS}{}
+#' \item{RAD}{}
+#' \item{TAX}{}
+#' \item{PTRATIO}{}
+#' \item{LSTAT}{}
+#' \item{MEDV}{}
+#' \item{CAT..MEDV}{}
+#' }
+#'
+#' @examples
+#' BostonHousing
+"BostonHousing"
+
+
 #' West Roxbury.
 #'
 #' Data
