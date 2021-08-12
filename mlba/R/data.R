@@ -62,6 +62,25 @@
 #' BostonHousing
 "BostonHousing"
 
+#' Utilities
+#'
+#' Data
+#' @format A data frame with 22 observations and 9 variables:
+#' \describe {
+#' \item{Company}{}
+#' \item{Fixed_charge}{}
+#' \item{RoR}{}
+#' \item{Cost}{}
+#' \item{Load_factor}{}
+#' \item{Demand_growth}{}
+#' \item{Sales}{}
+#' \item{Nuclear}{}
+#' \item{Fuel_Cost}{}
+#' }
+#'
+#' @examples
+#' Utilities
+"Utilities"
 
 #' West Roxbury.
 #'

@@ -12,5 +12,8 @@ BostonHousing = read.csv(file.path('data-raw', 'BostonHousing.csv.gz')) %>%
   rename(CAT.MEDV = CAT..MEDV)
 use_data(BostonHousing, overwrite=TRUE) # , file=file.path('data', 'BostonHousing.rda'))
 
+Utilities = read.csv(file.path('data-raw', 'Utilities.csv.gz'))
+use_data(Utilities, overwrite=TRUE) # , file=file.path('data', 'Utilities.rda'))
+
 WestRoxbury = read.csv(file.path('data-raw', 'WestRoxbury.csv.gz'))
 use_data(WestRoxbury, overwrite=TRUE) # , file=file.path('data', 'WestRoxbury.rda'))
