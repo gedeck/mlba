@@ -21,10 +21,24 @@
 "accidents"
 
 
+#' Amtrak
+#'
+#' Data
+#' @format A data frame with 159 observations and 2 variables:
+#' \describe{
+#' \item{Month}{}
+#' \item{Ridership}{}
+#' }
+#'
+#' @examples
+#' Amtrak
+"Amtrak"
+
+
 #' Boston Housing
 #'
 #' Data
-#' @format A data frame with 5802 observations and 14 variables:
+#' @format A data frame with 506 observations and 14 variables:
 #' \describe{
 #' \item{CRIM}{}
 #' \item{ZN}{}
