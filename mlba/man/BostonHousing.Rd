@@ -5,7 +5,7 @@
 \alias{BostonHousing}
 \title{Boston Housing}
 \format{
-A data frame with 5802 observations and 14 variables:
+A data frame with 506 observations and 14 variables:
 \describe{
 \item{CRIM}{}
 \item{ZN}{}
@@ -20,7 +20,7 @@ A data frame with 5802 observations and 14 variables:
 \item{PTRATIO}{}
 \item{LSTAT}{}
 \item{MEDV}{}
-\item{CAT..MEDV}{}
+\item{CAT.MEDV}{}
 }
 }
 \usage{

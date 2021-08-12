@@ -1,3 +1,5 @@
+# Run devtools::document()
+
 #' accidents
 #'
 #' Data
@@ -53,7 +55,7 @@
 #' \item{PTRATIO}{}
 #' \item{LSTAT}{}
 #' \item{MEDV}{}
-#' \item{CAT..MEDV}{}
+#' \item{CAT.MEDV}{}
 #' }
 #'
 #' @examples
