@@ -11,7 +11,7 @@ A data frame with 264 observations and 5 variables:
 \item{Country.Code}{}
 \item{Indicator.Name}{}
 \item{Indicator.Code}{}
-\item{X2015}{}
+\item{GDP2015}{}
 }
 }
 \usage{

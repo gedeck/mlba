@@ -148,6 +148,33 @@
 #' Utilities
 "Utilities"
 
+
+#' UniversalBank
+#'
+#' Data
+#' @format A data frame with 500 observations and 14 variables:
+#' \describe{
+#' \item{ID}{}
+#' \item{Age}{}
+#' \item{Experience}{}
+#' \item{Income}{}
+#' \item{ZIP.Code}{}
+#' \item{Family}{}
+#' \item{CCAvg}{}
+#' \item{Education}{}
+#' \item{Mortgage}{}
+#' \item{Personal.Loan}{}
+#' \item{Securities.Account}{}
+#' \item{CD.Account}{}
+#' \item{Online}{}
+#' \item{CreditCard}{}
+#' }
+#'
+#' @examples
+#' UniversalBank
+"UniversalBank"
+
+
 #' West Roxbury.
 #'
 #' Data

@@ -25,6 +25,9 @@ use_data(gdp, overwrite=TRUE) # , file=file.path('data', 'gdp.rda'))
 SCstudents = read.csv(file.path('data-raw', 'SC-US-students-GPS-data-2016.csv.gz'))
 use_data(SCstudents, overwrite=TRUE) # , file=file.path('data', 'SCstudents.rda'))
 
+UniversalBank = read.csv(file.path('data-raw', 'UniversalBank.csv.gz'))
+use_data(UniversalBank, overwrite=TRUE) # , file=file.path('data', 'UniversalBank.rda'))
+
 Utilities = read.csv(file.path('data-raw', 'Utilities.csv.gz'))
 use_data(Utilities, overwrite=TRUE) # , file=file.path('data', 'Utilities.rda'))
 
