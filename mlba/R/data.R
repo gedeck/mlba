@@ -175,6 +175,22 @@
 "UniversalBank"
 
 
+#' Veerhoven.
+#'
+#' Data
+#' @format A data frame with 159 observations and 5 variables:
+#' \describe{
+#' \item{Serial}{}
+#' \item{Code}{}
+#' \item{Nation}{}
+#' \item{Score}{}
+#' \item{X..surveys}{}
+#' }
+#'
+#' @examples
+#' Veerhoven
+"Veerhoven"
+
 #' West Roxbury.
 #'
 #' Data
