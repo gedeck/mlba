@@ -3,30 +3,39 @@ library(devtools)
 
 
 accidents = read.csv(file.path('data-raw', 'accidents.csv.gz'))
-use_data(accidents, overwrite=TRUE) #, file=file.path('data', 'accidents.rda'))
+use_data(accidents, overwrite=TRUE)
 
 Amtrak = read.csv(file.path('data-raw', 'Amtrak.csv.gz'))
-use_data(Amtrak, overwrite=TRUE) #, file=file.path('data', 'Amtrak.rda'))
+use_data(Amtrak, overwrite=TRUE)
 
 BostonHousing = read.csv(file.path('data-raw', 'BostonHousing.csv.gz')) %>%
   rename(CAT.MEDV = CAT..MEDV)
-use_data(BostonHousing, overwrite=TRUE) # , file=file.path('data', 'BostonHousing.rda'))
+use_data(BostonHousing, overwrite=TRUE)
 
 Cereals = read.csv(file.path('data-raw', 'Cereals.csv.gz'))
-use_data(Cereals, overwrite=TRUE) #, file=file.path('data', 'Cereals.rda'))
+use_data(Cereals, overwrite=TRUE)
 
 eBayNetwork = read.csv(file.path('data-raw', 'eBayNetwork.csv.gz'))
-use_data(eBayNetwork, overwrite=TRUE) # , file=file.path('data', 'eBayNetwork.rda'))
+use_data(eBayNetwork, overwrite=TRUE)
 
 eBayTreemap = read.csv(file.path('data-raw', 'EbayTreemap.csv.gz'))
-use_data(eBayTreemap, overwrite=TRUE) # , file=file.path('data', 'eBayTreemap.rda'))
+use_data(eBayTreemap, overwrite=TRUE)
 
 gdp = read.csv(file.path('data-raw', 'gdp.csv.gz'), skip = 4, stringsAsFactors = FALSE)
 names(gdp)[5] <- "GDP2015"
-use_data(gdp, overwrite=TRUE) # , file=file.path('data', 'gdp.rda'))
+use_data(gdp, overwrite=TRUE)
+
+liftExample = read.csv(file.path('data-raw', 'liftExample.csv.gz'),stringsAsFactors = TRUE)
+use_data(liftExample, overwrite=TRUE)
+
+ownerExample = read.csv(file.path('data-raw', 'ownerExample.csv.gz'),stringsAsFactors = TRUE)
+use_data(ownerExample, overwrite=TRUE)
 
 SCstudents = read.csv(file.path('data-raw', 'SC-US-students-GPS-data-2016.csv.gz'))
-use_data(SCstudents, overwrite=TRUE) # , file=file.path('data', 'SCstudents.rda'))
+use_data(SCstudents, overwrite=TRUE)
+
+ToyotaCorolla = read.csv(file.path('data-raw', 'ToyotaCorolla.csv.gz'))
+use_data(ToyotaCorolla, overwrite=TRUE)
 
 UniversalBank = read.csv(file.path('data-raw', 'UniversalBank.csv.gz'))
 use_data(UniversalBank, overwrite=TRUE) # , file=file.path('data', 'UniversalBank.rda'))

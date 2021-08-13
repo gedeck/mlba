@@ -142,6 +142,34 @@
 "gdp"
 
 
+#' Lift example
+#'
+#' Data
+#' @format A data frame with 24 observations and 2 variables:
+#' \describe{
+#' \item{prob}{}
+#' \item{actual}{}
+#' }
+#'
+#' @examples
+#' head(liftExample)
+"liftExample"
+
+
+#' Owner example
+#'
+#' Data
+#' @format A data frame with 24 observations and 2 variables:
+#' \describe{
+#' \item{Class}{}
+#' \item{Probability}{}
+#' }
+#'
+#' @examples
+#' head(ownerExample)
+"ownerExample"
+
+
 #' statistics.com Students
 #'
 #' Data
@@ -154,6 +182,57 @@
 #' @examples
 #' head(SCstudents)
 "SCstudents"
+
+
+#' Toyoto Corolla
+#'
+#' Data
+#' @format A data frame with 1436 observations and 39 variables:
+#' \describe{
+#' \item{Id}{}
+#' \item{Model}{}
+#' \item{Price}{}
+#' \item{Age_08_04}{}
+#' \item{Mfg_Month}{}
+#' \item{Mfg_Year}{}
+#' \item{KM}{}
+#' \item{Fuel_Type}{}
+#' \item{HP}{}
+#' \item{Met_Color}{}
+#' \item{Color}{}
+#' \item{Automatic}{}
+#' \item{CC}{}
+#' \item{Doors}{}
+#' \item{Cylinders}{}
+#' \item{Gears}{}
+#' \item{Quarterly_Tax}{}
+#' \item{Weight}{}
+#' \item{Mfr_Guarantee}{}
+#' \item{BOVAG_Guarantee}{}
+#' \item{Guarantee_Period}{}
+#' \item{ABS}{}
+#' \item{Airbag_1}{}
+#' \item{Airbag_2}{}
+#' \item{Airco}{}
+#' \item{Automatic_airco}{}
+#' \item{Boardcomputer}{}
+#' \item{CD_Player}{}
+#' \item{Central_Lock}{}
+#' \item{Powered_Windows}{}
+#' \item{Power_Steering}{}
+#' \item{Radio}{}
+#' \item{Mistlamps}{}
+#' \item{Sport_Model}{}
+#' \item{Backseat_Divider}{}
+#' \item{Metallic_Rim}{}
+#' \item{Radio_cassette}{}
+#' \item{Parking_Assistant}{}
+#' \item{Tow_Bar}{}
+#' }
+#'
+#' @examples
+#' head(ToyotaCorolla)
+"ToyotaCorolla"
 
 
 #' Utilities
