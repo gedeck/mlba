@@ -31,6 +31,9 @@ use_data(liftExample, overwrite=TRUE)
 ownerExample = read.csv(file.path('data-raw', 'ownerExample.csv.gz'),stringsAsFactors = TRUE)
 use_data(ownerExample, overwrite=TRUE)
 
+RidingMowers = read.csv(file.path('data-raw', 'RidingMowers.csv.gz'))
+use_data(RidingMowers, overwrite=TRUE)
+
 SCstudents = read.csv(file.path('data-raw', 'SC-US-students-GPS-data-2016.csv.gz'))
 use_data(SCstudents, overwrite=TRUE)
 

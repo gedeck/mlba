@@ -184,6 +184,21 @@
 "SCstudents"
 
 
+#' Riding Mowers
+#'
+#' Data
+#' @format A data frame with 24 observations and 3 variables:
+#' \describe{
+#' \item{Income}{}
+#' \item{Lot_Size}{}
+#' \item{Ownership}{}
+#' }
+#'
+#' @examples
+#' head(RidingMowers)
+"RidingMowers"
+
+
 #' Toyoto Corolla
 #'
 #' Data
