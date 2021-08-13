@@ -43,24 +43,27 @@ use_data(RidingMowers, overwrite=TRUE)
 SCstudents = read.csv(file.path('data-raw', 'SC-US-students-GPS-data-2016.csv.gz'))
 use_data(SCstudents, overwrite=TRUE)
 
-TinyData = read.csv(file.path('data-raw', 'TinyData.csv.gz', stringsAsFactors = TRUE))
+TinyData = read.csv(file.path('data-raw', 'TinyData.csv.gz'), stringsAsFactors = TRUE)
 use_data(TinyData, overwrite=TRUE)
 
 ToyotaCorolla = read.csv(file.path('data-raw', 'ToyotaCorolla.csv.gz'))
 use_data(ToyotaCorolla, overwrite=TRUE)
 
 UniversalBank = read.csv(file.path('data-raw', 'UniversalBank.csv.gz'))
-use_data(UniversalBank, overwrite=TRUE) # , file=file.path('data', 'UniversalBank.rda'))
+use_data(UniversalBank, overwrite=TRUE)
 
 Utilities = read.csv(file.path('data-raw', 'Utilities.csv.gz'))
-use_data(Utilities, overwrite=TRUE) # , file=file.path('data', 'Utilities.rda'))
+use_data(Utilities, overwrite=TRUE)
 
 Veerhoven = read.csv(file.path('data-raw', 'Veerhoven.csv.gz'))
-use_data(Veerhoven, overwrite=TRUE) # , file=file.path('data', 'Veerhoven.rda'))
+use_data(Veerhoven, overwrite=TRUE)
+
+VoterPersuasion = read.csv(file.path('data-raw', 'Voter-Persuasion.csv.gz'))
+use_data(VoterPersuasion, overwrite=TRUE)
 
 WestRoxbury = read.csv(file.path('data-raw', 'WestRoxbury.csv.gz'))
-use_data(WestRoxbury, overwrite=TRUE) # , file=file.path('data', 'WestRoxbury.rda'))
+use_data(WestRoxbury, overwrite=TRUE)
 
 Wine = read.csv(file.path('data-raw', 'Wine.csv.gz'))
-use_data(Wine, overwrite=TRUE) # , file=file.path('data', 'Wine.rda'))
+use_data(Wine, overwrite=TRUE)
 

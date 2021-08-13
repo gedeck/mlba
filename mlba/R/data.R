@@ -371,6 +371,98 @@
 #' Veerhoven
 "Veerhoven"
 
+
+#' VoterPersuasion
+#'
+#' Data
+#' @format A data frame with 10000 observations and 79 variables:
+#' \describe{
+#' \item{VOTER_ID}{}
+#' \item{SET_NO}{}
+#' \item{OPP_SEX}{}
+#' \item{AGE}{}
+#' \item{HH_ND}{}
+#' \item{HH_NR}{}
+#' \item{HH_NI}{}
+#' \item{MED_AGE}{}
+#' \item{NH_WHITE}{}
+#' \item{NH_AA}{}
+#' \item{NH_ASIAN}{}
+#' \item{NH_MULT}{}
+#' \item{HISP}{}
+#' \item{COMM_LT10}{}
+#' \item{COMM_609P}{}
+#' \item{MED_HH_INC}{}
+#' \item{COMM_CAR}{}
+#' \item{COMM_CP}{}
+#' \item{COMM_PT}{}
+#' \item{COMM_WALK}{}
+#' \item{KIDS}{}
+#' \item{M_MAR}{}
+#' \item{F_MAR}{}
+#' \item{ED_4COL}{}
+#' \item{GENDER_F}{}
+#' \item{GENDER_M}{}
+#' \item{H_AFDLN3P}{}
+#' \item{H_F1}{}
+#' \item{H_M1}{}
+#' \item{H_MFDLN3P}{}
+#' \item{PARTY_D}{}
+#' \item{PARTY_I}{}
+#' \item{PARTY_R}{}
+#' \item{VPP_08}{}
+#' \item{VPP_12}{}
+#' \item{VPR_08}{}
+#' \item{VPR_10}{}
+#' \item{VPR_12}{}
+#' \item{VG_04}{}
+#' \item{VG_06}{}
+#' \item{VG_08}{}
+#' \item{VG_10}{}
+#' \item{VG_12}{}
+#' \item{PP_PELIG}{}
+#' \item{PR_PELIG}{}
+#' \item{AP_PELIG}{}
+#' \item{G_PELIG}{}
+#' \item{E_PELIG}{}
+#' \item{NL5G}{}
+#' \item{NL3PR}{}
+#' \item{NL5AP}{}
+#' \item{NL2PP}{}
+#' \item{REG_DAYS}{}
+#' \item{UPSCALEBUY}{}
+#' \item{UPSCALEMAL}{}
+#' \item{UPSCALEFEM}{}
+#' \item{BOOKBUYERI}{}
+#' \item{FAMILYMAGA}{}
+#' \item{FEMALEORIE}{}
+#' \item{RELIGIOUSM}{}
+#' \item{GARDENINGM}{}
+#' \item{CULINARYIN}{}
+#' \item{HEALTHFITN}{}
+#' \item{DOITYOURSE}{}
+#' \item{FINANCIALM}{}
+#' \item{RELIGIOUSC}{}
+#' \item{POLITICALC}{}
+#' \item{MEDIANEDUC}{}
+#' \item{CAND1S}{}
+#' \item{CAND2S}{}
+#' \item{MESSAGE_A}{}
+#' \item{MESSAGE_A_REV}{}
+#' \item{I3}{}
+#' \item{CAND1_UND}{}
+#' \item{CAND2_UND}{}
+#' \item{MOVED_AD}{}
+#' \item{MOVED_A}{}
+#' \item{opposite}{}
+#' \item{Partition}{}
+#' }
+#'
+#' @examples
+#' VoterPersuasion
+"VoterPersuasion"
+
+
 #' West Roxbury.
 #'
 #' Data
