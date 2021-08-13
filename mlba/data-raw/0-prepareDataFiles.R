@@ -12,6 +12,9 @@ BostonHousing = read.csv(file.path('data-raw', 'BostonHousing.csv.gz')) %>%
   rename(CAT.MEDV = CAT..MEDV)
 use_data(BostonHousing, overwrite=TRUE) # , file=file.path('data', 'BostonHousing.rda'))
 
+Cereals = read.csv(file.path('data-raw', 'Cereals.csv.gz'))
+use_data(Cereals, overwrite=TRUE) #, file=file.path('data', 'Cereals.rda'))
+
 eBayNetwork = read.csv(file.path('data-raw', 'eBayNetwork.csv.gz'))
 use_data(eBayNetwork, overwrite=TRUE) # , file=file.path('data', 'eBayNetwork.rda'))
 
@@ -36,3 +39,7 @@ use_data(Veerhoven, overwrite=TRUE) # , file=file.path('data', 'Veerhoven.rda'))
 
 WestRoxbury = read.csv(file.path('data-raw', 'WestRoxbury.csv.gz'))
 use_data(WestRoxbury, overwrite=TRUE) # , file=file.path('data', 'WestRoxbury.rda'))
+
+Wine = read.csv(file.path('data-raw', 'Wine.csv.gz'))
+use_data(Wine, overwrite=TRUE) # , file=file.path('data', 'Wine.rda'))
+

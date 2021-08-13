@@ -63,6 +63,34 @@
 "BostonHousing"
 
 
+#' Cereals
+#'
+#' Data
+#' @format A data frame with 77 observations and 16 variables:
+#' \describe{
+#' \item{name}{}
+#' \item{mfr}{}
+#' \item{type}{}
+#' \item{calories}{}
+#' \item{protein}{}
+#' \item{fat}{}
+#' \item{sodium}{}
+#' \item{fiber}{}
+#' \item{carbo}{}
+#' \item{sugars}{}
+#' \item{potass}{}
+#' \item{vitamins}{}
+#' \item{shelf}{}
+#' \item{weight}{}
+#' \item{cups}{}
+#' \item{rating}{}
+#' }
+#'
+#' @examples
+#' Cereals
+"Cereals"
+
+
 #' ebay Network
 #'
 #' Data
@@ -215,3 +243,28 @@
 #' @examples
 #' WestRoxbury
 "WestRoxbury"
+
+#' Wine.
+#'
+#' Data
+#' @format A data frame with 178 observations and 14 variables:
+#' \describe{
+#' \item{Type}{}
+#' \item{Alcohol}{}
+#' \item{Malic_Acid}{}
+#' \item{Ash}{}
+#' \item{Ash_Alcalinity}{}
+#' \item{Magnesium}{}
+#' \item{Total_Phenols}{}
+#' \item{Flavanoids}{}
+#' \item{Nonflavanoid_Phenols}{}
+#' \item{Proanthocyanins}{}
+#' \item{Color_Intensity}{}
+#' \item{Hue}{}
+#' \item{OD280_OD315}{}
+#' \item{Proline}{}
+#' }
+#'
+#' @examples
+#' Wine
+"Wine"
