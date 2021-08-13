@@ -23,6 +23,23 @@
 "accidents"
 
 
+#' accidentsnn
+#'
+#' Data
+#' @format A data frame with 999 observations and 5 variables:
+#' \describe{
+#' \item{ALCHL_I}{}
+#' \item{PROFIL_I_R}{}
+#' \item{SUR_COND}{}
+#' \item{VEH_INVL}{}
+#' \item{MAX_SEV_IR}{}
+#' }
+#'
+#' @examples
+#' head(accidentsnn)
+"accidentsnn"
+
+
 #' Amtrak
 #'
 #' Data
@@ -222,6 +239,22 @@
 #' @examples
 #' head(RidingMowers)
 "RidingMowers"
+
+
+#' TinyData
+#'
+#' Data
+#' @format A data frame with 6 observations and 4 variables:
+#' \describe{
+#' \item{Obs.}{}
+#' \item{Fat}{}
+#' \item{Salt}{}
+#' \item{Acceptance}{}
+#' }
+#'
+#' @examples
+#' head(TinyData)
+"TinyData"
 
 
 #' Toyoto Corolla

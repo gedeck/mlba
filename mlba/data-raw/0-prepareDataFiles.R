@@ -5,6 +5,9 @@ library(devtools)
 accidents = read.csv(file.path('data-raw', 'accidents.csv.gz'))
 use_data(accidents, overwrite=TRUE)
 
+accidentsnn = read.csv(file.path('data-raw', 'accidentsnn.csv.gz'))
+use_data(accidentsnn, overwrite=TRUE)
+
 Amtrak = read.csv(file.path('data-raw', 'Amtrak.csv.gz'))
 use_data(Amtrak, overwrite=TRUE)
 
@@ -39,6 +42,9 @@ use_data(RidingMowers, overwrite=TRUE)
 
 SCstudents = read.csv(file.path('data-raw', 'SC-US-students-GPS-data-2016.csv.gz'))
 use_data(SCstudents, overwrite=TRUE)
+
+TinyData = read.csv(file.path('data-raw', 'TinyData.csv.gz', stringsAsFactors = TRUE))
+use_data(TinyData, overwrite=TRUE)
 
 ToyotaCorolla = read.csv(file.path('data-raw', 'ToyotaCorolla.csv.gz'))
 use_data(ToyotaCorolla, overwrite=TRUE)
