@@ -18,11 +18,17 @@ use_data(BostonHousing, overwrite=TRUE)
 Cereals = read.csv(file.path('data-raw', 'Cereals.csv.gz'))
 use_data(Cereals, overwrite=TRUE)
 
+CharlesBookClub = read.csv(file.path('data-raw', 'CharlesBookClub.csv.gz'))
+use_data(CharlesBookClub, overwrite=TRUE)
+
 eBayNetwork = read.csv(file.path('data-raw', 'eBayNetwork.csv.gz'))
 use_data(eBayNetwork, overwrite=TRUE)
 
 eBayTreemap = read.csv(file.path('data-raw', 'EbayTreemap.csv.gz'))
 use_data(eBayTreemap, overwrite=TRUE)
+
+Faceplate = read.csv(file.path('data-raw', 'Faceplate.csv.gz'))
+use_data(Faceplate, overwrite=TRUE)
 
 FlightDelays = read.csv(file.path('data-raw', 'FlightDelays.csv.gz'), stringsAsFactors = TRUE)
 use_data(FlightDelays, overwrite=TRUE)

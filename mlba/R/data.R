@@ -80,6 +80,42 @@
 "BostonHousing"
 
 
+#' Charles Book Club
+#'
+#' Data
+#' @format A data frame with 4000 observations and 24 variables:
+#' \describe{
+#' \item{Seq.}{}
+#' \item{ID.}{}
+#' \item{Gender}{}
+#' \item{M}{}
+#' \item{R}{}
+#' \item{F}{}
+#' \item{FirstPurch}{}
+#' \item{ChildBks}{}
+#' \item{YouthBks}{}
+#' \item{CookBks}{}
+#' \item{DoItYBks}{}
+#' \item{RefBks}{}
+#' \item{ArtBks}{}
+#' \item{GeogBks}{}
+#' \item{ItalCook}{}
+#' \item{ItalAtlas}{}
+#' \item{ItalArt}{}
+#' \item{Florence}{}
+#' \item{Related.Purchase}{}
+#' \item{Mcode}{}
+#' \item{Rcode}{}
+#' \item{Fcode}{}
+#' \item{Yes_Florence}{}
+#' \item{No_Florence}{}
+#' }
+#'
+#' @examples
+#' head(CharlesBookClub)
+"CharlesBookClub"
+
+
 #' Cereals
 #'
 #' Data
@@ -140,6 +176,25 @@
 #' @examples
 #' head(eBayTreemap)
 "eBayTreemap"
+
+
+#' Faceplate
+#'
+#' Data
+#' @format A data frame with 10 observations and 7 variables:
+#' \describe{
+#' \item{Transaction}{}
+#' \item{Red}{}
+#' \item{White}{}
+#' \item{Blue}{}
+#' \item{Orange}{}
+#' \item{Green}{}
+#' \item{Yellow}{}
+#' }
+#'
+#' @examples
+#' Faceplate
+"Faceplate"
 
 
 #' Flight delays
