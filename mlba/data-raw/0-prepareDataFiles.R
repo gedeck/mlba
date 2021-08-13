@@ -21,6 +21,9 @@ use_data(Cereals, overwrite=TRUE)
 CharlesBookClub = read.csv(file.path('data-raw', 'CharlesBookClub.csv.gz'))
 use_data(CharlesBookClub, overwrite=TRUE)
 
+drug = read.csv(file.path('data-raw', 'drug.csv.gz'))
+use_data(drug, overwrite=TRUE)
+
 eBayNetwork = read.csv(file.path('data-raw', 'eBayNetwork.csv.gz'))
 use_data(eBayNetwork, overwrite=TRUE)
 

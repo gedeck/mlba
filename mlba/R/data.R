@@ -144,6 +144,25 @@
 "Cereals"
 
 
+#' drug
+#'
+#' Data
+#' @format A data frame with 60 observations and 7 variables:
+#' \describe{
+#' \item{Entity}{}
+#' \item{Related.Entity}{}
+#' \item{Relationship}{}
+#' \item{Descrption}{}
+#' \item{Related.Entity.Address.1}{}
+#' \item{Related.Entity.Address.2}{}
+#' \item{Related.Address.3}{}
+#' }
+#'
+#' @examples
+#' drug
+"drug"
+
+
 #' ebay Network
 #'
 #' Data
