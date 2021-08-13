@@ -49,6 +49,9 @@ use_data(RidingMowers, overwrite=TRUE)
 SCstudents = read.csv(file.path('data-raw', 'SC-US-students-GPS-data-2016.csv.gz'))
 use_data(SCstudents, overwrite=TRUE)
 
+SP500 = read.csv(file.path('data-raw', 'SP500.csv.gz'))
+use_data(SP500, overwrite=TRUE)
+
 TinyData = read.csv(file.path('data-raw', 'TinyData.csv.gz'), stringsAsFactors = TRUE)
 use_data(TinyData, overwrite=TRUE)
 

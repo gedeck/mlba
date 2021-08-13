@@ -281,6 +281,20 @@
 "SCstudents"
 
 
+#' SP500
+#'
+#' Data
+#' @format A data frame with 100 observations and 2 variables:
+#' \describe{
+#' \item{Date}{}
+#' \item{Close}{}
+#' }
+#'
+#' @examples
+#' head(SP500)
+"SP500"
+
+
 #' Riding Mowers
 #'
 #' Data
