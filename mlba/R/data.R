@@ -125,6 +125,31 @@
 "eBayTreemap"
 
 
+#' Flight delays
+#'
+#' Data
+#' @format A data frame with 2201 observations and 13 variables:
+#' \describe{
+#' \item{CRS_DEP_TIME}{}
+#' \item{CARRIER}{}
+#' \item{DEP_TIME}{}
+#' \item{DEST}{}
+#' \item{DISTANCE}{}
+#' \item{FL_DATE}{}
+#' \item{FL_NUM}{}
+#' \item{ORIGIN}{}
+#' \item{Weather}{}
+#' \item{DAY_WEEK}{}
+#' \item{DAY_OF_MONTH}{}
+#' \item{TAIL_NUM}{}
+#' \item{Flight.Status}{}
+#' }
+#'
+#' @examples
+#' head(FlightDelays)
+"FlightDelays"
+
+
 #' GDP
 #'
 #' Data

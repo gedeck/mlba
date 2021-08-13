@@ -21,6 +21,9 @@ use_data(eBayNetwork, overwrite=TRUE)
 eBayTreemap = read.csv(file.path('data-raw', 'EbayTreemap.csv.gz'))
 use_data(eBayTreemap, overwrite=TRUE)
 
+FlightDelays = read.csv(file.path('data-raw', 'FlightDelays.csv.gz'))
+use_data(FlightDelays, overwrite=TRUE)
+
 gdp = read.csv(file.path('data-raw', 'gdp.csv.gz'), skip = 4, stringsAsFactors = FALSE)
 names(gdp)[5] <- "GDP2015"
 use_data(gdp, overwrite=TRUE)
