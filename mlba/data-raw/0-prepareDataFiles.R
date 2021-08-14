@@ -48,6 +48,7 @@ liftExample = read.csv(file.path('data-raw', 'liftExample.csv.gz'), stringsAsFac
 use_data(liftExample, overwrite=TRUE)
 
 NYPDMotorVehicleCollisions = read.csv(file.path('data-raw', 'NYPD_Motor_Vehicle_Collisions_1000.csv.gz'))
+NYPDMotorVehicleCollisions = NYPDMotorVehicleCollisions[order(as.Date(NYPDMotorVehicleCollisions$DATE, format = "%m/%d/%Y")),]
 use_data(NYPDMotorVehicleCollisions, overwrite=TRUE)
 
 ownerExample = read.csv(file.path('data-raw', 'ownerExample.csv.gz'),stringsAsFactors = TRUE)
