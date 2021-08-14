@@ -44,8 +44,11 @@ gdp = read.csv(file.path('data-raw', 'gdp.csv.gz'), skip = 4, stringsAsFactors =
 names(gdp)[5] <- "GDP2015"
 use_data(gdp, overwrite=TRUE)
 
-liftExample = read.csv(file.path('data-raw', 'liftExample.csv.gz'),stringsAsFactors = TRUE)
+liftExample = read.csv(file.path('data-raw', 'liftExample.csv.gz'), stringsAsFactors = TRUE)
 use_data(liftExample, overwrite=TRUE)
+
+NYPDMotorVehicleCollisions = read.csv(file.path('data-raw', 'NYPD_Motor_Vehicle_Collisions_1000.csv.gz'))
+use_data(NYPDMotorVehicleCollisions, overwrite=TRUE)
 
 ownerExample = read.csv(file.path('data-raw', 'ownerExample.csv.gz'),stringsAsFactors = TRUE)
 use_data(ownerExample, overwrite=TRUE)

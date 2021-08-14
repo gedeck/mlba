@@ -272,6 +272,47 @@
 "liftExample"
 
 
+#' NYPD Motor Vehicle Collisions
+#'
+#' Data
+#' @format A data frame with 1000 observations and 29 variables:
+#' \describe{
+#' \item{DATE}{}
+#' \item{TIME}{}
+#' \item{BOROUGH}{}
+#' \item{ZIP.CODE}{}
+#' \item{LATITUDE}{}
+#' \item{LONGITUDE}{}
+#' \item{LOCATION}{}
+#' \item{ON.STREET.NAME}{}
+#' \item{CROSS.STREET.NAME}{}
+#' \item{OFF.STREET.NAME}{}
+#' \item{NUMBER.OF.PERSONS.INJURED}{}
+#' \item{NUMBER.OF.PERSONS.KILLED}{}
+#' \item{NUMBER.OF.PEDESTRIANS.INJURED}{}
+#' \item{NUMBER.OF.PEDESTRIANS.KILLED}{}
+#' \item{NUMBER.OF.CYCLIST.INJURED}{}
+#' \item{NUMBER.OF.CYCLIST.KILLED}{}
+#' \item{NUMBER.OF.MOTORIST.INJURED}{}
+#' \item{NUMBER.OF.MOTORIST.KILLED}{}
+#' \item{CONTRIBUTING.FACTOR.VEHICLE.1}{}
+#' \item{CONTRIBUTING.FACTOR.VEHICLE.2}{}
+#' \item{CONTRIBUTING.FACTOR.VEHICLE.3}{}
+#' \item{CONTRIBUTING.FACTOR.VEHICLE.4}{}
+#' \item{CONTRIBUTING.FACTOR.VEHICLE.5}{}
+#' \item{UNIQUE.KEY}{}
+#' \item{VEHICLE.TYPE.CODE.1}{}
+#' \item{VEHICLE.TYPE.CODE.2}{}
+#' \item{VEHICLE.TYPE.CODE.3}{}
+#' \item{VEHICLE.TYPE.CODE.4}{}
+#' \item{VEHICLE.TYPE.CODE.5}{}
+#' }
+#'
+#' @examples
+#' head(NYPDMotorVehicleCollisions)
+"NYPDMotorVehicleCollisions"
+
+
 #' Owner example
 #'
 #' Data
