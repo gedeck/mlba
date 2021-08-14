@@ -11,8 +11,12 @@ use_data(accidentsnn, overwrite=TRUE)
 Amtrak = read.csv(file.path('data-raw', 'Amtrak.csv.gz'))
 use_data(Amtrak, overwrite=TRUE)
 
+file.copy(from=file.path('data-raw', 'AutoAndElectronics.zip'),
+          to=file.path('inst', 'extdata', 'AutoAndElectronics.zip'),
+          overwrite=TRUE, copy.mode=TRUE)
+
 BostonHousing = read.csv(file.path('data-raw', 'BostonHousing.csv.gz')) %>%
-  rename(CAT.MEDV = CAT..MEDV)
+  rename(CAT.MEDV=CAT..MEDV)
 use_data(BostonHousing, overwrite=TRUE)
 
 Cereals = read.csv(file.path('data-raw', 'Cereals.csv.gz'))
