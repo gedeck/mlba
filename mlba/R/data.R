@@ -278,6 +278,34 @@
 "drug"
 
 
+#' EastWestAirlinesNN
+#'
+#' Data
+#' @format A data frame with 4987 observations and 16 variables:
+#' \describe{
+#' \item{ID.}{}
+#' \item{Topflight}{}
+#' \item{Balance}{}
+#' \item{Qual_miles}{}
+#' \item{cc1_miles.}{}
+#' \item{cc2_miles.}{}
+#' \item{cc3_miles.}{}
+#' \item{Bonus_miles}{}
+#' \item{Bonus_trans}{}
+#' \item{Flight_miles_12mo}{}
+#' \item{Flight_trans_12}{}
+#' \item{Online_12}{}
+#' \item{Email}{}
+#' \item{Club_member}{}
+#' \item{Any_cc_miles_12mo}{}
+#' \item{Phone_sale}{}
+#' }
+#'
+#' @examples
+#' head(EastWestAirlinesNN)
+"EastWestAirlinesNN"
+
+
 #' ebay Auctions
 #'
 #' Data

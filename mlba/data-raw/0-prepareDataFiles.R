@@ -40,6 +40,9 @@ use_data(CharlesBookClub, overwrite=TRUE)
 drug = read.csv(file.path('data-raw', 'drug.csv.gz'))
 use_data(drug, overwrite=TRUE)
 
+EastWestAirlinesNN = read.csv(file.path('data-raw', 'EastWestAirlinesNN.csv.gz'))
+use_data(EastWestAirlinesNN, overwrite=TRUE)
+
 eBayAuctions = read.csv(file.path('data-raw', 'eBayAuctions.csv.gz'))
 use_data(eBayAuctions, overwrite=TRUE)
 
