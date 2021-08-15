@@ -138,6 +138,23 @@
 "Airfares"
 
 
+#' Banks
+#'
+#' Data
+#' @format A data frame with 20 observations and 5 variables:
+#' \describe{
+#' \item{Obs}{}
+#' \item{Financial.Condition}{}
+#' \item{TotCap.Assets}{}
+#' \item{TotExp.Assets}{}
+#' \item{TotLns.Lses.Assets}{}
+#' }
+#'
+#' @examples
+#' banks
+"banks"
+
+
 #' Applicance Shipments
 #'
 #' Data
@@ -515,6 +532,21 @@
 #' @examples
 #' head(RidingMowers)
 "RidingMowers"
+
+
+#' System Administrator
+#'
+#' Data
+#' @format A data frame with 75 observations and 3 variables:
+#' \describe{
+#' \item{Experience}{}
+#' \item{Training}{}
+#' \item{Completed.task}{}
+#' }
+#'
+#' @examples
+#' head(SystemAdministrators)
+"SystemAdministrators"
 
 
 #' Tayko

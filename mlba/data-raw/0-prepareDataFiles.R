@@ -24,6 +24,9 @@ file.copy(from=file.path('data-raw', 'AutoAndElectronics.zip'),
           to=file.path('inst', 'extdata', 'AutoAndElectronics.zip'),
           overwrite=TRUE, copy.mode=TRUE)
 
+banks = read.csv(file.path('data-raw', 'banks.csv.gz'))
+use_data(banks, overwrite=TRUE)
+
 BostonHousing = read.csv(file.path('data-raw', 'BostonHousing.csv.gz')) %>%
   rename(CAT.MEDV=CAT..MEDV)
 use_data(BostonHousing, overwrite=TRUE)
@@ -77,6 +80,9 @@ use_data(SCstudents, overwrite=TRUE)
 
 SP500 = read.csv(file.path('data-raw', 'SP500.csv.gz'))
 use_data(SP500, overwrite=TRUE)
+
+SystemAdministrators = read.csv(file.path('data-raw', 'SystemAdministrators.csv.gz'))
+use_data(SystemAdministrators, overwrite=TRUE)
 
 Tayko = read.csv(file.path('data-raw', 'Tayko.csv.gz'))
 use_data(Tayko, overwrite=TRUE)
