@@ -347,6 +347,30 @@
 "drug"
 
 
+#' EastWestAirlinesCluster
+#'
+#' Data
+#' @format A data frame with 3999 observations and 12 variables:
+#' \describe{
+#' \item{ID.}{}
+#' \item{Balance}{}
+#' \item{Qual_miles}{}
+#' \item{cc1_miles}{}
+#' \item{cc2_miles}{}
+#' \item{cc3_miles}{}
+#' \item{Bonus_miles}{}
+#' \item{Bonus_trans}{}
+#' \item{Flight_miles_12mo}{}
+#' \item{Flight_trans_12}{}
+#' \item{Days_since_enroll}{}
+#' \item{Award.}{}
+#' }
+#'
+#' @examples
+#' head(EastWestAirlinesCluster)
+"EastWestAirlinesCluster"
+
+
 #' EastWestAirlinesNN
 #'
 #' Data
@@ -606,6 +630,32 @@
 #' @examples
 #' head(ownerExample)
 "ownerExample"
+
+
+#' Pharmaceuticals
+#'
+#' Data
+#' @format A data frame with 21 observations and 14 variables:
+#' \describe{
+#' \item{Symbol}{}
+#' \item{Name}{}
+#' \item{Market_Cap}{}
+#' \item{Beta}{}
+#' \item{PE_Ratio}{}
+#' \item{ROE}{}
+#' \item{ROA}{}
+#' \item{Asset_Turnover}{}
+#' \item{Leverage}{}
+#' \item{Rev_Growth}{}
+#' \item{Net_Profit_Margin}{}
+#' \item{Median_Recommendation}{}
+#' \item{Location}{}
+#' \item{Exchange}{}
+#' }
+#'
+#' @examples
+#' head(Pharmaceuticals)
+"Pharmaceuticals"
 
 
 #' statistics.com Students

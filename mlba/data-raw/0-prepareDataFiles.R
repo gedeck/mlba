@@ -49,6 +49,9 @@ use_data(Cosmetics, overwrite=TRUE)
 drug = read.csv(file.path('data-raw', 'drug.csv.gz'))
 use_data(drug, overwrite=TRUE)
 
+EastWestAirlinesCluster = read.csv(file.path('data-raw', 'EastWestAirlinesCluster.csv.gz'))
+use_data(EastWestAirlinesCluster, overwrite=TRUE)
+
 EastWestAirlinesNN = read.csv(file.path('data-raw', 'EastWestAirlinesNN.csv.gz'))
 use_data(EastWestAirlinesNN, overwrite=TRUE)
 
@@ -86,6 +89,9 @@ use_data(NYPDMotorVehicleCollisions, overwrite=TRUE)
 
 ownerExample = read.csv(file.path('data-raw', 'ownerExample.csv.gz'),stringsAsFactors = TRUE)
 use_data(ownerExample, overwrite=TRUE)
+
+Pharmaceuticals = read.csv(file.path('data-raw', 'Pharmaceuticals.csv.gz'))
+use_data(Pharmaceuticals, overwrite=TRUE)
 
 RidingMowers = read.csv(file.path('data-raw', 'RidingMowers.csv.gz'))
 use_data(RidingMowers, overwrite=TRUE)
