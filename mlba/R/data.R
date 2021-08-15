@@ -23,6 +23,60 @@
 "accidents"
 
 
+#' accidents
+#'
+#' These data, from the U.S. Bureau of Transportation Statistics, can be used to predict
+#' whether an accident will results in injuries or fatalities, based on  predictors
+#' such as alcohol involvement, time of day, road condition, etc.  Such a prediction
+#' system could be used to prioritize responder resources at the time of the report.
+#'
+#'  Data are for the year 2001.
+#'
+#' @format A data frame with 42183 observations and 24 variables:
+#' \describe{
+#' \item{HOUR_I_R}{1 = rush hour, 0 = not (rush = 6-9 am, 4-7 pm)}
+#' \item{ALCHL_I}{1 = Alcohol involved, 2 = not involved}
+#' \item{ALIGN_I}{1 = straight, 2 = curve}
+#' \item{STRATUM_R}{1 = NASS Crashes Involving At Least One Passenger Vehicle,
+#' i.e., A Passenger Car, Sport Utility Vehicle, Pickup Truck Or Van) Towed Due To
+#' Damage From The Crash Scene And No Medium Or Heavy Trucks Are Involved. 0 = not}
+#' \item{WRK_ZONE}{1 = yes, 0 = no}
+#' \item{WKDY_I_R}{1 = weekday, 0 = weekend}
+#' \item{INT_HWY}{Interstate? 1 = yes, 0 = no }
+#' \item{LGTCON_I_R}{Light conditions - 1 = day, 2 = dark (including dawn/dusk),
+#'  3 = dark, but lighted, 4 = dawn or dusk}
+#' \item{MANCOL_I_R}{0 = no collision, 1 = head-on, 2 = other form of collision}
+#' \item{PED_ACC_R}{1 = pedestrian/cyclist involved, 0 = not}
+#' \item{RELJCT_I_R}{1 = accident at intersection/interchange, 0 = not at intersection}
+#' \item{REL_RWY_R}{1 = accident on roadway, 0 = not on roadway}
+#' \item{PROFIL_I_R}{1 = level, 0 = other}
+#' \item{SPD_LIM}{Speed limit, miles per hour}
+#' \item{SUR_COND}{Surface conditions (1 = dry, 2 = wet, 3 = snow/slush, 4 = ice, 5 = sand/dirt/oil, 8 = other, 9 = unknown)}
+#' \item{TRAF_CON_R}{Traffic control device: 0 = none, 1 = signal, 2 = other (sign, officer …)}
+#' \item{TRAF_WAY}{1 = two-way traffic, 2 = divided hwy, 3 = one-way road}
+#' \item{VEH_INVL}{Number of vehicles involved}
+#' \item{WEATHER_R}{1 = no adverse conditions, 2 = rain, snow or other adverse condition}
+#' \item{INJURY_CRASH}{1 = yes, 0 = no}
+#' \item{NO_INJ_I}{Number of injuries}
+#' \item{PRPTYDMG_CRASH}{1 = property damage, 2 = no property damage}
+#' \item{FATALITIES}{1 = yes, 0 = no}
+#' \item{MAX_SEV_IR}{0 = no injury, 1 = non-fatal inj., 2 = fatal inj.}
+#' }
+#'
+#' Source: US Dept. of Transportation, Bureau of Transportation Statistics,
+#' "TranStats," (www.transtats.bts.gov -- select "databases" then "General Estimate System (GES))
+#' http://www.transtats.bts.gov/Fields.asp?Table_ID=1158&SYS_Table_Name=T_GES_ACCIDENT&User_Table_Name=Accident&Year_Info=1&First_Year=1999&Last_Year=2001&Rate_Info=1&Frequency=Annual&Data_Frequency=Annual,Monthly&Map_Info=&Is_Survey=1&Univ_Filter=&Latest_Available_Data=2001
+#' Note:  TranStats reports both variables with missing data, and their derived
+#' counterparts with imputed values filled in, denoted by an "I" at the end.
+#' Only one variant (the original or the derived) is included here. An "R" at the
+#' end of the variable name indicates that the Transtats variable has been
+#' collapsed into fewer categories for analysis purposes.
+#'
+#' @examples
+#' accidentsFull
+"accidentsFull"
+
+
 #' accidentsnn
 #'
 #' Data

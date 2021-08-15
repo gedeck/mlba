@@ -5,6 +5,9 @@ library(devtools)
 accidents = read.csv(file.path('data-raw', 'accidents.csv.gz'))
 use_data(accidents, overwrite=TRUE)
 
+accidentsFull = read.csv(file.path('data-raw', 'accidentsFull.csv.gz'))
+use_data(accidentsFull, overwrite=TRUE)
+
 accidentsnn = read.csv(file.path('data-raw', 'accidentsnn.csv.gz'))
 use_data(accidentsnn, overwrite=TRUE)
 
