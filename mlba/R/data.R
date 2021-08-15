@@ -54,6 +54,36 @@
 "Amtrak"
 
 
+#' Airfares
+#'
+#' Data
+#' @format A data frame with 638 observations and 18 variables:
+#' \describe{
+#' \item{S_CODE}{}
+#' \item{S_CITY}{}
+#' \item{E_CODE}{}
+#' \item{E_CITY}{}
+#' \item{COUPON}{}
+#' \item{NEW}{}
+#' \item{VACATION}{}
+#' \item{SW}{}
+#' \item{HI}{}
+#' \item{S_INCOME}{}
+#' \item{E_INCOME}{}
+#' \item{S_POP}{}
+#' \item{E_POP}{}
+#' \item{SLOT}{}
+#' \item{GATE}{}
+#' \item{DISTANCE}{}
+#' \item{PAX}{}
+#' \item{FARE}{}
+#' }
+#'
+#' @examples
+#' head(Airfares)
+"Airfares"
+
+
 #' Applicance Shipments
 #'
 #' Data
@@ -411,6 +441,43 @@
 #' @examples
 #' head(RidingMowers)
 "RidingMowers"
+
+
+#' Tayko
+#'
+#' Data
+#' @format A data frame with 2000 observations and 25 variables:
+#' \describe{
+#' \item{sequence_number}{}
+#' \item{US}{}
+#' \item{source_a}{}
+#' \item{source_c}{}
+#' \item{source_b}{}
+#' \item{source_d}{}
+#' \item{source_e}{}
+#' \item{source_m}{}
+#' \item{source_o}{}
+#' \item{source_h}{}
+#' \item{source_r}{}
+#' \item{source_s}{}
+#' \item{source_t}{}
+#' \item{source_u}{}
+#' \item{source_p}{}
+#' \item{source_x}{}
+#' \item{source_w}{}
+#' \item{Freq}{}
+#' \item{last_update_days_ago}{}
+#' \item{X1st_update_days_ago}{}
+#' \item{Web.order}{}
+#' \item{Gender.male}{}
+#' \item{Address_is_res}{}
+#' \item{Purchase}{}
+#' \item{Spending}{}
+#' }
+#'
+#' @examples
+#' head(Tayko)
+"Tayko"
 
 
 #' TinyData

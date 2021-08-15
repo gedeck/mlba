@@ -11,6 +11,9 @@ use_data(accidentsnn, overwrite=TRUE)
 Amtrak = read.csv(file.path('data-raw', 'Amtrak.csv.gz'))
 use_data(Amtrak, overwrite=TRUE)
 
+Airfares = read.csv(file.path('data-raw', 'Airfares.csv.gz'))
+use_data(Airfares, overwrite=TRUE)
+
 ApplianceShipments = read.csv(file.path('data-raw', 'ApplianceShipments.csv.gz'))
 use_data(ApplianceShipments, overwrite=TRUE)
 
@@ -68,6 +71,9 @@ use_data(SCstudents, overwrite=TRUE)
 
 SP500 = read.csv(file.path('data-raw', 'SP500.csv.gz'))
 use_data(SP500, overwrite=TRUE)
+
+Tayko = read.csv(file.path('data-raw', 'Tayko.csv.gz'))
+use_data(Tayko, overwrite=TRUE)
 
 TinyData = read.csv(file.path('data-raw', 'TinyData.csv.gz'), stringsAsFactors = TRUE)
 use_data(TinyData, overwrite=TRUE)
