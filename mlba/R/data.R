@@ -261,6 +261,26 @@
 "drug"
 
 
+#' ebay Auctions
+#'
+#' Data
+#' @format A data frame with 1972 observations and 8 variables:
+#' \describe{
+#' \item{Category}{}
+#' \item{currency}{}
+#' \item{sellerRating}{}
+#' \item{Duration}{}
+#' \item{endDay}{}
+#' \item{ClosePrice}{}
+#' \item{OpenPrice}{}
+#' \item{Competitive.}{}
+#' }
+#'
+#' @examples
+#' eBayAuctions
+"eBayAuctions"
+
+
 #' ebay Network
 #'
 #' Data
