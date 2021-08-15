@@ -154,6 +154,9 @@ use_data(CanadianWorkHours, overwrite=TRUE)
 DepartmentStoreSales = read.csv(file.path('data-raw', 'DepartmentStoreSales.csv.gz'))
 use_data(DepartmentStoreSales, overwrite=TRUE)
 
+NaturalGasSales = read.csv(file.path('data-raw', 'NaturalGasSales.csv.gz'))
+use_data(NaturalGasSales, overwrite=TRUE)
+
 Sept11Travel = read.csv(file.path('data-raw', 'Sept11Travel.csv.gz'))
 use_data(Sept11Travel, overwrite=TRUE)
 

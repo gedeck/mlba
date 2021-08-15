@@ -1190,6 +1190,20 @@
 "DepartmentStoreSales"
 
 
+#' NaturalGasSales
+#'
+#' Data
+#' @format A data frame with 16 observations and 2 variables:
+#' \describe{
+#' \item{Quarter}{}
+#' \item{Gas.Sales}{}
+#' }
+#'
+#' @examples
+#' NaturalGasSales
+"NaturalGasSales"
+
+
 #' Sept11Travel
 #'
 #' Data
