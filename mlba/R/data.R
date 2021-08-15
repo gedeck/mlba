@@ -472,6 +472,20 @@
 "Faceplate"
 
 
+#' FarmAds
+#'
+#' Data
+#' @format A data frame with 4143 observations and 2 variables:
+#' \describe{
+#' \item{label}{}
+#' \item{text}{}
+#' }
+#'
+#' @examples
+#' FarmAds
+"FarmAds"
+
+
 #' Flight delays
 #'
 #' Data

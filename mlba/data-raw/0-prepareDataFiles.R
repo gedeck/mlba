@@ -154,6 +154,11 @@ use_data(CanadianWorkHours, overwrite=TRUE)
 DepartmentStoreSales = read.csv(file.path('data-raw', 'DepartmentStoreSales.csv.gz'))
 use_data(DepartmentStoreSales, overwrite=TRUE)
 
+FarmAds <- read.csv(file.path('data-raw', 'Farm-ads.csv.gz'), header = FALSE,
+                    col.names=c('label', 'text'), stringsAsFactors=FALSE)
+# FarmAds$text <- as.character(FarmAds$text)
+use_data(FarmAds, overwrite=TRUE)
+
 NaturalGasSales = read.csv(file.path('data-raw', 'NaturalGasSales.csv.gz'))
 use_data(NaturalGasSales, overwrite=TRUE)
 
