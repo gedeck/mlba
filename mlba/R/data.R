@@ -195,6 +195,34 @@
 "BostonHousing"
 
 
+#' Cereals
+#'
+#' Data
+#' @format A data frame with 77 observations and 16 variables:
+#' \describe{
+#' \item{name}{}
+#' \item{mfr}{}
+#' \item{type}{}
+#' \item{calories}{}
+#' \item{protein}{}
+#' \item{fat}{}
+#' \item{sodium}{}
+#' \item{fiber}{}
+#' \item{carbo}{}
+#' \item{sugars}{}
+#' \item{potass}{}
+#' \item{vitamins}{}
+#' \item{shelf}{}
+#' \item{weight}{}
+#' \item{cups}{}
+#' \item{rating}{}
+#' }
+#'
+#' @examples
+#' Cereals
+"Cereals"
+
+
 #' Charles Book Club
 #'
 #' Data
@@ -231,32 +259,73 @@
 "CharlesBookClub"
 
 
-#' Cereals
+#' Course Rating
 #'
 #' Data
-#' @format A data frame with 77 observations and 16 variables:
+#' @format A data frame with 15 observations and 10 variables:
 #' \describe{
-#' \item{name}{}
-#' \item{mfr}{}
-#' \item{type}{}
-#' \item{calories}{}
-#' \item{protein}{}
-#' \item{fat}{}
-#' \item{sodium}{}
-#' \item{fiber}{}
-#' \item{carbo}{}
-#' \item{sugars}{}
-#' \item{potass}{}
-#' \item{vitamins}{}
-#' \item{shelf}{}
-#' \item{weight}{}
-#' \item{cups}{}
-#' \item{rating}{}
+#' \item{X}{}
+#' \item{SQL}{}
+#' \item{Spatial}{}
+#' \item{PA1}{}
+#' \item{DM.in.R}{}
+#' \item{Python}{}
+#' \item{Forecast}{}
+#' \item{R.Prog}{}
+#' \item{Hadoop}{}
+#' \item{Regression}{}
 #' }
 #'
 #' @examples
-#' Cereals
-"Cereals"
+#' head(courserating)
+"courserating"
+
+
+#' Coursetopics
+#'
+#' Data
+#' @format A data frame with 365 observations and 8 variables:
+#' \describe{
+#' \item{Intro}{}
+#' \item{DataMining}{}
+#' \item{Survey}{}
+#' \item{Cat.Data}{}
+#' \item{Regression}{}
+#' \item{Forecast}{}
+#' \item{DOE}{}
+#' \item{SW}{}
+#' }
+#'
+#' @examples
+#' head(Coursetopics)
+"Coursetopics"
+
+
+#' Cosmetics
+#'
+#' Data
+#' @format A data frame with 1000 observations and 15 variables:
+#' \describe{
+#' \item{Trans.}{}
+#' \item{Bag}{}
+#' \item{Blush}{}
+#' \item{Nail.Polish}{}
+#' \item{Brushes}{}
+#' \item{Concealer}{}
+#' \item{Eyebrow.Pencils}{}
+#' \item{Bronzer}{}
+#' \item{Lip.liner}{}
+#' \item{Mascara}{}
+#' \item{Eye.shadow}{}
+#' \item{Foundation}{}
+#' \item{Lip.Gloss}{}
+#' \item{Lipstick}{}
+#' \item{Eyeliner}{}
+#' }
+#'
+#' @examples
+#' head(Cosmetics)
+"Cosmetics"
 
 
 #' drug

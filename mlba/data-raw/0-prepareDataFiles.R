@@ -37,6 +37,15 @@ use_data(Cereals, overwrite=TRUE)
 CharlesBookClub = read.csv(file.path('data-raw', 'CharlesBookClub.csv.gz'))
 use_data(CharlesBookClub, overwrite=TRUE)
 
+Coursetopics = read.csv(file.path('data-raw', 'Coursetopics.csv.gz'))
+use_data(Coursetopics, overwrite=TRUE)
+
+courserating = read.csv(file.path('data-raw', 'courserating.csv.gz'))
+use_data(courserating, overwrite=TRUE)
+
+Cosmetics = read.csv(file.path('data-raw', 'Cosmetics.csv.gz'))
+use_data(Cosmetics, overwrite=TRUE)
+
 drug = read.csv(file.path('data-raw', 'drug.csv.gz'))
 use_data(drug, overwrite=TRUE)
 
