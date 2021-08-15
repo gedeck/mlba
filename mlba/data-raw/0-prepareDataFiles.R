@@ -84,6 +84,9 @@ use_data(SCstudents, overwrite=TRUE)
 SP500 = read.csv(file.path('data-raw', 'SP500.csv.gz'))
 use_data(SP500, overwrite=TRUE)
 
+spambase = read.csv(file.path('data-raw', 'spambase.csv.gz'))
+use_data(spambase, overwrite=TRUE)
+
 SystemAdministrators = read.csv(file.path('data-raw', 'SystemAdministrators.csv.gz'))
 use_data(SystemAdministrators, overwrite=TRUE)
 
