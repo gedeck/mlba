@@ -142,6 +142,12 @@ use_data(Wine, overwrite=TRUE)
 ApplianceShipments = read.csv(file.path('data-raw', 'ApplianceShipments.csv.gz'))
 use_data(ApplianceShipments, overwrite=TRUE)
 
+AustralianWines = read.csv(file.path('data-raw', 'AustralianWines.csv.gz'),
+                           header=FALSE, sep=",", skip=1,
+                           col.names=c('month', 'fortified','red', 'rose', 'sparkling','sweet white', 'dry white'),
+                           na.strings='NA', stringsAsFactors=FALSE)
+use_data(AustralianWines, overwrite=TRUE)
+
 CanadianWorkHours = read.csv(file.path('data-raw', 'CanadianWorkHours.csv.gz'))
 use_data(CanadianWorkHours, overwrite=TRUE)
 
@@ -156,3 +162,9 @@ use_data(ShampooSales, overwrite=TRUE)
 
 SouvenirSales = read.csv(file.path('data-raw', 'SouvenirSales.csv.gz'))
 use_data(SouvenirSales, overwrite=TRUE)
+
+ToysRUsRevenues = read.csv(file.path('data-raw', 'ToysRUsRevenues.csv.gz'))
+use_data(ToysRUsRevenues, overwrite=TRUE)
+
+WalMartStock = read.csv(file.path('data-raw', 'WalMartStock.csv.gz'))
+use_data(WalMartStock, overwrite=TRUE)

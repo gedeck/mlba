@@ -1129,6 +1129,25 @@
 "Wine"
 
 
+#' AustralianWines
+#'
+#' Data
+#' @format A data frame with 180 observations and 7 variables:
+#' \describe{
+#' \item{month}{}
+#' \item{fortified}{}
+#' \item{red}{}
+#' \item{rose}{}
+#' \item{sparkling}{}
+#' \item{sweet.white}{}
+#' \item{dry.white}{}
+#' }
+#'
+#' @examples
+#' AustralianWines
+"AustralianWines"
+
+
 #' ApplianceShipments
 #'
 #' Data
@@ -1215,4 +1234,32 @@
 "SouvenirSales"
 
 
+#' ToysRUsRevenues
+#'
+#' Data
+#' @format A data frame with 16 observations and 4 variables:
+#' \describe{
+#' \item{Index}{}
+#' \item{QuarterYear}{}
+#' \item{Revenue.in.million...}{}
+#' \item{Quarter}{}
+#' }
+#'
+#' @examples
+#' ToysRUsRevenues
+"ToysRUsRevenues"
+
+
+#' WalMartStock
+#'
+#' Data
+#' @format A data frame with 248 observations and 2 variables:
+#' \describe{
+#' \item{Date}{}
+#' \item{Close}{}
+#' }
+#'
+#' @examples
+#' WalMartStock
+"WalMartStock"
 
