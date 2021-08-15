@@ -81,6 +81,9 @@ use_data(UniversalBank, overwrite=TRUE)
 Utilities = read.csv(file.path('data-raw', 'Utilities.csv.gz'))
 use_data(Utilities, overwrite=TRUE)
 
+Universities = read.csv(file.path('data-raw', 'Universities.csv.gz'))
+use_data(Universities, overwrite=TRUE)
+
 Veerhoven = read.csv(file.path('data-raw', 'Veerhoven.csv.gz'))
 use_data(Veerhoven, overwrite=TRUE)
 
