@@ -54,6 +54,20 @@
 "Amtrak"
 
 
+#' Applicance Shipments
+#'
+#' Data
+#' @format A data frame with 20 observations and 2 variables:
+#' \describe{
+#' \item{Quarter}{}
+#' \item{Shipments}{}
+#' }
+#'
+#' @examples
+#' ApplianceShipments
+"ApplianceShipments"
+
+
 #' Boston Housing
 #'
 #' Data
@@ -256,6 +270,35 @@
 #' @examples
 #' head(gdp)
 "gdp"
+
+
+#' Laptop Sales January 2008
+#'
+#' Data
+#' @format A data frame with 7956 observations and 17 variables:
+#' \describe{
+#' \item{Date}{}
+#' \item{Configuration}{}
+#' \item{Customer.Postcode}{}
+#' \item{Store.Postcode}{}
+#' \item{Retail.Price}{}
+#' \item{Screen.Size..Inches.}{}
+#' \item{Battery.Life..Hours.}{}
+#' \item{RAM..GB.}{}
+#' \item{Processor.Speeds..GHz.}{}
+#' \item{Integrated.Wireless.}{}
+#' \item{HD.Size..GB.}{}
+#' \item{Bundled.Applications.}{}
+#' \item{OS.X.Customer}{}
+#' \item{OS.Y.Customer}{}
+#' \item{OS.X.Store}{}
+#' \item{OS.Y.Store}{}
+#' \item{CustomerStoreDistance}{}
+#' }
+#'
+#' @examples
+#' head(LaptopSalesJanuary2008)
+"LaptopSalesJanuary2008"
 
 
 #' Lift example

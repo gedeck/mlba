@@ -11,6 +11,9 @@ use_data(accidentsnn, overwrite=TRUE)
 Amtrak = read.csv(file.path('data-raw', 'Amtrak.csv.gz'))
 use_data(Amtrak, overwrite=TRUE)
 
+ApplianceShipments = read.csv(file.path('data-raw', 'ApplianceShipments.csv.gz'))
+use_data(ApplianceShipments, overwrite=TRUE)
+
 file.copy(from=file.path('data-raw', 'AutoAndElectronics.zip'),
           to=file.path('inst', 'extdata', 'AutoAndElectronics.zip'),
           overwrite=TRUE, copy.mode=TRUE)
@@ -43,6 +46,9 @@ use_data(FlightDelays, overwrite=TRUE)
 gdp = read.csv(file.path('data-raw', 'gdp.csv.gz'), skip = 4, stringsAsFactors = FALSE)
 names(gdp)[5] <- "GDP2015"
 use_data(gdp, overwrite=TRUE)
+
+LaptopSalesJanuary2008 = read.csv(file.path('data-raw', 'LaptopSalesJanuary2008.csv.gz'), stringsAsFactors = FALSE)
+use_data(LaptopSalesJanuary2008, overwrite=TRUE)
 
 liftExample = read.csv(file.path('data-raw', 'liftExample.csv.gz'), stringsAsFactors = TRUE)
 use_data(liftExample, overwrite=TRUE)
