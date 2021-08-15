@@ -123,7 +123,7 @@ use_data(UniversalBank, overwrite=TRUE)
 Utilities = read.csv(file.path('data-raw', 'Utilities.csv.gz'))
 use_data(Utilities, overwrite=TRUE)
 
-Universities = read.csv(file.path('data-raw', 'Universities.csv.gz'))
+Universities = read.csv(file.path('data-raw', 'Universities.csv.gz'), stringsAsFactors = TRUE)
 use_data(Universities, overwrite=TRUE)
 
 Veerhoven = read.csv(file.path('data-raw', 'Veerhoven.csv.gz'))
@@ -138,3 +138,21 @@ use_data(WestRoxbury, overwrite=TRUE)
 Wine = read.csv(file.path('data-raw', 'Wine.csv.gz'))
 use_data(Wine, overwrite=TRUE)
 
+# Time series
+ApplianceShipments = read.csv(file.path('data-raw', 'ApplianceShipments.csv.gz'))
+use_data(ApplianceShipments, overwrite=TRUE)
+
+CanadianWorkHours = read.csv(file.path('data-raw', 'CanadianWorkHours.csv.gz'))
+use_data(CanadianWorkHours, overwrite=TRUE)
+
+DepartmentStoreSales = read.csv(file.path('data-raw', 'DepartmentStoreSales.csv.gz'))
+use_data(DepartmentStoreSales, overwrite=TRUE)
+
+Sept11Travel = read.csv(file.path('data-raw', 'Sept11Travel.csv.gz'))
+use_data(Sept11Travel, overwrite=TRUE)
+
+ShampooSales = read.csv(file.path('data-raw', 'ShampooSales.csv.gz'))
+use_data(ShampooSales, overwrite=TRUE)
+
+SouvenirSales = read.csv(file.path('data-raw', 'SouvenirSales.csv.gz'))
+use_data(SouvenirSales, overwrite=TRUE)

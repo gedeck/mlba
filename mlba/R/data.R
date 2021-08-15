@@ -1102,6 +1102,7 @@
 #' WestRoxbury
 "WestRoxbury"
 
+
 #' Wine.
 #'
 #' Data
@@ -1126,3 +1127,92 @@
 #' @examples
 #' Wine
 "Wine"
+
+
+#' ApplianceShipments
+#'
+#' Data
+#' @format A data frame with 20 observations and 2 variables:
+#' \describe{
+#' \item{Quarter}{}
+#' \item{Shipments}{}
+#' }
+#'
+#' @examples
+#' ApplianceShipments
+"ApplianceShipments"
+
+
+#' CanadianWorkHours
+#'
+#' Data
+#' @format A data frame with 35 observations and 2 variables:
+#' \describe{
+#' \item{Year}{}
+#' \item{Hours}{}
+#' }
+#'
+#' @examples
+#' CanadianWorkHours
+"CanadianWorkHours"
+
+
+#' DepartmentStoreSales
+#'
+#' Data
+#' @format A data frame with 24 observations and 2 variables:
+#' \describe{
+#' \item{Quarter}{}
+#' \item{Sales}{}
+#' }
+#'
+#' @examples
+#' DepartmentStoreSales
+"DepartmentStoreSales"
+
+
+#' Sept11Travel
+#'
+#' Data
+#' @format A data frame with 172 observations and 4 variables:
+#' \describe{
+#' \item{Month}{}
+#' \item{Air.RPM..000s.}{}
+#' \item{Rail.PM}{}
+#' \item{VMT..billions.}{}
+#' }
+#'
+#' @examples
+#' Sept11Travel
+"Sept11Travel"
+
+
+#' ShampooSales
+#'
+#' Data
+#' @format A data frame with 36 observations and 2 variables:
+#' \describe{
+#' \item{Month}{}
+#' \item{Shampoo.Sales}{}
+#' }
+#'
+#' @examples
+#' ShampooSales
+"ShampooSales"
+
+
+#' SouvenirSales
+#'
+#' Data
+#' @format A data frame with 84 observations and 2 variables:
+#' \describe{
+#' \item{Date}{}
+#' \item{Sales}{}
+#' }
+#'
+#' @examples
+#' SouvenirSales
+"SouvenirSales"
+
+
+

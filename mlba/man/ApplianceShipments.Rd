@@ -10,14 +10,25 @@ A data frame with 20 observations and 2 variables:
 \item{Quarter}{}
 \item{Shipments}{}
 }
+
+A data frame with 20 observations and 2 variables:
+\describe{
+\item{Quarter}{}
+\item{Shipments}{}
+}
 }
 \usage{
+ApplianceShipments
+
 ApplianceShipments
 }
 \description{
 Data
+
+Data
 }
 \examples{
+ApplianceShipments
 ApplianceShipments
 }
 \keyword{datasets}
