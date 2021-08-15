@@ -421,6 +421,26 @@
 "gdp"
 
 
+#' Hair Care Product
+#'
+#' Data
+#' @format A data frame with 10000 observations and 8 variables:
+#' \describe{
+#' \item{Purchase}{}
+#' \item{Age}{}
+#' \item{Hair.Color}{}
+#' \item{U.S..Region}{}
+#' \item{Validation}{}
+#' \item{Promotion_ord}{}
+#' \item{Gender_ord}{}
+#' \item{Residence_ord}{}
+#' }
+#'
+#' @examples
+#' head(HairCareProduct)
+"HairCareProduct"
+
+
 #' Laptop Sales January 2008
 #'
 #' Data
