@@ -29,8 +29,6 @@ use_data(banks, overwrite=TRUE)
 
 BostonHousing = read.csv(file.path('data-raw', 'BostonHousing.csv.gz')) %>%
   rename(CAT.MEDV=CAT..MEDV)
-BostonHousing$CAT.MEDV = factor(BostonHousing$CAT.MEDV)
-BostonHousing$CHAS = factor(BostonHousing$CHAS)
 use_data(BostonHousing, overwrite=TRUE)
 
 Cereals = read.csv(file.path('data-raw', 'Cereals.csv.gz'))
