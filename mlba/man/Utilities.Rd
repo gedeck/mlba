@@ -7,15 +7,15 @@
 \format{
 A data frame with 22 observations and 9 variables:
 \describe{
-\item{Company}{}
-\item{Fixed_charge}{}
-\item{RoR}{}
-\item{Cost}{}
-\item{Load_factor}{}
-\item{Demand_growth}{}
-\item{Sales}{}
-\item{Nuclear}{}
-\item{Fuel_Cost}{}
+\item{Company}{Company name}
+\item{Fixed_charge}{Fixed-charge coverage ratio (income/debt)}
+\item{RoR}{Percent rate of return on capital}
+\item{Cost}{Cost per KW capacity in place}
+\item{Load_factor}{Annual load factor}
+\item{Demand_growth}{Percent demand growth}
+\item{Sales}{Sales (KWH use per year)}
+\item{Nuclear}{Percent nuclear}
+\item{Fuel_Cost}{Total fuel costs (cents per KWH)}
 }
 }
 \usage{

@@ -7,29 +7,40 @@
 \format{
 A data frame with 7956 observations and 17 variables:
 \describe{
-\item{Date}{}
-\item{Configuration}{}
-\item{Customer.Postcode}{}
-\item{Store.Postcode}{}
-\item{Retail.Price}{}
-\item{Screen.Size..Inches.}{}
-\item{Battery.Life..Hours.}{}
-\item{RAM..GB.}{}
-\item{Processor.Speeds..GHz.}{}
-\item{Integrated.Wireless.}{}
-\item{HD.Size..GB.}{}
-\item{Bundled.Applications.}{}
-\item{OS.X.Customer}{}
-\item{OS.Y.Customer}{}
-\item{OS.X.Store}{}
-\item{OS.Y.Store}{}
+\item{Date}{purchase date}
+\item{Configuration}{A numerical code representing a combination of screen
+size, battery life, RAM, etc. Each code corresponds to a particular combination.}
+\item{Customer.Postcode}{postcode in London of the customer}
+\item{Store.Postcode}{postcode in London of the store}
+\item{Retail.Price}{price of laptop in GBP}
+\item{Screen.Size..Inches.}{screen size of laptop (Inches)}
+\item{Battery.Life..Hours.}{battery life of laptop (Hours)}
+\item{RAM..GB.}{RAM size of laptop(GB)}
+\item{Processor.Speeds..GHz.}{processor speed of laptop (GHz)}
+\item{Integrated.Wireless.}{whether the laptop has integrated wireless or not}
+\item{HD.Size..GB.}{HD size of laptop (GB)}
+\item{Bundled.Applications.}{whether the laptop comes with bundled applications or not}
+\item{OS.X.Customer}{X geo coordinates for customer location.}
+\item{OS.Y.Customer}{Y geo coordinates for customer location.}
+\item{OS.X.Store}{X geo coordinates for store location}
+\item{OS.Y.Store}{Y geo coordinates for store location}
 \item{CustomerStoreDistance}{}
 }
+}
+\source{
+{The laptop sales data were part of the ENBIS 2009 Challenge
+in Industrial Statistics}
 }
 \usage{
 LaptopSalesJanuary2008
 }
 \description{
+{The laptop sales data were part of the ENBIS 2009 Challenge in
+Industrial Statistics.
+
+This is a subset of the Laptop sales dataset. It includes only the Jan 2008
+sales (the complete dataset includes the entire 2008 sales).}
+
 Data
 }
 \examples{

@@ -17,11 +17,15 @@ A data frame with 365 observations and 8 variables:
 \item{SW}{}
 }
 }
+\source{
+{Copyright 2016 statistics.com}
+}
 \usage{
 Coursetopics
 }
 \description{
-Data
+Course topics at statistics.com (each row is a customer, column heads are
+topics taken [1] or not taken [0] by that customer)
 }
 \examples{
 head(Coursetopics)

@@ -7,15 +7,19 @@
 \format{
 A data frame with 1972 observations and 8 variables:
 \describe{
-\item{Category}{}
+\item{Category}{Category of the auctioned item.}
 \item{currency}{}
-\item{sellerRating}{}
-\item{Duration}{}
-\item{endDay}{}
-\item{ClosePrice}{}
-\item{OpenPrice}{}
-\item{Competitive.}{}
+\item{sellerRating}{a rating by eBay, as a function of the number of "good"
+and "bad" transactions the seller had on eBay.}
+\item{Duration}{Number of days the auction lasted (set by seller at auction start)}
+\item{endDay}{Day of week that the auction closed}
+\item{ClosePrice}{Price item sold at (converted into USD)}
+\item{OpenPrice}{Initial price set by the seller (converted into USD)}
+\item{Competitive.}{whether the auction had a single bid (0) or more (1)}
 }
+}
+\source{
+{Copyright 2016 Galit Shmueli and Peter Bruce}
 }
 \usage{
 eBayAuctions

@@ -3,7 +3,7 @@
 \docType{data}
 \name{spambase}
 \alias{spambase}
-\title{spambase}
+\title{Spambase}
 \format{
 A data frame with 4601 observations and 58 variables:
 \describe{
@@ -55,23 +55,25 @@ A data frame with 4601 observations and 58 variables:
 \item{edu}{}
 \item{table}{}
 \item{conference}{}
-\item{C.}{}
-\item{C..1}{}
-\item{C..2}{}
-\item{C..3}{}
-\item{C..4}{}
-\item{C..5}{}
-\item{CAP_avg}{}
-\item{CAP_long}{}
-\item{CAP_tot}{}
-\item{Spam}{}
+\item{C.}{C;}
+\item{C..1}{C(}
+\item{C..2}{C[}
+\item{C..3}{C!}
+\item{C..4}{C$}
+\item{C..5}{C#}
+\item{CAP_avg}{average length of uninterrupted sequences of capital letters}
+\item{CAP_long}{length of longest uninterrupted sequence of capital letters}
+\item{CAP_tot}{total number of capital letters in the e-mail}
+\item{Spam}{1 = spam, 0 = not spam}
 }
 }
 \usage{
 spambase
 }
 \description{
-Data
+{ Each of the words below are columns in the data and the values represent
+\% of words in the e-mail that match that particular word. For example,
+make represent \% of words in the e-mail that match "make".}
 }
 \examples{
 head(spambase)

@@ -7,10 +7,13 @@
 \format{
 A data frame with 24 observations and 3 variables:
 \describe{
-\item{Income}{}
-\item{Lot_Size}{}
-\item{Ownership}{}
+\item{Income}{Annual income in $000}
+\item{Lot_Size}{In thousands of sq. feet}
+\item{Ownership}{Whether the resident owns a riding mower or not}
 }
+}
+\source{
+{Data courtesy of Dean Wichern}
 }
 \usage{
 RidingMowers

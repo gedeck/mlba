@@ -2,28 +2,33 @@
 
 #' accidents
 #'
+#' Cleaned up and reduced version of the \code{\link{accidentsFull}} dataset
+#' to facilitate model building.
+#'
 #' Data
 #' @format A data frame with 600 observations and 11 variables:
 #' \describe{
-#' \item{RushHour}{}
-#' \item{WRK_ZONE}{}
-#' \item{WKDY}{}
-#' \item{INT_HWY}{}
-#' \item{LGTCON_day}{}
-#' \item{LEVEL}{}
-#' \item{SPD_LIM}{}
-#' \item{SUR_COND_dry}{}
-#' \item{TRAF_two_way}{}
-#' \item{WEATHER_adverse}{}
-#' \item{MAX_SEV}{}
+#' \item{RushHour}{1 = rush hour, 0 = not (rush = 6-9 am, 4-7 pm)}
+#' \item{WRK_ZONE}{1 = yes, 0 = no}
+#' \item{WKDY}{1 = weekday, 0 = weekend}
+#' \item{INT_HWY}{Interstate? 1 = yes, 0 = no}
+#' \item{LGTCON_day}{Light conditions - 1 = day, 0 = other}
+#' \item{LEVEL}{1 = level, 0 = other}
+#' \item{SPD_LIM}{Speed limit, miles per hour}
+#' \item{SUR_COND_dry}{Surface conditions (1 = dry, 0 = other)}
+#' \item{TRAF_two_way}{1 = two-way traffic, 0 = other}
+#' \item{WEATHER_adverse}{0 = no adverse conditions, 1 = adverse condition}
+#' \item{MAX_SEV}{one of: "no-injury", "non-fatal", 2 = "fatal"}
 #' }
+#'
+#' @seealso \code{\link{accidentsFull}} for the original dataset
 #'
 #' @examples
 #' accidents
 "accidents"
 
 
-#' accidents
+#' Accidents
 #'
 #' These data, from the U.S. Bureau of Transportation Statistics, can be used to predict
 #' whether an accident will results in injuries or fatalities, based on  predictors
@@ -63,9 +68,10 @@
 #' \item{MAX_SEV_IR}{0 = no injury, 1 = non-fatal inj., 2 = fatal inj.}
 #' }
 #'
-#' Source: US Dept. of Transportation, Bureau of Transportation Statistics,
+#' @source {US Dept. of Transportation, Bureau of Transportation Statistics,
 #' "TranStats," (www.transtats.bts.gov -- select "databases" then "General Estimate System (GES))
-#' http://www.transtats.bts.gov/Fields.asp?Table_ID=1158&SYS_Table_Name=T_GES_ACCIDENT&User_Table_Name=Accident&Year_Info=1&First_Year=1999&Last_Year=2001&Rate_Info=1&Frequency=Annual&Data_Frequency=Annual,Monthly&Map_Info=&Is_Survey=1&Univ_Filter=&Latest_Available_Data=2001
+#' \url{http://www.transtats.bts.gov/Fields.asp?Table_ID=1158&SYS_Table_Name=T_GES_ACCIDENT&User_Table_Name=Accident&Year_Info=1&First_Year=1999&Last_Year=2001&Rate_Info=1&Frequency=Annual&Data_Frequency=Annual,Monthly&Map_Info=&Is_Survey=1&Univ_Filter=&Latest_Available_Data=2001}}
+#'
 #' Note:  TranStats reports both variables with missing data, and their derived
 #' counterparts with imputed values filled in, denoted by an "I" at the end.
 #' Only one variant (the original or the derived) is included here. An "R" at the
@@ -79,60 +85,50 @@
 
 #' accidentsnn
 #'
+#' Subset of the `accidents` dataset
+#'
 #' Data
 #' @format A data frame with 999 observations and 5 variables:
 #' \describe{
-#' \item{ALCHL_I}{}
-#' \item{PROFIL_I_R}{}
-#' \item{SUR_COND}{}
-#' \item{VEH_INVL}{}
-#' \item{MAX_SEV_IR}{}
+#' \item{ALCHL_I}{1 = Alcohol involved, 2 = not involved}
+#' \item{PROFIL_I_R}{1 = level, 0 = other}
+#' \item{SUR_COND}{Surface conditions (1 = dry, 2 = wet, 3 = snow/slush, 4 = ice, 5 = sand/dirt/oil, 8 = other, 9 = unknown)}
+#' \item{VEH_INVL}{Number of vehicles involved}
+#' \item{MAX_SEV_IR}{0 = no injury, 1 = non-fatal inj., 2 = fatal inj.}
 #' }
+#'
+#' @seealso \code{\link{accidentsFull}} for the full dataset
 #'
 #' @examples
 #' head(accidentsnn)
 "accidentsnn"
 
 
-#' Amtrak
-#'
-#' Data
-#' @format A data frame with 159 observations and 2 variables:
-#' \describe{
-#' \item{Month}{}
-#' \item{Ridership}{}
-#' }
-#'
-#' @examples
-#' Amtrak
-"Amtrak"
-
-
 #' Airfares
 #'
-#' Data
 #' @format A data frame with 638 observations and 18 variables:
 #' \describe{
-#' \item{S_CODE}{}
-#' \item{S_CITY}{}
-#' \item{E_CODE}{}
-#' \item{E_CITY}{}
-#' \item{COUPON}{}
-#' \item{NEW}{}
-#' \item{VACATION}{}
-#' \item{SW}{}
-#' \item{HI}{}
-#' \item{S_INCOME}{}
-#' \item{E_INCOME}{}
-#' \item{S_POP}{}
-#' \item{E_POP}{}
-#' \item{SLOT}{}
-#' \item{GATE}{}
-#' \item{DISTANCE}{}
-#' \item{PAX}{}
-#' \item{FARE}{}
+#' \item{S_CODE}{starting airport's code}
+#' \item{S_CITY}{starting city}
+#' \item{E_CODE}{ending airport's code}
+#' \item{E_CITY}{ending city}
+#' \item{COUPON}{average number of coupons (a one-coupon flight is a non-stop flight, a two-coupon flight is a one stop flight, etc.) for that route}
+#' \item{NEW}{number of new carriers entering that route between Q3-96 and Q2-97}
+#' \item{VACATION}{whether a vacation route (Yes) or not (No); Florida and Las Vegas routes are generally considered vacation routes}
+#' \item{SW}{whether Southwest Airlines serves that route (Yes) or not (No)}
+#' \item{HI}{Herfindel Index – measure of market concentration (refer to BMGT 681)}
+#' \item{S_INCOME}{starting city's average personal income}
+#' \item{E_INCOME}{ending city's average personal income}
+#' \item{S_POP}{starting city's population}
+#' \item{E_POP}{ending city's population}
+#' \item{SLOT}{whether either endpoint airport is slot controlled or not; this is a measure of airport congestion}
+#' \item{GATE}{whether either endpoint airport has gate constraints or not; this is another measure of airport congestion}
+#' \item{DISTANCE}{distance between two endpoint airports in miles}
+#' \item{PAX}{number of passengers on that route during period of data collection}
+#' \item{FARE}{average fare on that route}
 #' }
 #'
+#' @source{Copyright 2016 Galit Shmueli and Peter Bruce}
 #' @examples
 #' head(Airfares)
 "Airfares"
@@ -144,7 +140,7 @@
 #' @format A data frame with 20 observations and 5 variables:
 #' \describe{
 #' \item{Obs}{}
-#' \item{Financial.Condition}{}
+#' \item{Financial.Condition}{1 = financially weak; 0 = financially strong}
 #' \item{TotCap.Assets}{}
 #' \item{TotExp.Assets}{}
 #' \item{TotLns.Lses.Assets}{}
@@ -155,40 +151,32 @@
 "banks"
 
 
-#' Applicance Shipments
-#'
-#' Data
-#' @format A data frame with 20 observations and 2 variables:
-#' \describe{
-#' \item{Quarter}{}
-#' \item{Shipments}{}
-#' }
-#'
-#' @examples
-#' ApplianceShipments
-"ApplianceShipments"
-
-
 #' Boston Housing
 #'
-#' Data
+#' This dataset contains information collected by the US Census Service concerning housing
+#' in the area of Boston Massachusetts. It was obtained from the StatLib archive
+#' (\url{http://lib.stat.cmu.edu/datasets/boston}).
+#'
 #' @format A data frame with 506 observations and 14 variables:
 #' \describe{
-#' \item{CRIM}{}
-#' \item{ZN}{}
-#' \item{INDUS}{}
-#' \item{CHAS}{}
-#' \item{NOX}{}
-#' \item{RM}{}
-#' \item{AGE}{}
-#' \item{DIS}{}
-#' \item{RAD}{}
-#' \item{TAX}{}
-#' \item{PTRATIO}{}
-#' \item{LSTAT}{}
-#' \item{MEDV}{}
+#' \item{CRIM}{per capita crime rate by town}
+#' \item{ZN}{proportion of residential land zoned for lots over 25,000 sq.ft.}
+#' \item{INDUS}{proportion of non-retail business acres per town.}
+#' \item{CHAS}{Charles River dummy variable (1 if tract bounds river; 0 otherwise)}
+#' \item{NOX}{nitric oxides concentration (parts per 10 million)}
+#' \item{RM}{average number of rooms per dwelling}
+#' \item{AGE}{proportion of owner-occupied units built prior to 1940}
+#' \item{DIS}{weighted distances to five Boston employment centres}
+#' \item{RAD}{index of accessibility to radial highways}
+#' \item{TAX}{full-value property-tax rate per $10,000}
+#' \item{PTRATIO}{pupil-teacher ratio by town}
+#' \item{LSTAT}{\% lower status of the population}
+#' \item{MEDV}{Median value of owner-occupied homes in $1000}
 #' \item{CAT.MEDV}{}
 #' }
+#' @source{The data was originally published by Harrison, D. and Rubinfeld, D.L.
+#' 'Hedonic prices and the demand for clean air',
+#' J. Environ. Economics & Management, vol.5, 81-102, 1978.}
 #'
 #' @examples
 #' BostonHousing
@@ -197,29 +185,30 @@
 
 #' Cereals
 #'
-#' Data
 #' @format A data frame with 77 observations and 16 variables:
 #' \describe{
-#' \item{name}{}
-#' \item{mfr}{}
-#' \item{type}{}
-#' \item{calories}{}
-#' \item{protein}{}
-#' \item{fat}{}
-#' \item{sodium}{}
-#' \item{fiber}{}
-#' \item{carbo}{}
-#' \item{sugars}{}
-#' \item{potass}{}
-#' \item{vitamins}{}
-#' \item{shelf}{}
-#' \item{weight}{}
-#' \item{cups}{}
-#' \item{rating}{}
+#' \item{name}{Name of cereal}
+#' \item{mfr}{Manufacturer of cereal where A = American Home Food Products; G = General Mills;
+#'            K =Kelloggs; N = Nabisco; P = Post; Q = Quaker Oats; R = Ralston Purina}
+#' \item{type}{cold or hot}
+#' \item{calories}{calories per serving}
+#' \item{protein}{grams of protein}
+#' \item{fat}{grams of fat}
+#' \item{sodium}{milligrams of sodium}
+#' \item{fiber}{grams of dietary fiber}
+#' \item{carbo}{grams of complex carbohydrates}
+#' \item{sugars}{grams of sugars}
+#' \item{potass}{milligrams of potassium}
+#' \item{vitamins}{vitamins and minerals - 0, 25, or 100, indicating the typical percentage of FDA recommended}
+#' \item{shelf}{display shelf (1, 2, or 3, counting from the floor)}
+#' \item{weight}{weight in ounces of one serving}
+#' \item{cups}{number of cups in one serving}
+#' \item{rating}{a rating of the cereals calculated by Consumer Reports}
 #' }
+#' @source{Data analysis for student learning (DASL)}
 #'
 #' @examples
-#' Cereals
+#' head(Cereals)
 "Cereals"
 
 
@@ -228,14 +217,14 @@
 #' Data
 #' @format A data frame with 4000 observations and 24 variables:
 #' \describe{
-#' \item{Seq.}{}
-#' \item{ID.}{}
-#' \item{Gender}{}
-#' \item{M}{}
-#' \item{R}{}
-#' \item{F}{}
-#' \item{FirstPurch}{}
-#' \item{ChildBks}{}
+#' \item{Seq.}{Sequence number in the sample}
+#' \item{ID.}{ID# in the full dataset}
+#' \item{Gender}{0=male, 1=female}
+#' \item{M}{Monetary - total money spent on books}
+#' \item{R}{Recency - Months since last purchase}
+#' \item{F}{Frequency - Total number of purchases}
+#' \item{FirstPurch}{Months since first purchase}
+#' \item{ChildBks}{this and following - book categories}
 #' \item{YouthBks}{}
 #' \item{CookBks}{}
 #' \item{DoItYBks}{}
@@ -246,67 +235,34 @@
 #' \item{ItalAtlas}{}
 #' \item{ItalArt}{}
 #' \item{Florence}{}
-#' \item{Related.Purchase}{}
-#' \item{Mcode}{}
-#' \item{Rcode}{}
-#' \item{Fcode}{}
+#' \item{Related.Purchase}{Number of related books purchased}
+#' \item{Mcode}{Recoding of M - see case description in DMBA and MLBA}
+#' \item{Rcode}{Recoding of R - see case description in DMBA and MLBA}
+#' \item{Fcode}{Recoding of F - see case description in DMBA and MLBA}
 #' \item{Yes_Florence}{}
 #' \item{No_Florence}{}
 #' }
+#' @source{Adapted with permission from The Bookbinders Club, prepared by Nissan Levin and Jacob Zahavi.}
 #'
 #' @examples
 #' head(CharlesBookClub)
 "CharlesBookClub"
 
 
-#' Course Rating
-#'
-#' Data
-#' @format A data frame with 15 observations and 10 variables:
-#' \describe{
-#' \item{X}{}
-#' \item{SQL}{}
-#' \item{Spatial}{}
-#' \item{PA1}{}
-#' \item{DM.in.R}{}
-#' \item{Python}{}
-#' \item{Forecast}{}
-#' \item{R.Prog}{}
-#' \item{Hadoop}{}
-#' \item{Regression}{}
-#' }
-#'
-#' @examples
-#' head(courserating)
-"courserating"
-
-
-#' Coursetopics
-#'
-#' Data
-#' @format A data frame with 365 observations and 8 variables:
-#' \describe{
-#' \item{Intro}{}
-#' \item{DataMining}{}
-#' \item{Survey}{}
-#' \item{Cat.Data}{}
-#' \item{Regression}{}
-#' \item{Forecast}{}
-#' \item{DOE}{}
-#' \item{SW}{}
-#' }
-#'
-#' @examples
-#' head(Coursetopics)
-"Coursetopics"
-
-
 #' Cosmetics
+#'
+#' A drug store chain wants to learn more about cosmetics buyers purchase patterns.
+#' Specifically, they want to know what items are purchased in conjunction with each other,
+#' for purposes of display, point of sale special offers, and to eventually implement
+#' a real time recommender system to cross-sell items at time of purchase.
+#'
+#' The data (synthetic) are in the form of a matrix in which each column
+#' represents a product group, and each row a customer transaction.
 #'
 #' Data
 #' @format A data frame with 1000 observations and 15 variables:
 #' \describe{
-#' \item{Trans.}{}
+#' \item{Trans.}{Transaction #}
 #' \item{Bag}{}
 #' \item{Blush}{}
 #' \item{Nail.Polish}{}
@@ -322,10 +278,58 @@
 #' \item{Lipstick}{}
 #' \item{Eyeliner}{}
 #' }
+#' @source{statistics.com; Copyright 2016 Galit Shmueli and Peter Bruce}
 #'
 #' @examples
 #' head(Cosmetics)
 "Cosmetics"
+
+
+#' Course Rating
+#'
+#' Student ratings of online statistics courses at Statistics.com
+#'
+#' @format A data frame with 15 observations and 10 variables:
+#' \describe{
+#' \item{X}{}
+#' \item{SQL}{}
+#' \item{Spatial}{}
+#' \item{PA1}{}
+#' \item{DM.in.R}{}
+#' \item{Python}{}
+#' \item{Forecast}{}
+#' \item{R.Prog}{}
+#' \item{Hadoop}{}
+#' \item{Regression}{}
+#' }
+#' @source{Copyright 2016 statistics.com}
+#'
+#' @examples
+#' head(courserating)
+"courserating"
+
+
+#' Coursetopics
+#'
+#' Course topics at statistics.com (each row is a customer, column heads are
+#' topics taken [1] or not taken [0] by that customer)
+#'
+#' @format A data frame with 365 observations and 8 variables:
+#' \describe{
+#' \item{Intro}{}
+#' \item{DataMining}{}
+#' \item{Survey}{}
+#' \item{Cat.Data}{}
+#' \item{Regression}{}
+#' \item{Forecast}{}
+#' \item{DOE}{}
+#' \item{SW}{}
+#' }
+#' @source{Copyright 2016 statistics.com}
+#'
+#' @examples
+#' head(Coursetopics)
+"Coursetopics"
 
 
 #' drug
@@ -349,22 +353,30 @@
 
 #' EastWestAirlinesCluster
 #'
-#' Data
+#' East-West Airlines is trying to learn more about its customers.  Key issues
+#' are their flying patterns, earning and use of frequent flyer rewards, and
+#' use of the airline credit card.  The task is to identify customer segments
+#' via clustering.
+#'
 #' @format A data frame with 3999 observations and 12 variables:
 #' \describe{
-#' \item{ID.}{}
-#' \item{Balance}{}
-#' \item{Qual_miles}{}
-#' \item{cc1_miles}{}
-#' \item{cc2_miles}{}
-#' \item{cc3_miles}{}
-#' \item{Bonus_miles}{}
-#' \item{Bonus_trans}{}
-#' \item{Flight_miles_12mo}{}
-#' \item{Flight_trans_12}{}
-#' \item{Days_since_enroll}{}
-#' \item{Award.}{}
+#' \item{ID.}{Unique ID}
+#' \item{Balance}{Number of miles eligible for award travel}
+#' \item{Qual_miles}{Number of miles counted as qualifying for Topflight status}
+#' \item{cc1_miles}{Number of miles earned with freq. flyer credit card in the past 12 months:
+#' 1 = under 5,000; 2 = 5,000 - 10,000; 3 = 10,001 - 25,000; 4 = 25,001 - 50,000;
+#' 5 = over 50,000}
+#' \item{cc2_miles}{Number of miles earned with Rewards credit card in the past 12 months (see cc1_miles)}
+#' \item{cc3_miles}{Number of miles earned with Small Business credit card in the past 12 months (see cc1_miles)}
+#' \item{Bonus_miles}{Number of miles earned from non-flight bonus transactions in the past 12 months}
+#' \item{Bonus_trans}{Number of non-flight bonus transactions in the past 12 months}
+#' \item{Flight_miles_12mo}{Number of flight miles in the past 12 months}
+#' \item{Flight_trans_12}{Number of flight transactions in the past 12 months}
+#' \item{Days_since_enroll}{Number of days since Enroll_date}
+#' \item{Award.}{Dummy variable for Last_award (1=not null, 0=null)}
 #' }
+#' @source{Based upon real business data; company names have been changed.
+#' Copyright 2016 Galit Shmueli and Peter Bruce}
 #'
 #' @examples
 #' head(EastWestAirlinesCluster)
@@ -373,26 +385,39 @@
 
 #' EastWestAirlinesNN
 #'
-#' Data
+#' East-West Airlines has entered into a partnership with the wireless phone company
+#' Telcom to sell the latter's service via direct mail.  These are a sample of data,
+#' provided so that the analyst can develop a model to classify East-West customers
+#' as to whether they purchase a wireless phone service contract (target variable
+#' `Phone_sale`).
+#'
 #' @format A data frame with 4987 observations and 16 variables:
 #' \describe{
-#' \item{ID.}{}
+#' \item{ID.}{Unique ID}
+#' \item{Balance}{Number of miles eligible for award travel}
+#' \item{Qual_miles}{Number of miles counted as qualifying for Topflight status}
+#' \item{cc1_miles}{Number of miles earned with freq. flyer credit card in the past 12 months:
+#' 1 = under 5,000; 2 = 5,000 - 10,000; 3 = 10,001 - 25,000; 4 = 25,001 - 50,000;
+#' 5 = over 50,000}
+#' \item{cc2_miles}{Number of miles earned with Rewards credit card in the past 12 months (see cc1_miles)}
+#' \item{cc3_miles}{Number of miles earned with Small Business credit card in the past 12 months (see cc1_miles)}
+#' \item{Bonus_miles}{Number of miles earned from non-flight bonus transactions in the past 12 months}
+#' \item{Bonus_trans}{Number of non-flight bonus transactions in the past 12 months}
+#' \item{Flight_miles_12mo}{Number of flight miles in the past 12 months}
+#' \item{Flight_trans_12}{Number of flight transactions in the past 12 months}
+#' \item{Days_since_enroll}{Number of days since Enroll_date}
+#' \item{Award.}{Dummy variable for Last_award (1=not null, 0=null)}
 #' \item{Topflight}{}
-#' \item{Balance}{}
-#' \item{Qual_miles}{}
-#' \item{cc1_miles.}{}
-#' \item{cc2_miles.}{}
-#' \item{cc3_miles.}{}
-#' \item{Bonus_miles}{}
-#' \item{Bonus_trans}{}
-#' \item{Flight_miles_12mo}{}
-#' \item{Flight_trans_12}{}
 #' \item{Online_12}{}
-#' \item{Email}{}
-#' \item{Club_member}{}
-#' \item{Any_cc_miles_12mo}{}
-#' \item{Phone_sale}{}
+#' \item{Email}{E-mail address on file. 1= yes, 0 =no?}
+#' \item{Club_member}{Member of the airline's club (paid membership), 1=yes, 0=no}
+#' \item{Any_cc_miles_12mo}{Dummy variable indicating whether member added miles on
+#' any creditcard type within the past 12 months (1='Y', 0='N')}
+#' \item{Phone_sale}{Dummy variable indicating whether member purchased Telcom service
+#' as a result of the direct mail campaign (1=sale, 0=no sale)}
 #' }
+#' @source{Based upon real business data; company names have been changed.
+#' Copyright 2016 Galit Shmueli and Peter Bruce}
 #'
 #' @examples
 #' head(EastWestAirlinesNN)
@@ -404,15 +429,17 @@
 #' Data
 #' @format A data frame with 1972 observations and 8 variables:
 #' \describe{
-#' \item{Category}{}
+#' \item{Category}{Category of the auctioned item.}
 #' \item{currency}{}
-#' \item{sellerRating}{}
-#' \item{Duration}{}
-#' \item{endDay}{}
-#' \item{ClosePrice}{}
-#' \item{OpenPrice}{}
-#' \item{Competitive.}{}
+#' \item{sellerRating}{a rating by eBay, as a function of the number of "good"
+#' and "bad" transactions the seller had on eBay.}
+#' \item{Duration}{Number of days the auction lasted (set by seller at auction start)}
+#' \item{endDay}{Day of week that the auction closed}
+#' \item{ClosePrice}{Price item sold at (converted into USD)}
+#' \item{OpenPrice}{Initial price set by the seller (converted into USD)}
+#' \item{Competitive.}{whether the auction had a single bid (0) or more (1)}
 #' }
+#' @source{Copyright 2016 Galit Shmueli and Peter Bruce}
 #'
 #' @examples
 #' eBayAuctions
@@ -455,7 +482,8 @@
 
 #' Faceplate
 #'
-#' Data
+#' Synthetic Data on Purchases of Phone Faceplates.
+#'
 #' @format A data frame with 10 observations and 7 variables:
 #' \describe{
 #' \item{Transaction}{}
@@ -466,6 +494,7 @@
 #' \item{Green}{}
 #' \item{Yellow}{}
 #' }
+#' @source{Copyright 2016 Galit Shmueli and Peter Bruce}
 #'
 #' @examples
 #' Faceplate
@@ -474,10 +503,15 @@
 
 #' FarmAds
 #'
+#' Data on advertisements posted at a website that caters to the needs of
+#' a specific farming community. Each ad is in a row, and each ad labeled
+#' as either −1 (not relevant) or 1 (relevant). The goal is to develop a
+#' predictive model that can classify ads automatically.
+#'
 #' Data
 #' @format A data frame with 4143 observations and 2 variables:
 #' \describe{
-#' \item{label}{}
+#' \item{label}{1: ad is relevant; -1 ad is not relevant}
 #' \item{text}{}
 #' }
 #'
@@ -488,23 +522,33 @@
 
 #' Flight delays
 #'
-#' Data
+#' All flights in January 2004 out of 3 DC airports (WAS) into 3 NYC airports.
+#' Flights not cancelled
+#'
 #' @format A data frame with 2201 observations and 13 variables:
 #' \describe{
-#' \item{CRS_DEP_TIME}{}
-#' \item{CARRIER}{}
-#' \item{DEP_TIME}{}
-#' \item{DEST}{}
-#' \item{DISTANCE}{}
-#' \item{FL_DATE}{}
-#' \item{FL_NUM}{}
-#' \item{ORIGIN}{}
-#' \item{Weather}{}
-#' \item{DAY_WEEK}{}
+#' \item{CRS_DEP_TIME}{scheduled departure time}
+#' \item{CARRIER}{The airline. AA=American Airlines, Inc.;
+#' CO=Continental Air Lines, Inc.; DH=Atlantic Coast Airlines;
+#' DL=Delta Air Lines, Inc.; EV=Atlantic Southeast Airlines;
+#' FL=Airtran Airways Corporation; MQ=American Eagle Airlines,inc;
+#' OH=Comair, Inc.; RU=Continental Express Airline;
+#' UA=United Air Lines, Inc.; US=US Airways, Inc.}
+#' \item{DEP_TIME}{Actual departure time}
+#' \item{DEST}{Destination airport in NY: Kennedy (JFK), LaGuardia (LGA), Newark (EWR)}
+#' \item{DISTANCE}{Flight distance in miles}
+#' \item{FL_DATE}{Flight date}
+#' \item{FL_NUM}{Flight number}
+#' \item{ORIGIN}{Departure airport in Washingon DC: National (DCA),
+#' Baltimore-Washington (BWI), Dulles (IAD)}
+#' \item{Weather}{Whether the weather was inclement (1) or not (0)}
+#' \item{DAY_WEEK}{Day of week. 1=Mon, 2=Tues...}
 #' \item{DAY_OF_MONTH}{}
-#' \item{TAIL_NUM}{}
-#' \item{Flight.Status}{}
+#' \item{TAIL_NUM}{This number is airplane specific}
+#' \item{Flight.Status}{Whether the flight was delayed or on time (defined as
+#' arriving within 15 min of scheduled time)}
 #' }
+#' @source{Bureau of Transportation Statistics}
 #'
 #' @examples
 #' head(FlightDelays)
@@ -520,8 +564,11 @@
 #' \item{Country.Code}{}
 #' \item{Indicator.Name}{}
 #' \item{Indicator.Code}{}
-#' \item{GDP2015}{}
+#' \item{GDP2015}{Gross domestic product of the countries.}
 #' }
+#' @source{Data from Veenhoven's world database of happiness.
+#' \url{http://data.worldbank.org/indicator/NY.GDP.MKTP.CD}.
+#' World Development Indicators.  }
 #'
 #' @examples
 #' head(gdp)
@@ -530,47 +577,64 @@
 
 #' Hair Care Product
 #'
-#' Data
+#' @description{
+#' Fictional data representing an uplift study. A promotion for a hair
+#' color product was sent out to a sample of potential customers.
+#'
+#' Promotional literature about a hair care product was sent to members
+#' of a buyers club. The goal is to determine which groups are most likely
+#' to make increased purchases as a result of receiving the promotion.
+#' }
+#'
 #' @format A data frame with 10000 observations and 8 variables:
 #' \describe{
-#' \item{Purchase}{}
-#' \item{Age}{}
-#' \item{Hair.Color}{}
-#' \item{U.S..Region}{}
-#' \item{Validation}{}
-#' \item{Promotion_ord}{}
-#' \item{Gender_ord}{}
-#' \item{Residence_ord}{}
+#' \item{Purchase}{1: purchased; 0: not purchased}
+#' \item{Age}{age of customer}
+#' \item{Hair.Color}{one of `Black`, `Red`, `Blond`, or `Brown`}
+#' \item{U.S..Region}{one of `Southwest`, `Northwest`, `Northeast`, or `Southeast`}
+#' \item{Validation}{0: training set; 1: validation set}
+#' \item{Promotion_ord}{1: customer received a promotion; 0: did'n receive promotional material}
+#' \item{Gender_ord}{1: male; 0: female}
+#' \item{Residence_ord}{1: urban; 0: rural}
 #' }
+#' @source{SAS Institute, used by permission; sample of 10,000 observations from full 126,184 dataset}
 #'
 #' @examples
 #' head(HairCareProduct)
 "HairCareProduct"
 
-
 #' Laptop Sales January 2008
+#'
+#' @description{The laptop sales data were part of the ENBIS 2009 Challenge in
+#' Industrial Statistics.
+#'
+#' This is a subset of the Laptop sales dataset. It includes only the Jan 2008
+#' sales (the complete dataset includes the entire 2008 sales).}
 #'
 #' Data
 #' @format A data frame with 7956 observations and 17 variables:
 #' \describe{
-#' \item{Date}{}
-#' \item{Configuration}{}
-#' \item{Customer.Postcode}{}
-#' \item{Store.Postcode}{}
-#' \item{Retail.Price}{}
-#' \item{Screen.Size..Inches.}{}
-#' \item{Battery.Life..Hours.}{}
-#' \item{RAM..GB.}{}
-#' \item{Processor.Speeds..GHz.}{}
-#' \item{Integrated.Wireless.}{}
-#' \item{HD.Size..GB.}{}
-#' \item{Bundled.Applications.}{}
-#' \item{OS.X.Customer}{}
-#' \item{OS.Y.Customer}{}
-#' \item{OS.X.Store}{}
-#' \item{OS.Y.Store}{}
+#' \item{Date}{purchase date}
+#' \item{Configuration}{A numerical code representing a combination of screen
+#' size, battery life, RAM, etc. Each code corresponds to a particular combination.}
+#' \item{Customer.Postcode}{postcode in London of the customer}
+#' \item{Store.Postcode}{postcode in London of the store}
+#' \item{Retail.Price}{price of laptop in GBP}
+#' \item{Screen.Size..Inches.}{screen size of laptop (Inches)}
+#' \item{Battery.Life..Hours.}{battery life of laptop (Hours)}
+#' \item{RAM..GB.}{RAM size of laptop(GB)}
+#' \item{Processor.Speeds..GHz.}{processor speed of laptop (GHz)}
+#' \item{Integrated.Wireless.}{whether the laptop has integrated wireless or not}
+#' \item{HD.Size..GB.}{HD size of laptop (GB)}
+#' \item{Bundled.Applications.}{whether the laptop comes with bundled applications or not}
+#' \item{OS.X.Customer}{X geo coordinates for customer location.}
+#' \item{OS.Y.Customer}{Y geo coordinates for customer location.}
+#' \item{OS.X.Store}{X geo coordinates for store location}
+#' \item{OS.Y.Store}{Y geo coordinates for store location}
 #' \item{CustomerStoreDistance}{}
 #' }
+#' @source{The laptop sales data were part of the ENBIS 2009 Challenge
+#' in Industrial Statistics}
 #'
 #' @examples
 #' head(LaptopSalesJanuary2008)
@@ -579,7 +643,7 @@
 
 #' Lift example
 #'
-#' Data
+#' @description{Synthetic dataset to demonstrate lift}
 #' @format A data frame with 24 observations and 2 variables:
 #' \describe{
 #' \item{prob}{}
@@ -666,10 +730,27 @@
 #' \item{Location}{}
 #' \item{Exchange}{}
 #' }
+#' @source{Compiled from various web sources. Copyright 2016 Galit Shmueli and Peter Bruce}
 #'
 #' @examples
 #' head(Pharmaceuticals)
 "Pharmaceuticals"
+
+
+#' Riding Mowers
+#'
+#' Data
+#' @format A data frame with 24 observations and 3 variables:
+#' \describe{
+#' \item{Income}{Annual income in $000}
+#' \item{Lot_Size}{In thousands of sq. feet}
+#' \item{Ownership}{Whether the resident owns a riding mower or not}
+#' }
+#' @source{Data courtesy of Dean Wichern}
+#'
+#' @examples
+#' head(RidingMowers)
+"RidingMowers"
 
 
 #' statistics.com Students
@@ -686,23 +767,12 @@
 "SCstudents"
 
 
-#' SP500
+#' Spambase
 #'
-#' Data
-#' @format A data frame with 100 observations and 2 variables:
-#' \describe{
-#' \item{Date}{}
-#' \item{Close}{}
-#' }
+#' @description{ Each of the words below are columns in the data and the values represent
+#' \% of words in the e-mail that match that particular word. For example,
+#' make represent \% of words in the e-mail that match "make".}
 #'
-#' @examples
-#' head(SP500)
-"SP500"
-
-
-#' spambase
-#'
-#' Data
 #' @format A data frame with 4601 observations and 58 variables:
 #' \describe{
 #' \item{make}{}
@@ -753,16 +823,16 @@
 #' \item{edu}{}
 #' \item{table}{}
 #' \item{conference}{}
-#' \item{C.}{}
-#' \item{C..1}{}
-#' \item{C..2}{}
-#' \item{C..3}{}
-#' \item{C..4}{}
-#' \item{C..5}{}
-#' \item{CAP_avg}{}
-#' \item{CAP_long}{}
-#' \item{CAP_tot}{}
-#' \item{Spam}{}
+#' \item{C.}{C;}
+#' \item{C..1}{C(}
+#' \item{C..2}{C[}
+#' \item{C..3}{C!}
+#' \item{C..4}{C$}
+#' \item{C..5}{C#}
+#' \item{CAP_avg}{average length of uninterrupted sequences of capital letters}
+#' \item{CAP_long}{length of longest uninterrupted sequence of capital letters}
+#' \item{CAP_tot}{total number of capital letters in the e-mail}
+#' \item{Spam}{1 = spam, 0 = not spam}
 #' }
 #'
 #' @examples
@@ -770,30 +840,17 @@
 "spambase"
 
 
-#' Riding Mowers
-#'
-#' Data
-#' @format A data frame with 24 observations and 3 variables:
-#' \describe{
-#' \item{Income}{}
-#' \item{Lot_Size}{}
-#' \item{Ownership}{}
-#' }
-#'
-#' @examples
-#' head(RidingMowers)
-"RidingMowers"
-
-
 #' System Administrator
 #'
 #' Data
 #' @format A data frame with 75 observations and 3 variables:
 #' \describe{
-#' \item{Experience}{}
-#' \item{Training}{}
-#' \item{Completed.task}{}
+#' \item{Experience}{measures months of full-time system administrator experience}
+#' \item{Training}{measures the number of relevant training credits}
+#' \item{Completed.task}{either Yes or No, according to whether or not the
+#' administrator completed the tasks}
 #' }
+#' @source{Samprit Chatterjee}
 #'
 #' @examples
 #' head(SystemAdministrators)
@@ -805,9 +862,12 @@
 #' Data
 #' @format A data frame with 2000 observations and 25 variables:
 #' \describe{
-#' \item{sequence_number}{}
-#' \item{US}{}
-#' \item{source_a}{}
+#' \item{sequence_number}{Unique identifier}
+#' \item{US}{Is it a US address? 1=yes; 0=no}
+#' \item{source_a}{Source catalog for the record. 1=yes; 0=no
+#'
+#' (15 identified sources plus one "other source" category; 15 dummies created
+#' with "other" as the reference, hence omitted.)}
 #' \item{source_c}{}
 #' \item{source_b}{}
 #' \item{source_d}{}
@@ -822,15 +882,16 @@
 #' \item{source_p}{}
 #' \item{source_x}{}
 #' \item{source_w}{}
-#' \item{Freq}{}
-#' \item{last_update_days_ago}{}
-#' \item{X1st_update_days_ago}{}
-#' \item{Web.order}{}
-#' \item{Gender.male}{}
-#' \item{Address_is_res}{}
-#' \item{Purchase}{}
-#' \item{Spending}{}
+#' \item{Freq}{Number of transactions in last year at source catalog}
+#' \item{last_update_days_ago}{How many days ago was last update to customer record}
+#' \item{X1st_update_days_ago}{How many days ago was 1st update to customer record}
+#' \item{Web.order}{Customer placed at least 1 order via web. 1=yes; 0=no}
+#' \item{Gender.male}{Customer is male. 1=yes; 0=no}
+#' \item{Address_is_res}{Address is a residence. 1=yes; 0=no}
+#' \item{Purchase}{Person made purchase in test mailing. 1=yes; 0=no}
+#' \item{Spending}{Amount spent by customer intest mailing ($)}
 #' }
+#' @source{Copyright 2016 statistics.com}
 #'
 #' @examples
 #' head(Tayko)
@@ -839,13 +900,19 @@
 
 #' TinyData
 #'
+#' @description{Data includes information on a tasting score for a certain
+#' processed cheese. The two predictors are scores for fat and salt,
+#' indicating the relative presence of fat and salt in the particular cheese
+#' sample (where 0 is the minimum amount possible in the manufacturing process,
+#' and 1 the maximum). The outcome variable is the cheese sample’s consumer
+#' taste preference, where like or dislike indicate whether the consumer likes the cheese or not.}
 #' Data
 #' @format A data frame with 6 observations and 4 variables:
 #' \describe{
-#' \item{Obs.}{}
-#' \item{Fat}{}
-#' \item{Salt}{}
-#' \item{Acceptance}{}
+#' \item{Obs.}{unique identifier}
+#' \item{Fat}{relative presence of fat in cheese. (where 0 is the minimum amount possible in the manufacturing process, and 1 the maximum)}
+#' \item{Salt}{relative presence of salt in cheese. (where 0 is the minimum amount possible in the manufacturing process, and 1 the maximum)}
+#' \item{Acceptance}{Consumer taste preference; one of `like` or `dislike`}
 #' }
 #'
 #' @examples
@@ -858,93 +925,75 @@
 #' Data
 #' @format A data frame with 1436 observations and 39 variables:
 #' \describe{
-#' \item{Id}{}
-#' \item{Model}{}
-#' \item{Price}{}
-#' \item{Age_08_04}{}
-#' \item{Mfg_Month}{}
-#' \item{Mfg_Year}{}
-#' \item{KM}{}
-#' \item{Fuel_Type}{}
-#' \item{HP}{}
-#' \item{Met_Color}{}
-#' \item{Color}{}
-#' \item{Automatic}{}
-#' \item{CC}{}
-#' \item{Doors}{}
-#' \item{Cylinders}{}
-#' \item{Gears}{}
-#' \item{Quarterly_Tax}{}
-#' \item{Weight}{}
-#' \item{Mfr_Guarantee}{}
-#' \item{BOVAG_Guarantee}{}
-#' \item{Guarantee_Period}{}
-#' \item{ABS}{}
-#' \item{Airbag_1}{}
-#' \item{Airbag_2}{}
-#' \item{Airco}{}
-#' \item{Automatic_airco}{}
-#' \item{Boardcomputer}{}
-#' \item{CD_Player}{}
-#' \item{Central_Lock}{}
-#' \item{Powered_Windows}{}
-#' \item{Power_Steering}{}
-#' \item{Radio}{}
-#' \item{Mistlamps}{}
-#' \item{Sport_Model}{}
-#' \item{Backseat_Divider}{}
-#' \item{Metallic_Rim}{}
-#' \item{Radio_cassette}{}
-#' \item{Parking_Assistant}{}
-#' \item{Tow_Bar}{}
+#' \item{Id}{Record_ID; unique identifier}
+#' \item{Model}{Model Description}
+#' \item{Price}{Offer Price in EUROs}
+#' \item{Age_08_04}{Age in months as in August 2004}
+#' \item{Mfg_Month}{Manufacturing month (1-12)}
+#' \item{Mfg_Year}{Manufacturing year}
+#' \item{KM}{Accumulated Kilometers on odometer}
+#' \item{Fuel_Type}{Fuel Type. one of `Petrol`, `Diesel`, or `CNG`}
+#' \item{HP}{Horse Power}
+#' \item{Met_Color}{Metallic Color?  (Yes=1, No=0)}
+#' \item{Color}{Color (Blue, Red, Grey, Silver, Black, etc.)}
+#' \item{Automatic}{Automatic (Yes=1, No=0)}
+#' \item{CC}{Cylinder Volume in cubic centimeters}
+#' \item{Doors}{Number of doors}
+#' \item{Cylinders}{Number of cylinders}
+#' \item{Gears}{Number of gear positions}
+#' \item{Quarterly_Tax}{Quarterly road tax in EUROs}
+#' \item{Weight}{Weight in Kilograms}
+#' \item{Mfr_Guarantee}{Within Manufacturer's Guarantee period  (Yes=1, No=0)}
+#' \item{BOVAG_Guarantee}{BOVAG (Dutch dealer network) Guarantee  (Yes=1, No=0)}
+#' \item{Guarantee_Period}{Guarantee period in months}
+#' \item{ABS}{Anti-Lock Brake System (Yes=1, No=0)}
+#' \item{Airbag_1}{Driver_Airbag  (Yes=1, No=0)}
+#' \item{Airbag_2}{Passenger Airbag  (Yes=1, No=0)}
+#' \item{Airco}{Airconditioning  (Yes=1, No=0)}
+#' \item{Automatic_airco}{Automatic Airconditioning  (Yes=1, No=0)}
+#' \item{Boardcomputer}{Boardcomputer  (Yes=1, No=0)}
+#' \item{CD_Player}{CD Player  (Yes=1, No=0)}
+#' \item{Central_Lock}{Central Lock  (Yes=1, No=0)}
+#' \item{Powered_Windows}{Powered Windows  (Yes=1, No=0)}
+#' \item{Power_Steering}{Power Steering  (Yes=1, No=0)}
+#' \item{Radio}{Radio  (Yes=1, No=0)}
+#' \item{Mistlamps}{Mistlamps  (Yes=1, No=0)}
+#' \item{Sport_Model}{Sport Model  (Yes=1, No=0)}
+#' \item{Backseat_Divider}{Backseat Divider  (Yes=1, No=0)}
+#' \item{Metallic_Rim}{Metallic Rim  (Yes=1, No=0)}
+#' \item{Radio_cassette}{Radio Cassette  (Yes=1, No=0)}
+#' \item{Parking_Assistant}{Parking assistance system  (Yes=1, No=0)}
+#' \item{Tow_Bar}{Tow Bar  (Yes=1, No=0)}
 #' }
+#' @source{Copyright 2016 Nitin Patel, Galit Shmueli and Peter Bruce   }
 #'
 #' @examples
 #' head(ToyotaCorolla)
 "ToyotaCorolla"
 
 
-#' Utilities
-#'
-#' Data
-#' @format A data frame with 22 observations and 9 variables:
-#' \describe{
-#' \item{Company}{}
-#' \item{Fixed_charge}{}
-#' \item{RoR}{}
-#' \item{Cost}{}
-#' \item{Load_factor}{}
-#' \item{Demand_growth}{}
-#' \item{Sales}{}
-#' \item{Nuclear}{}
-#' \item{Fuel_Cost}{}
-#' }
-#'
-#' @examples
-#' Utilities
-"Utilities"
-
-
 #' UniversalBank
 #'
-#' Data
+#' @description{Synthetic dataset courtesy of \url{statistics.com}}
+#'
 #' @format A data frame with 500 observations and 14 variables:
 #' \describe{
-#' \item{ID}{}
-#' \item{Age}{}
-#' \item{Experience}{}
-#' \item{Income}{}
-#' \item{ZIP.Code}{}
-#' \item{Family}{}
-#' \item{CCAvg}{}
-#' \item{Education}{}
-#' \item{Mortgage}{}
-#' \item{Personal.Loan}{}
-#' \item{Securities.Account}{}
-#' \item{CD.Account}{}
-#' \item{Online}{}
-#' \item{CreditCard}{}
+#' \item{ID}{Customer ID}
+#' \item{Age}{Customer's age in completed years}
+#' \item{Experience}{#years of professional experience}
+#' \item{Income}{Annual income of the customer ($000)}
+#' \item{ZIP.Code}{Home Address ZIP code}
+#' \item{Family}{Family size of the customer}
+#' \item{CCAvg}{Avg. spending on credit cards per month ($000)}
+#' \item{Education}{Education Level. 1: Undergrad; 2: Graduate; 3: Advanced/Professional}
+#' \item{Mortgage}{Value of house mortgage if any. ($000)}
+#' \item{Personal.Loan}{Did this customer accept the personal loan offered in the last campaign?}
+#' \item{Securities.Account}{Does the customer have a securities account with the bank?}
+#' \item{CD.Account}{Does the customer have a certificate of deposit (CD) account with the bank?}
+#' \item{Online}{Does the customer use internet banking facilities?}
+#' \item{CreditCard}{Does the customer use a credit card issued by UniversalBank?}
 #' }
+#' @source{Copyright Cytel, Inc. 2005}
 #'
 #' @examples
 #' UniversalBank
@@ -953,7 +1002,12 @@
 
 #' Universities
 #'
-#' Data
+#' @description{The dataset on American college and university rankings contains
+#' information on 1302 American colleges and universities oﬀering an undergraduate
+#' program. For each university, there are 17 measurements that include
+#' continuous measurements (such as tuition and graduation rate) and categorical
+#' measurements (such as location by state and whether it is a private or a public school).}
+#'
 #' @format A data frame with 1302 observations and 20 variables:
 #' \describe{
 #' \item{College.Name}{}
@@ -977,15 +1031,39 @@
 #' \item{stud..fac..ratio}{}
 #' \item{Graduation.rate}{}
 #' }
+#' @source{Copyright 2016 Galit Shmueli and Peter Bruce. Compiled from US News and
+#' World Report rankings on 1302American Colleges and Universities}
 #'
 #' @examples
 #' head(Universities)
 "Universities"
 
 
-#' Veerhoven.
+#' Utilities
 #'
 #' Data
+#' @format A data frame with 22 observations and 9 variables:
+#' \describe{
+#' \item{Company}{Company name}
+#' \item{Fixed_charge}{Fixed-charge coverage ratio (income/debt)}
+#' \item{RoR}{Percent rate of return on capital}
+#' \item{Cost}{Cost per KW capacity in place}
+#' \item{Load_factor}{Annual load factor}
+#' \item{Demand_growth}{Percent demand growth}
+#' \item{Sales}{Sales (KWH use per year)}
+#' \item{Nuclear}{Percent nuclear}
+#' \item{Fuel_Cost}{Total fuel costs (cents per KWH)}
+#' }
+#'
+#' @examples
+#' Utilities
+"Utilities"
+
+
+#' Veerhoven.
+#'
+#' @description{Data measuring happiness of countries. according to a 2006 Gallup survey.}
+#'
 #' @format A data frame with 159 observations and 5 variables:
 #' \describe{
 #' \item{Serial}{}
@@ -1005,86 +1083,91 @@
 #' Data
 #' @format A data frame with 10000 observations and 79 variables:
 #' \describe{
-#' \item{VOTER_ID}{}
-#' \item{SET_NO}{}
-#' \item{OPP_SEX}{}
-#' \item{AGE}{}
-#' \item{HH_ND}{}
-#' \item{HH_NR}{}
-#' \item{HH_NI}{}
-#' \item{MED_AGE}{}
-#' \item{NH_WHITE}{}
-#' \item{NH_AA}{}
-#' \item{NH_ASIAN}{}
-#' \item{NH_MULT}{}
-#' \item{HISP}{}
-#' \item{COMM_LT10}{}
-#' \item{COMM_609P}{}
-#' \item{MED_HH_INC}{}
-#' \item{COMM_CAR}{}
-#' \item{COMM_CP}{}
-#' \item{COMM_PT}{}
-#' \item{COMM_WALK}{}
-#' \item{KIDS}{}
-#' \item{M_MAR}{}
-#' \item{F_MAR}{}
-#' \item{ED_4COL}{}
-#' \item{GENDER_F}{}
-#' \item{GENDER_M}{}
-#' \item{H_AFDLN3P}{}
-#' \item{H_F1}{}
-#' \item{H_M1}{}
-#' \item{H_MFDLN3P}{}
-#' \item{PARTY_D}{}
-#' \item{PARTY_I}{}
-#' \item{PARTY_R}{}
-#' \item{VPP_08}{}
-#' \item{VPP_12}{}
-#' \item{VPR_08}{}
-#' \item{VPR_10}{}
-#' \item{VPR_12}{}
-#' \item{VG_04}{}
-#' \item{VG_06}{}
-#' \item{VG_08}{}
-#' \item{VG_10}{}
-#' \item{VG_12}{}
-#' \item{PP_PELIG}{}
-#' \item{PR_PELIG}{}
-#' \item{AP_PELIG}{}
-#' \item{G_PELIG}{}
-#' \item{E_PELIG}{}
-#' \item{NL5G}{}
-#' \item{NL3PR}{}
-#' \item{NL5AP}{}
-#' \item{NL2PP}{}
-#' \item{REG_DAYS}{}
-#' \item{UPSCALEBUY}{}
-#' \item{UPSCALEMAL}{}
-#' \item{UPSCALEFEM}{}
-#' \item{BOOKBUYERI}{}
-#' \item{FAMILYMAGA}{}
-#' \item{FEMALEORIE}{}
-#' \item{RELIGIOUSM}{}
-#' \item{GARDENINGM}{}
-#' \item{CULINARYIN}{}
-#' \item{HEALTHFITN}{}
-#' \item{DOITYOURSE}{}
-#' \item{FINANCIALM}{}
-#' \item{RELIGIOUSC}{}
-#' \item{POLITICALC}{}
-#' \item{MEDIANEDUC}{}
-#' \item{CAND1S}{}
-#' \item{CAND2S}{}
-#' \item{MESSAGE_A}{}
-#' \item{MESSAGE_A_REV}{}
-#' \item{I3}{}
-#' \item{CAND1_UND}{}
-#' \item{CAND2_UND}{}
-#' \item{MOVED_AD}{}
-#' \item{MOVED_A}{}
-#' \item{opposite}{}
-#' \item{Partition}{}
+#' \item{VOTER_ID}{Unique ID for each voter}
+#' \item{SET_NO}{Set number, assigned at random.  Can be used to divide development and
+#' test sets.  Build models using only sets 1 & 2.  Validate on the hold-out
+#' sample of set_no=3 voters}
+#' \item{OPP_SEX}{\% of people with the same first name who have a different gender (Derived)}
+#' \item{AGE}{Age (Voterfile)}
+#' \item{HH_ND}{Number of Democrats in this household (Derived)}
+#' \item{HH_NR}{Number of Republicans in this household (Derived)}
+#' \item{HH_NI}{Number of independents in this household (Derived)}
+#' \item{MED_AGE}{Census Block Group median age (Census)}
+#' \item{NH_WHITE}{\% Non-Hispanic Caucasian	(Census)}
+#' \item{NH_AA}{\% Non-Hispanic African-American	(Census)}
+#' \item{NH_ASIAN}{\% Non-Hispanic Asian	(Census)}
+#' \item{NH_MULT}{\% Non-Hispanic multi-race	(Census)}
+#' \item{HISP}{\% Hispanic	(Census)}
+#' \item{COMM_LT10}{\% of workers who commute less than 10 minutes each way	(Census)}
+#' \item{COMM_609P}{\% of workers who commute 60+ minutes each way	(Census)}
+#' \item{MED_HH_INC}{Median household income	(Census)}
+#' \item{COMM_CAR}{\% of workers who commute by themselves by car	(Census)}
+#' \item{COMM_CP}{\% of workers who carpool	(Census)}
+#' \item{COMM_PT}{\% of workers who take public transportation	(Census)}
+#' \item{COMM_WALK}{\% of workers who walk to work	(Census)}
+#' \item{KIDS}{\% of families with children under 18	(Census)}
+#' \item{M_MAR}{\% of adult men who are married	(Census)}
+#' \item{F_MAR}{\% of adult females who are married	(Census)}
+#' \item{ED_4COL}{\% of adult population with at least 4 years of college	(Census)}
+#' \item{GENDER_F}{Flag - is female	(Voterfile)}
+#' \item{GENDER_M}{Flag - is male	(Voterfile)}
+#' \item{H_AFDLN3P}{Flag - household all-female different last names, 3+ members	(Derived)}
+#' \item{H_F1}{Flag - household single female	(Derived)}
+#' \item{H_M1}{Flag - Single male	(Derived)}
+#' \item{H_MFDLN3P}{Flag - household male & female, different last names, 3+ members	(Derived)}
+#' \item{PARTY_D}{Flag - Democrat	(Voterfile)}
+#' \item{PARTY_I}{Flag - Independent	(Voterfile)}
+#' \item{PARTY_R}{Flag - Republican	(Voterfile)}
+#' \item{VPP_08}{Flag - vote history - voted presidential primary 2008	(Derived)}
+#' \item{VPP_12}{Flag - vote history - voted presidential primary 2012	(Derived)}
+#' \item{VPR_08}{Flag - vote history - voted primary 2008	(Derived)}
+#' \item{VPR_10}{Flag - vote history - voted primary 2010	(Derived)}
+#' \item{VPR_12}{Flag - vote history - voted primary 2012	(Derived)}
+#' \item{VG_04}{Flag - vote history - voted general election 2004	(Derived)}
+#' \item{VG_06}{Flag - vote history - voted general election 2006	(Derived)}
+#' \item{VG_08}{Flag - vote history - voted general election 2008	(Derived)}
+#' \item{VG_10}{Flag - vote history - voted general election 2010	(Derived)}
+#' \item{VG_12}{Flag - vote history - voted general election 2012	(Derived)}
+#' \item{PP_PELIG}{Voted in \% of presidential primaries in which they were eligible	(Derived)}
+#' \item{PR_PELIG}{Voted in \% of non-presidential primaries in which they were eligible	(Derived)}
+#' \item{AP_PELIG}{Voted in \% of any kind of primary in which they were eligible	(Derived)}
+#' \item{G_PELIG}{Voted in \% of general elections in which they were eligible	(Derived)}
+#' \item{E_PELIG}{Voted in \% of any kind of election in which they were eligible	(Derived)}
+#' \item{NL5G}{# of the last 5 elections in which the voter voted	(Derived)}
+#' \item{NL3PR}{# of last 3 primaries in which the voter voted	(Derived)}
+#' \item{NL5AP}{# of last 5 primaries of any kind in which the voter voted	(Derived)}
+#' \item{NL2PP}{# of last 2 presidential primaries in which the voter voted	(Derived)}
+#' \item{REG_DAYS}{Days since the voter registered to vote at their current address	(Derived)}
+#' \item{UPSCALEBUY}{Upscale Buyer In Home	(Commercial Data)}
+#' \item{UPSCALEMAL}{Upscale Male Buyer In Home	(Commercial Data)}
+#' \item{UPSCALEFEM}{Upscale Female Buyer In Home	(Commercial Data)}
+#' \item{BOOKBUYERI}{Book Buyer In Home	(Commercial Data)}
+#' \item{FAMILYMAGA}{Family Magazine In Home	(Commercial Data)}
+#' \item{FEMALEORIE}{Female Oriented Magazine In Home	(Commercial Data)}
+#' \item{RELIGIOUSM}{Religious Magazine In Home	(Commercial Data)}
+#' \item{GARDENINGM}{Gardening Magazine In Home	(Commercial Data)}
+#' \item{CULINARYIN}{Culinary Interest Magazine In Home	(Commercial Data)}
+#' \item{HEALTHFITN}{Health Fitness Magazine In Home	(Commercial Data)}
+#' \item{DOITYOURSE}{Do It Yourselfer Magazine In Home	(Commercial Data)}
+#' \item{FINANCIALM}{Financial Magazine In Home	(Commercial Data)}
+#' \item{RELIGIOUSC}{Religious Contributor In Home	(Commercial Data)}
+#' \item{POLITICALC}{Political Contributer In Home	(Commercial Data)}
+#' \item{MEDIANEDUC}{Median Education Years	(Commercial Data)}
+#' \item{CAND1S}{Wave 1 candidate ID with strenght of support.  SD=Strong Democrat,
+#'       LD=Lean Democrat, U=Undecided, LR=Lean Republican, SR=Strong Republican	(Synthetic)}
+#' \item{CAND2S}{Wave 2 candidate ID with strenght of support	(Synthetic)}
+#' \item{MESSAGE_A}{Flag indicating if the voter received message A	(Synthetic)}
+#' \item{MESSAGE_A_REV}{Flag indicating if the voter received message B	(Synthetic)}
+#' \item{I3}{Independent 3-way.  Y if voter is an independent or minor party member.
+#'      N if Democrat or Republican}
+#' \item{CAND1_UND}{Undecided in wave 1 IDs}
+#' \item{CAND2_UND}{Undecided in wave 2 IDs}
+#' \item{MOVED_AD}{Moved to be more supportive of the Democratic candidate.  Stronger support for the Democrat or weaker support for the Republican in wave 2 than in wave 1.}
+#' \item{MOVED_A}{0/1 encoding of `MOVED_AD`}
+#' \item{opposite}{reverse of `MOVED_AD`}
+#' \item{Partition}{`V`=validation, `T`= test set}
 #' }
+#' @source{Copyright 2016 Ken Strasma and statistics.com; Ken Strasma and HaystaqDNA}
 #'
 #' @examples
 #' VoterPersuasion
@@ -1096,20 +1179,20 @@
 #' Data
 #' @format A data frame with 5802 observations and 14 variables:
 #' \describe{
-#' \item{TOTAL.VALUE}{}
-#' \item{TAX}{}
-#' \item{LOT.SQFT}{}
-#' \item{YR.BUILT}{}
-#' \item{GROSS.AREA}{}
-#' \item{LIVING.AREA}{}
-#' \item{FLOORS}{}
-#' \item{ROOMS}{}
-#' \item{BEDROOMS}{}
-#' \item{FULL.BATH}{}
-#' \item{HALF.BATH}{}
-#' \item{KITCHEN}{}
-#' \item{FIREPLACE}{}
-#' \item{REMODEL}{}
+#' \item{TOTAL.VALUE}{Total assessed value for property, in thousands of USD}
+#' \item{TAX}{Tax bill amount based on total assessed value multiplied by the tax rate}
+#' \item{LOT.SQFT}{Total lot size of parcel in square feet}
+#' \item{YR.BUILT}{Year property was built}
+#' \item{GROSS.AREA}{Gross floor area}
+#' \item{LIVING.AREA}{Total living area for residential properties (in square feet)}
+#' \item{FLOORS}{Number of floors}
+#' \item{ROOMS}{Total number of rooms}
+#' \item{BEDROOMS}{Total number of bedrooms}
+#' \item{FULL.BATH}{Total number of full baths}
+#' \item{HALF.BATH}{Total number of half baths}
+#' \item{KITCHEN}{Total number of kitchens}
+#' \item{FIREPLACE}{Total number of fireplaces}
+#' \item{REMODEL}{When house was remodeled (Recent/Old/None)}
 #' }
 #'
 #' @examples
@@ -1119,14 +1202,20 @@
 
 #' Wine.
 #'
+#' @description{Wine dataset contains properties of wine captured from three
+#' different wineries in the same region. There are 13 variables describing
+#' various properties of wine and 3 classes. This dataset can be used for
+#' classification with Type as a output variable OR can be used to perform
+#' clustering to without using Type variable to see the accuracy of prediction.}
+#'
 #' Data
 #' @format A data frame with 178 observations and 14 variables:
 #' \describe{
-#' \item{Type}{}
+#' \item{Type}{Type of wine; one of `A`, `B`, or `C`}
 #' \item{Alcohol}{}
 #' \item{Malic_Acid}{}
 #' \item{Ash}{}
-#' \item{Ash_Alcalinity}{}
+#' \item{Ash_Alcalinity}{Alcalinity of ash}
 #' \item{Magnesium}{}
 #' \item{Total_Phenols}{}
 #' \item{Flavanoids}{}
@@ -1134,16 +1223,52 @@
 #' \item{Proanthocyanins}{}
 #' \item{Color_Intensity}{}
 #' \item{Hue}{}
-#' \item{OD280_OD315}{}
+#' \item{OD280_OD315}{OD280/OD315 of diluted wines}
 #' \item{Proline}{}
 #' }
+#' @source{This data set can be found in the UCI Machine Learning Repository
+#' (\url{https://archive.ics.uci.edu/ml/datasets/wine})}
 #'
 #' @examples
 #' Wine
 "Wine"
 
 
+#' Amtrak
+#'
+#' Data
+#' @format A data frame with 159 observations and 2 variables:
+#' \describe{
+#' \item{Month}{}
+#' \item{Ridership}{Amtrak Ridership Number of Passengers (in thousands) }
+#' }
+#'
+#' @examples
+#' Amtrak
+"Amtrak"
+
+
+#' Applicance Shipments
+#'
+#' The series of quarterly shipments (in millions of dollars) of US household
+#' appliances between 1985 and 1989.
+#'
+#' @format A data frame with 20 observations and 2 variables:
+#' \describe{
+#' \item{Quarter}{}
+#' \item{Shipments}{}
+#' }
+#'
+#' @source{Data courtesy Ken Black}
+#'
+#' @examples
+#' head(ApplianceShipments)
+"ApplianceShipments"
+
+
 #' AustralianWines
+#'
+#' Monthly Australian sales of wine Jan 1980 - Jul 1995
 #'
 #' Data
 #' @format A data frame with 180 observations and 7 variables:
@@ -1156,24 +1281,11 @@
 #' \item{sweet.white}{}
 #' \item{dry.white}{}
 #' }
+#' @source{Website}
 #'
 #' @examples
 #' AustralianWines
 "AustralianWines"
-
-
-#' ApplianceShipments
-#'
-#' Data
-#' @format A data frame with 20 observations and 2 variables:
-#' \describe{
-#' \item{Quarter}{}
-#' \item{Shipments}{}
-#' }
-#'
-#' @examples
-#' ApplianceShipments
-"ApplianceShipments"
 
 
 #' CanadianWorkHours
@@ -1182,8 +1294,9 @@
 #' @format A data frame with 35 observations and 2 variables:
 #' \describe{
 #' \item{Year}{}
-#' \item{Hours}{}
+#' \item{Hours}{average annual number of weekly hours spent by Canadian manufacturing workers}
 #' }
+#' @source{Ken Black (used by permission)}
 #'
 #' @examples
 #' CanadianWorkHours
@@ -1220,14 +1333,17 @@
 
 #' Sept11Travel
 #'
-#' Data
+#' @description{Estimated Impacts of September 11th on US Travel}
+#'
 #' @format A data frame with 172 observations and 4 variables:
 #' \describe{
 #' \item{Month}{}
-#' \item{Air.RPM..000s.}{}
-#' \item{Rail.PM}{}
-#' \item{VMT..billions.}{}
+#' \item{Air.RPM..000s.}{Air revenue passenger miles (1 RMP is one revenue passenger carried for one mile)}
+#' \item{Rail.PM}{Rail passenger miles}
+#' \item{VMT..billions.}{Vehicle miles traveled}
 #' }
+#' @source{Bureau of Transportation Statistics:
+#'   \url{https://www.bts.gov/archive/publications/estimated_impacts_of_9_11_on_us_travel/index}}
 #'
 #' @examples
 #' Sept11Travel
@@ -1236,26 +1352,45 @@
 
 #' ShampooSales
 #'
-#' Data
+#' @description{Data on the monthly sales of a certain shampoo over a 3-year period.}
+#'
 #' @format A data frame with 36 observations and 2 variables:
 #' \describe{
 #' \item{Month}{}
 #' \item{Shampoo.Sales}{}
 #' }
+#' @source{Time Series Data Library, \url{https://pkg.yangzhuoranyang.com/tsdl/}}
 #'
 #' @examples
 #' ShampooSales
 "ShampooSales"
 
 
+#' SP500
+#'
+#' @description{Monthly closing prices of S&P500}
+#'
+#' @format A data frame with 100 observations and 2 variables:
+#' \describe{
+#' \item{Date}{}
+#' \item{Close}{Monthly closing prices of S&P500}
+#' }
+#'
+#' @examples
+#' head(SP500)
+"SP500"
+
+
 #' SouvenirSales
 #'
-#' Data
+#' @description{Monthly sales for a souvenir shop at a beach resort town in Queensland, Australia, between 1995–2001.}
+#'
 #' @format A data frame with 84 observations and 2 variables:
 #' \describe{
 #' \item{Date}{}
 #' \item{Sales}{}
 #' }
+#' @source{Time Series Data Library, \url{https://pkg.yangzhuoranyang.com/tsdl/}}
 #'
 #' @examples
 #' SouvenirSales
@@ -1264,7 +1399,8 @@
 
 #' ToysRUsRevenues
 #'
-#' Data
+#' @description{The quarterly revenues of Toys “R” Us between 1992 and 1995}
+#'
 #' @format A data frame with 16 observations and 4 variables:
 #' \describe{
 #' \item{Index}{}
@@ -1272,6 +1408,7 @@
 #' \item{Revenue.in.million...}{}
 #' \item{Quarter}{}
 #' }
+#' @source{Chris Albright}
 #'
 #' @examples
 #' ToysRUsRevenues
@@ -1280,12 +1417,16 @@
 
 #' WalMartStock
 #'
+#' @description{The series of Walmart daily closing prices between February 2001
+#' and February 2002.}
 #' Data
 #' @format A data frame with 248 observations and 2 variables:
 #' \describe{
 #' \item{Date}{}
 #' \item{Close}{}
 #' }
+#' @source{publicly available, for example, at \url{https://finance.yahoo.com}.
+#' These data are also used in "Data Analysis for Managers" by Albright, Winston & Zappe.}
 #'
 #' @examples
 #' WalMartStock

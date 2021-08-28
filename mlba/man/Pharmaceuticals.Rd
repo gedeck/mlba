@@ -23,6 +23,9 @@ A data frame with 21 observations and 14 variables:
 \item{Exchange}{}
 }
 }
+\source{
+{Compiled from various web sources. Copyright 2016 Galit Shmueli and Peter Bruce}
+}
 \usage{
 Pharmaceuticals
 }

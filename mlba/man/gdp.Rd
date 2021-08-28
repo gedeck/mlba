@@ -11,8 +11,13 @@ A data frame with 264 observations and 5 variables:
 \item{Country.Code}{}
 \item{Indicator.Name}{}
 \item{Indicator.Code}{}
-\item{GDP2015}{}
+\item{GDP2015}{Gross domestic product of the countries.}
 }
+}
+\source{
+{Data from Veenhoven's world database of happiness.
+\url{http://data.worldbank.org/indicator/NY.GDP.MKTP.CD}.
+World Development Indicators.  }
 }
 \usage{
 gdp

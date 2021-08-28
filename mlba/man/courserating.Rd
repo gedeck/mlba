@@ -19,11 +19,14 @@ A data frame with 15 observations and 10 variables:
 \item{Regression}{}
 }
 }
+\source{
+{Copyright 2016 statistics.com}
+}
 \usage{
 courserating
 }
 \description{
-Data
+Student ratings of online statistics courses at Statistics.com
 }
 \examples{
 head(courserating)

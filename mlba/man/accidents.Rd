@@ -7,26 +7,33 @@
 \format{
 A data frame with 600 observations and 11 variables:
 \describe{
-\item{RushHour}{}
-\item{WRK_ZONE}{}
-\item{WKDY}{}
-\item{INT_HWY}{}
-\item{LGTCON_day}{}
-\item{LEVEL}{}
-\item{SPD_LIM}{}
-\item{SUR_COND_dry}{}
-\item{TRAF_two_way}{}
-\item{WEATHER_adverse}{}
-\item{MAX_SEV}{}
+\item{RushHour}{1 = rush hour, 0 = not (rush = 6-9 am, 4-7 pm)}
+\item{WRK_ZONE}{1 = yes, 0 = no}
+\item{WKDY}{1 = weekday, 0 = weekend}
+\item{INT_HWY}{Interstate? 1 = yes, 0 = no}
+\item{LGTCON_day}{Light conditions - 1 = day, 0 = other}
+\item{LEVEL}{1 = level, 0 = other}
+\item{SPD_LIM}{Speed limit, miles per hour}
+\item{SUR_COND_dry}{Surface conditions (1 = dry, 0 = other)}
+\item{TRAF_two_way}{1 = two-way traffic, 0 = other}
+\item{WEATHER_adverse}{0 = no adverse conditions, 1 = adverse condition}
+\item{MAX_SEV}{one of: "no-injury", "non-fatal", 2 = "fatal"}
 }
 }
 \usage{
 accidents
 }
 \description{
+Cleaned up and reduced version of the \code{\link{accidentsFull}} dataset
+to facilitate model building.
+}
+\details{
 Data
 }
 \examples{
 accidents
+}
+\seealso{
+\code{\link{accidentsFull}} for the original dataset
 }
 \keyword{datasets}

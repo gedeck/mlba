@@ -8,7 +8,7 @@
 A data frame with 159 observations and 2 variables:
 \describe{
 \item{Month}{}
-\item{Ridership}{}
+\item{Ridership}{Amtrak Ridership Number of Passengers (in thousands) }
 }
 }
 \usage{

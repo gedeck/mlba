@@ -7,29 +7,43 @@
 \format{
 A data frame with 4987 observations and 16 variables:
 \describe{
-\item{ID.}{}
+\item{ID.}{Unique ID}
+\item{Balance}{Number of miles eligible for award travel}
+\item{Qual_miles}{Number of miles counted as qualifying for Topflight status}
+\item{cc1_miles}{Number of miles earned with freq. flyer credit card in the past 12 months:
+1 = under 5,000; 2 = 5,000 - 10,000; 3 = 10,001 - 25,000; 4 = 25,001 - 50,000;
+5 = over 50,000}
+\item{cc2_miles}{Number of miles earned with Rewards credit card in the past 12 months (see cc1_miles)}
+\item{cc3_miles}{Number of miles earned with Small Business credit card in the past 12 months (see cc1_miles)}
+\item{Bonus_miles}{Number of miles earned from non-flight bonus transactions in the past 12 months}
+\item{Bonus_trans}{Number of non-flight bonus transactions in the past 12 months}
+\item{Flight_miles_12mo}{Number of flight miles in the past 12 months}
+\item{Flight_trans_12}{Number of flight transactions in the past 12 months}
+\item{Days_since_enroll}{Number of days since Enroll_date}
+\item{Award.}{Dummy variable for Last_award (1=not null, 0=null)}
 \item{Topflight}{}
-\item{Balance}{}
-\item{Qual_miles}{}
-\item{cc1_miles.}{}
-\item{cc2_miles.}{}
-\item{cc3_miles.}{}
-\item{Bonus_miles}{}
-\item{Bonus_trans}{}
-\item{Flight_miles_12mo}{}
-\item{Flight_trans_12}{}
 \item{Online_12}{}
-\item{Email}{}
-\item{Club_member}{}
-\item{Any_cc_miles_12mo}{}
-\item{Phone_sale}{}
+\item{Email}{E-mail address on file. 1= yes, 0 =no?}
+\item{Club_member}{Member of the airline's club (paid membership), 1=yes, 0=no}
+\item{Any_cc_miles_12mo}{Dummy variable indicating whether member added miles on
+any creditcard type within the past 12 months (1='Y', 0='N')}
+\item{Phone_sale}{Dummy variable indicating whether member purchased Telcom service
+as a result of the direct mail campaign (1=sale, 0=no sale)}
 }
+}
+\source{
+{Based upon real business data; company names have been changed.
+Copyright 2016 Galit Shmueli and Peter Bruce}
 }
 \usage{
 EastWestAirlinesNN
 }
 \description{
-Data
+East-West Airlines has entered into a partnership with the wireless phone company
+Telcom to sell the latter's service via direct mail.  These are a sample of data,
+provided so that the analyst can develop a model to classify East-West customers
+as to whether they purchase a wireless phone service contract (target variable
+`Phone_sale`).
 }
 \examples{
 head(EastWestAirlinesNN)

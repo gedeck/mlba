@@ -7,20 +7,20 @@
 \format{
 A data frame with 5802 observations and 14 variables:
 \describe{
-\item{TOTAL.VALUE}{}
-\item{TAX}{}
-\item{LOT.SQFT}{}
-\item{YR.BUILT}{}
-\item{GROSS.AREA}{}
-\item{LIVING.AREA}{}
-\item{FLOORS}{}
-\item{ROOMS}{}
-\item{BEDROOMS}{}
-\item{FULL.BATH}{}
-\item{HALF.BATH}{}
-\item{KITCHEN}{}
-\item{FIREPLACE}{}
-\item{REMODEL}{}
+\item{TOTAL.VALUE}{Total assessed value for property, in thousands of USD}
+\item{TAX}{Tax bill amount based on total assessed value multiplied by the tax rate}
+\item{LOT.SQFT}{Total lot size of parcel in square feet}
+\item{YR.BUILT}{Year property was built}
+\item{GROSS.AREA}{Gross floor area}
+\item{LIVING.AREA}{Total living area for residential properties (in square feet)}
+\item{FLOORS}{Number of floors}
+\item{ROOMS}{Total number of rooms}
+\item{BEDROOMS}{Total number of bedrooms}
+\item{FULL.BATH}{Total number of full baths}
+\item{HALF.BATH}{Total number of half baths}
+\item{KITCHEN}{Total number of kitchens}
+\item{FIREPLACE}{Total number of fireplaces}
+\item{REMODEL}{When house was remodeled (Recent/Old/None)}
 }
 }
 \usage{

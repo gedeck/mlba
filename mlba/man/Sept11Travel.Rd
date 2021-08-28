@@ -8,16 +8,20 @@
 A data frame with 172 observations and 4 variables:
 \describe{
 \item{Month}{}
-\item{Air.RPM..000s.}{}
-\item{Rail.PM}{}
-\item{VMT..billions.}{}
+\item{Air.RPM..000s.}{Air revenue passenger miles (1 RMP is one revenue passenger carried for one mile)}
+\item{Rail.PM}{Rail passenger miles}
+\item{VMT..billions.}{Vehicle miles traveled}
 }
+}
+\source{
+{Bureau of Transportation Statistics:
+  \url{https://www.bts.gov/archive/publications/estimated_impacts_of_9_11_on_us_travel/index}}
 }
 \usage{
 Sept11Travel
 }
 \description{
-Data
+{Estimated Impacts of September 11th on US Travel}
 }
 \examples{
 Sept11Travel

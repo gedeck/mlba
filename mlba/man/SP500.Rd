@@ -8,14 +8,14 @@
 A data frame with 100 observations and 2 variables:
 \describe{
 \item{Date}{}
-\item{Close}{}
+\item{Close}{Monthly closing prices of S&P500}
 }
 }
 \usage{
 SP500
 }
 \description{
-Data
+{Monthly closing prices of S&P500}
 }
 \examples{
 head(SP500)

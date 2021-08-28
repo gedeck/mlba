@@ -7,11 +7,11 @@
 \format{
 A data frame with 178 observations and 14 variables:
 \describe{
-\item{Type}{}
+\item{Type}{Type of wine; one of `A`, `B`, or `C`}
 \item{Alcohol}{}
 \item{Malic_Acid}{}
 \item{Ash}{}
-\item{Ash_Alcalinity}{}
+\item{Ash_Alcalinity}{Alcalinity of ash}
 \item{Magnesium}{}
 \item{Total_Phenols}{}
 \item{Flavanoids}{}
@@ -19,14 +19,24 @@ A data frame with 178 observations and 14 variables:
 \item{Proanthocyanins}{}
 \item{Color_Intensity}{}
 \item{Hue}{}
-\item{OD280_OD315}{}
+\item{OD280_OD315}{OD280/OD315 of diluted wines}
 \item{Proline}{}
 }
+}
+\source{
+{This data set can be found in the UCI Machine Learning Repository
+(\url{https://archive.ics.uci.edu/ml/datasets/wine})}
 }
 \usage{
 Wine
 }
 \description{
+{Wine dataset contains properties of wine captured from three
+different wineries in the same region. There are 13 variables describing
+various properties of wine and 3 classes. This dataset can be used for
+classification with Type as a output variable OR can be used to perform
+clustering to without using Type variable to see the accuracy of prediction.}
+
 Data
 }
 \examples{

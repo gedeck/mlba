@@ -11,11 +11,14 @@ A data frame with 84 observations and 2 variables:
 \item{Sales}{}
 }
 }
+\source{
+{Time Series Data Library, \url{https://pkg.yangzhuoranyang.com/tsdl/}}
+}
 \usage{
 SouvenirSales
 }
 \description{
-Data
+{Monthly sales for a souvenir shop at a beach resort town in Queensland, Australia, between 1995–2001.}
 }
 \examples{
 SouvenirSales

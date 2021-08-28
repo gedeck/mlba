@@ -7,9 +7,12 @@
 \format{
 A data frame with 2000 observations and 25 variables:
 \describe{
-\item{sequence_number}{}
-\item{US}{}
-\item{source_a}{}
+\item{sequence_number}{Unique identifier}
+\item{US}{Is it a US address? 1=yes; 0=no}
+\item{source_a}{Source catalog for the record. 1=yes; 0=no
+
+(15 identified sources plus one "other source" category; 15 dummies created
+with "other" as the reference, hence omitted.)}
 \item{source_c}{}
 \item{source_b}{}
 \item{source_d}{}
@@ -24,15 +27,18 @@ A data frame with 2000 observations and 25 variables:
 \item{source_p}{}
 \item{source_x}{}
 \item{source_w}{}
-\item{Freq}{}
-\item{last_update_days_ago}{}
-\item{X1st_update_days_ago}{}
-\item{Web.order}{}
-\item{Gender.male}{}
-\item{Address_is_res}{}
-\item{Purchase}{}
-\item{Spending}{}
+\item{Freq}{Number of transactions in last year at source catalog}
+\item{last_update_days_ago}{How many days ago was last update to customer record}
+\item{X1st_update_days_ago}{How many days ago was 1st update to customer record}
+\item{Web.order}{Customer placed at least 1 order via web. 1=yes; 0=no}
+\item{Gender.male}{Customer is male. 1=yes; 0=no}
+\item{Address_is_res}{Address is a residence. 1=yes; 0=no}
+\item{Purchase}{Person made purchase in test mailing. 1=yes; 0=no}
+\item{Spending}{Amount spent by customer intest mailing ($)}
 }
+}
+\source{
+{Copyright 2016 statistics.com}
 }
 \usage{
 Tayko

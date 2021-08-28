@@ -7,25 +7,34 @@
 \format{
 A data frame with 3999 observations and 12 variables:
 \describe{
-\item{ID.}{}
-\item{Balance}{}
-\item{Qual_miles}{}
-\item{cc1_miles}{}
-\item{cc2_miles}{}
-\item{cc3_miles}{}
-\item{Bonus_miles}{}
-\item{Bonus_trans}{}
-\item{Flight_miles_12mo}{}
-\item{Flight_trans_12}{}
-\item{Days_since_enroll}{}
-\item{Award.}{}
+\item{ID.}{Unique ID}
+\item{Balance}{Number of miles eligible for award travel}
+\item{Qual_miles}{Number of miles counted as qualifying for Topflight status}
+\item{cc1_miles}{Number of miles earned with freq. flyer credit card in the past 12 months:
+1 = under 5,000; 2 = 5,000 - 10,000; 3 = 10,001 - 25,000; 4 = 25,001 - 50,000;
+5 = over 50,000}
+\item{cc2_miles}{Number of miles earned with Rewards credit card in the past 12 months (see cc1_miles)}
+\item{cc3_miles}{Number of miles earned with Small Business credit card in the past 12 months (see cc1_miles)}
+\item{Bonus_miles}{Number of miles earned from non-flight bonus transactions in the past 12 months}
+\item{Bonus_trans}{Number of non-flight bonus transactions in the past 12 months}
+\item{Flight_miles_12mo}{Number of flight miles in the past 12 months}
+\item{Flight_trans_12}{Number of flight transactions in the past 12 months}
+\item{Days_since_enroll}{Number of days since Enroll_date}
+\item{Award.}{Dummy variable for Last_award (1=not null, 0=null)}
 }
+}
+\source{
+{Based upon real business data; company names have been changed.
+Copyright 2016 Galit Shmueli and Peter Bruce}
 }
 \usage{
 EastWestAirlinesCluster
 }
 \description{
-Data
+East-West Airlines is trying to learn more about its customers.  Key issues
+are their flying patterns, earning and use of frequent flyer rewards, and
+use of the airline credit card.  The task is to identify customer segments
+via clustering.
 }
 \examples{
 head(EastWestAirlinesCluster)

@@ -11,10 +11,16 @@ A data frame with 248 observations and 2 variables:
 \item{Close}{}
 }
 }
+\source{
+{publicly available, for example, at \url{https://finance.yahoo.com}.
+These data are also used in "Data Analysis for Managers" by Albright, Winston & Zappe.}
+}
 \usage{
 WalMartStock
 }
 \description{
+{The series of Walmart daily closing prices between February 2001
+and February 2002.}
 Data
 }
 \examples{

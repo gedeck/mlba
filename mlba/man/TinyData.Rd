@@ -7,16 +7,22 @@
 \format{
 A data frame with 6 observations and 4 variables:
 \describe{
-\item{Obs.}{}
-\item{Fat}{}
-\item{Salt}{}
-\item{Acceptance}{}
+\item{Obs.}{unique identifier}
+\item{Fat}{relative presence of fat in cheese. (where 0 is the minimum amount possible in the manufacturing process, and 1 the maximum)}
+\item{Salt}{relative presence of salt in cheese. (where 0 is the minimum amount possible in the manufacturing process, and 1 the maximum)}
+\item{Acceptance}{Consumer taste preference; one of `like` or `dislike`}
 }
 }
 \usage{
 TinyData
 }
 \description{
+{Data includes information on a tasting score for a certain
+processed cheese. The two predictors are scores for fat and salt,
+indicating the relative presence of fat and salt in the particular cheese
+sample (where 0 is the minimum amount possible in the manufacturing process,
+and 1 the maximum). The outcome variable is the cheese sample’s consumer
+taste preference, where like or dislike indicate whether the consumer likes the cheese or not.}
 Data
 }
 \examples{

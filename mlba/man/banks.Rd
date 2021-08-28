@@ -8,7 +8,7 @@
 A data frame with 20 observations and 5 variables:
 \describe{
 \item{Obs}{}
-\item{Financial.Condition}{}
+\item{Financial.Condition}{1 = financially weak; 0 = financially strong}
 \item{TotCap.Assets}{}
 \item{TotExp.Assets}{}
 \item{TotLns.Lses.Assets}{}

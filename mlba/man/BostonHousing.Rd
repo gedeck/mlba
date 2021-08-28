@@ -7,27 +7,34 @@
 \format{
 A data frame with 506 observations and 14 variables:
 \describe{
-\item{CRIM}{}
-\item{ZN}{}
-\item{INDUS}{}
-\item{CHAS}{}
-\item{NOX}{}
-\item{RM}{}
-\item{AGE}{}
-\item{DIS}{}
-\item{RAD}{}
-\item{TAX}{}
-\item{PTRATIO}{}
-\item{LSTAT}{}
-\item{MEDV}{}
+\item{CRIM}{per capita crime rate by town}
+\item{ZN}{proportion of residential land zoned for lots over 25,000 sq.ft.}
+\item{INDUS}{proportion of non-retail business acres per town.}
+\item{CHAS}{Charles River dummy variable (1 if tract bounds river; 0 otherwise)}
+\item{NOX}{nitric oxides concentration (parts per 10 million)}
+\item{RM}{average number of rooms per dwelling}
+\item{AGE}{proportion of owner-occupied units built prior to 1940}
+\item{DIS}{weighted distances to five Boston employment centres}
+\item{RAD}{index of accessibility to radial highways}
+\item{TAX}{full-value property-tax rate per $10,000}
+\item{PTRATIO}{pupil-teacher ratio by town}
+\item{LSTAT}{\% lower status of the population}
+\item{MEDV}{Median value of owner-occupied homes in $1000}
 \item{CAT.MEDV}{}
 }
+}
+\source{
+{The data was originally published by Harrison, D. and Rubinfeld, D.L.
+'Hedonic prices and the demand for clean air',
+J. Environ. Economics & Management, vol.5, 81-102, 1978.}
 }
 \usage{
 BostonHousing
 }
 \description{
-Data
+This dataset contains information collected by the US Census Service concerning housing
+in the area of Boston Massachusetts. It was obtained from the StatLib archive
+(\url{http://lib.stat.cmu.edu/datasets/boston}).
 }
 \examples{
 BostonHousing

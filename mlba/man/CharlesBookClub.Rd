@@ -7,14 +7,14 @@
 \format{
 A data frame with 4000 observations and 24 variables:
 \describe{
-\item{Seq.}{}
-\item{ID.}{}
-\item{Gender}{}
-\item{M}{}
-\item{R}{}
-\item{F}{}
-\item{FirstPurch}{}
-\item{ChildBks}{}
+\item{Seq.}{Sequence number in the sample}
+\item{ID.}{ID# in the full dataset}
+\item{Gender}{0=male, 1=female}
+\item{M}{Monetary - total money spent on books}
+\item{R}{Recency - Months since last purchase}
+\item{F}{Frequency - Total number of purchases}
+\item{FirstPurch}{Months since first purchase}
+\item{ChildBks}{this and following - book categories}
 \item{YouthBks}{}
 \item{CookBks}{}
 \item{DoItYBks}{}
@@ -25,13 +25,16 @@ A data frame with 4000 observations and 24 variables:
 \item{ItalAtlas}{}
 \item{ItalArt}{}
 \item{Florence}{}
-\item{Related.Purchase}{}
-\item{Mcode}{}
-\item{Rcode}{}
-\item{Fcode}{}
+\item{Related.Purchase}{Number of related books purchased}
+\item{Mcode}{Recoding of M - see case description in DMBA and MLBA}
+\item{Rcode}{Recoding of R - see case description in DMBA and MLBA}
+\item{Fcode}{Recoding of F - see case description in DMBA and MLBA}
 \item{Yes_Florence}{}
 \item{No_Florence}{}
 }
+}
+\source{
+{Adapted with permission from The Bookbinders Club, prepared by Nissan Levin and Jacob Zahavi.}
 }
 \usage{
 CharlesBookClub

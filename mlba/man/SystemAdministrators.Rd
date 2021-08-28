@@ -7,10 +7,14 @@
 \format{
 A data frame with 75 observations and 3 variables:
 \describe{
-\item{Experience}{}
-\item{Training}{}
-\item{Completed.task}{}
+\item{Experience}{measures months of full-time system administrator experience}
+\item{Training}{measures the number of relevant training credits}
+\item{Completed.task}{either Yes or No, according to whether or not the
+administrator completed the tasks}
 }
+}
+\source{
+{Samprit Chatterjee}
 }
 \usage{
 SystemAdministrators

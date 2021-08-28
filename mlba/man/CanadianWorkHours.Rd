@@ -8,8 +8,11 @@
 A data frame with 35 observations and 2 variables:
 \describe{
 \item{Year}{}
-\item{Hours}{}
+\item{Hours}{average annual number of weekly hours spent by Canadian manufacturing workers}
 }
+}
+\source{
+{Ken Black (used by permission)}
 }
 \usage{
 CanadianWorkHours

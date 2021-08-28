@@ -7,7 +7,7 @@
 \format{
 A data frame with 4143 observations and 2 variables:
 \describe{
-\item{label}{}
+\item{label}{1: ad is relevant; -1 ad is not relevant}
 \item{text}{}
 }
 }
@@ -15,6 +15,12 @@ A data frame with 4143 observations and 2 variables:
 FarmAds
 }
 \description{
+Data on advertisements posted at a website that caters to the needs of
+a specific farming community. Each ad is in a row, and each ad labeled
+as either −1 (not relevant) or 1 (relevant). The goal is to develop a
+predictive model that can classify ads automatically.
+}
+\details{
 Data
 }
 \examples{

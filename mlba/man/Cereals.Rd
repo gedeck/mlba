@@ -7,31 +7,35 @@
 \format{
 A data frame with 77 observations and 16 variables:
 \describe{
-\item{name}{}
-\item{mfr}{}
-\item{type}{}
-\item{calories}{}
-\item{protein}{}
-\item{fat}{}
-\item{sodium}{}
-\item{fiber}{}
-\item{carbo}{}
-\item{sugars}{}
-\item{potass}{}
-\item{vitamins}{}
-\item{shelf}{}
-\item{weight}{}
-\item{cups}{}
-\item{rating}{}
+\item{name}{Name of cereal}
+\item{mfr}{Manufacturer of cereal where A = American Home Food Products; G = General Mills;
+           K =Kelloggs; N = Nabisco; P = Post; Q = Quaker Oats; R = Ralston Purina}
+\item{type}{cold or hot}
+\item{calories}{calories per serving}
+\item{protein}{grams of protein}
+\item{fat}{grams of fat}
+\item{sodium}{milligrams of sodium}
+\item{fiber}{grams of dietary fiber}
+\item{carbo}{grams of complex carbohydrates}
+\item{sugars}{grams of sugars}
+\item{potass}{milligrams of potassium}
+\item{vitamins}{vitamins and minerals - 0, 25, or 100, indicating the typical percentage of FDA recommended}
+\item{shelf}{display shelf (1, 2, or 3, counting from the floor)}
+\item{weight}{weight in ounces of one serving}
+\item{cups}{number of cups in one serving}
+\item{rating}{a rating of the cereals calculated by Consumer Reports}
 }
+}
+\source{
+{Data analysis for student learning (DASL)}
 }
 \usage{
 Cereals
 }
 \description{
-Data
+Cereals
 }
 \examples{
-Cereals
+head(Cereals)
 }
 \keyword{datasets}

@@ -10,25 +10,18 @@ A data frame with 20 observations and 2 variables:
 \item{Quarter}{}
 \item{Shipments}{}
 }
-
-A data frame with 20 observations and 2 variables:
-\describe{
-\item{Quarter}{}
-\item{Shipments}{}
 }
+\source{
+{Data courtesy Ken Black}
 }
 \usage{
 ApplianceShipments
-
-ApplianceShipments
 }
 \description{
-Data
-
-Data
+The series of quarterly shipments (in millions of dollars) of US household
+appliances between 1985 and 1989.
 }
 \examples{
-ApplianceShipments
-ApplianceShipments
+head(ApplianceShipments)
 }
 \keyword{datasets}

@@ -7,27 +7,30 @@
 \format{
 A data frame with 500 observations and 14 variables:
 \describe{
-\item{ID}{}
-\item{Age}{}
-\item{Experience}{}
-\item{Income}{}
-\item{ZIP.Code}{}
-\item{Family}{}
-\item{CCAvg}{}
-\item{Education}{}
-\item{Mortgage}{}
-\item{Personal.Loan}{}
-\item{Securities.Account}{}
-\item{CD.Account}{}
-\item{Online}{}
-\item{CreditCard}{}
+\item{ID}{Customer ID}
+\item{Age}{Customer's age in completed years}
+\item{Experience}{#years of professional experience}
+\item{Income}{Annual income of the customer ($000)}
+\item{ZIP.Code}{Home Address ZIP code}
+\item{Family}{Family size of the customer}
+\item{CCAvg}{Avg. spending on credit cards per month ($000)}
+\item{Education}{Education Level. 1: Undergrad; 2: Graduate; 3: Advanced/Professional}
+\item{Mortgage}{Value of house mortgage if any. ($000)}
+\item{Personal.Loan}{Did this customer accept the personal loan offered in the last campaign?}
+\item{Securities.Account}{Does the customer have a securities account with the bank?}
+\item{CD.Account}{Does the customer have a certificate of deposit (CD) account with the bank?}
+\item{Online}{Does the customer use internet banking facilities?}
+\item{CreditCard}{Does the customer use a credit card issued by UniversalBank?}
 }
+}
+\source{
+{Copyright Cytel, Inc. 2005}
 }
 \usage{
 UniversalBank
 }
 \description{
-Data
+{Synthetic dataset courtesy of \url{statistics.com}}
 }
 \examples{
 UniversalBank

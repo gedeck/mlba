@@ -7,21 +7,31 @@
 \format{
 A data frame with 10000 observations and 8 variables:
 \describe{
-\item{Purchase}{}
-\item{Age}{}
-\item{Hair.Color}{}
-\item{U.S..Region}{}
-\item{Validation}{}
-\item{Promotion_ord}{}
-\item{Gender_ord}{}
-\item{Residence_ord}{}
+\item{Purchase}{1: purchased; 0: not purchased}
+\item{Age}{age of customer}
+\item{Hair.Color}{one of `Black`, `Red`, `Blond`, or `Brown`}
+\item{U.S..Region}{one of `Southwest`, `Northwest`, `Northeast`, or `Southeast`}
+\item{Validation}{0: training set; 1: validation set}
+\item{Promotion_ord}{1: customer received a promotion; 0: did'n receive promotional material}
+\item{Gender_ord}{1: male; 0: female}
+\item{Residence_ord}{1: urban; 0: rural}
 }
+}
+\source{
+{SAS Institute, used by permission; sample of 10,000 observations from full 126,184 dataset}
 }
 \usage{
 HairCareProduct
 }
 \description{
-Data
+{
+Fictional data representing an uplift study. A promotion for a hair
+color product was sent out to a sample of potential customers.
+
+Promotional literature about a hair care product was sent to members
+of a buyers club. The goal is to determine which groups are most likely
+to make increased purchases as a result of receiving the promotion.
+}
 }
 \examples{
 head(HairCareProduct)

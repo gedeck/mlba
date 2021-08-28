@@ -7,20 +7,26 @@
 \format{
 A data frame with 999 observations and 5 variables:
 \describe{
-\item{ALCHL_I}{}
-\item{PROFIL_I_R}{}
-\item{SUR_COND}{}
-\item{VEH_INVL}{}
-\item{MAX_SEV_IR}{}
+\item{ALCHL_I}{1 = Alcohol involved, 2 = not involved}
+\item{PROFIL_I_R}{1 = level, 0 = other}
+\item{SUR_COND}{Surface conditions (1 = dry, 2 = wet, 3 = snow/slush, 4 = ice, 5 = sand/dirt/oil, 8 = other, 9 = unknown)}
+\item{VEH_INVL}{Number of vehicles involved}
+\item{MAX_SEV_IR}{0 = no injury, 1 = non-fatal inj., 2 = fatal inj.}
 }
 }
 \usage{
 accidentsnn
 }
 \description{
+Subset of the `accidents` dataset
+}
+\details{
 Data
 }
 \examples{
 head(accidentsnn)
+}
+\seealso{
+\code{\link{accidentsFull}} for the full dataset
 }
 \keyword{datasets}

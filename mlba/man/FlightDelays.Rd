@@ -7,26 +7,37 @@
 \format{
 A data frame with 2201 observations and 13 variables:
 \describe{
-\item{CRS_DEP_TIME}{}
-\item{CARRIER}{}
-\item{DEP_TIME}{}
-\item{DEST}{}
-\item{DISTANCE}{}
-\item{FL_DATE}{}
-\item{FL_NUM}{}
-\item{ORIGIN}{}
-\item{Weather}{}
-\item{DAY_WEEK}{}
+\item{CRS_DEP_TIME}{scheduled departure time}
+\item{CARRIER}{The airline. AA=American Airlines, Inc.;
+CO=Continental Air Lines, Inc.; DH=Atlantic Coast Airlines;
+DL=Delta Air Lines, Inc.; EV=Atlantic Southeast Airlines;
+FL=Airtran Airways Corporation; MQ=American Eagle Airlines,inc;
+OH=Comair, Inc.; RU=Continental Express Airline;
+UA=United Air Lines, Inc.; US=US Airways, Inc.}
+\item{DEP_TIME}{Actual departure time}
+\item{DEST}{Destination airport in NY: Kennedy (JFK), LaGuardia (LGA), Newark (EWR)}
+\item{DISTANCE}{Flight distance in miles}
+\item{FL_DATE}{Flight date}
+\item{FL_NUM}{Flight number}
+\item{ORIGIN}{Departure airport in Washingon DC: National (DCA),
+Baltimore-Washington (BWI), Dulles (IAD)}
+\item{Weather}{Whether the weather was inclement (1) or not (0)}
+\item{DAY_WEEK}{Day of week. 1=Mon, 2=Tues...}
 \item{DAY_OF_MONTH}{}
-\item{TAIL_NUM}{}
-\item{Flight.Status}{}
+\item{TAIL_NUM}{This number is airplane specific}
+\item{Flight.Status}{Whether the flight was delayed or on time (defined as
+arriving within 15 min of scheduled time)}
 }
+}
+\source{
+{Bureau of Transportation Statistics}
 }
 \usage{
 FlightDelays
 }
 \description{
-Data
+All flights in January 2004 out of 3 DC airports (WAS) into 3 NYC airports.
+Flights not cancelled
 }
 \examples{
 head(FlightDelays)

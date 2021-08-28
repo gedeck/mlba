@@ -13,11 +13,14 @@ A data frame with 16 observations and 4 variables:
 \item{Quarter}{}
 }
 }
+\source{
+{Chris Albright}
+}
 \usage{
 ToysRUsRevenues
 }
 \description{
-Data
+{The quarterly revenues of Toys “R” Us between 1992 and 1995}
 }
 \examples{
 ToysRUsRevenues

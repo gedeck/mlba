@@ -7,46 +7,49 @@
 \format{
 A data frame with 1436 observations and 39 variables:
 \describe{
-\item{Id}{}
-\item{Model}{}
-\item{Price}{}
-\item{Age_08_04}{}
-\item{Mfg_Month}{}
-\item{Mfg_Year}{}
-\item{KM}{}
-\item{Fuel_Type}{}
-\item{HP}{}
-\item{Met_Color}{}
-\item{Color}{}
-\item{Automatic}{}
-\item{CC}{}
-\item{Doors}{}
-\item{Cylinders}{}
-\item{Gears}{}
-\item{Quarterly_Tax}{}
-\item{Weight}{}
-\item{Mfr_Guarantee}{}
-\item{BOVAG_Guarantee}{}
-\item{Guarantee_Period}{}
-\item{ABS}{}
-\item{Airbag_1}{}
-\item{Airbag_2}{}
-\item{Airco}{}
-\item{Automatic_airco}{}
-\item{Boardcomputer}{}
-\item{CD_Player}{}
-\item{Central_Lock}{}
-\item{Powered_Windows}{}
-\item{Power_Steering}{}
-\item{Radio}{}
-\item{Mistlamps}{}
-\item{Sport_Model}{}
-\item{Backseat_Divider}{}
-\item{Metallic_Rim}{}
-\item{Radio_cassette}{}
-\item{Parking_Assistant}{}
-\item{Tow_Bar}{}
+\item{Id}{Record_ID; unique identifier}
+\item{Model}{Model Description}
+\item{Price}{Offer Price in EUROs}
+\item{Age_08_04}{Age in months as in August 2004}
+\item{Mfg_Month}{Manufacturing month (1-12)}
+\item{Mfg_Year}{Manufacturing year}
+\item{KM}{Accumulated Kilometers on odometer}
+\item{Fuel_Type}{Fuel Type. one of `Petrol`, `Diesel`, or `CNG`}
+\item{HP}{Horse Power}
+\item{Met_Color}{Metallic Color?  (Yes=1, No=0)}
+\item{Color}{Color (Blue, Red, Grey, Silver, Black, etc.)}
+\item{Automatic}{Automatic (Yes=1, No=0)}
+\item{CC}{Cylinder Volume in cubic centimeters}
+\item{Doors}{Number of doors}
+\item{Cylinders}{Number of cylinders}
+\item{Gears}{Number of gear positions}
+\item{Quarterly_Tax}{Quarterly road tax in EUROs}
+\item{Weight}{Weight in Kilograms}
+\item{Mfr_Guarantee}{Within Manufacturer's Guarantee period  (Yes=1, No=0)}
+\item{BOVAG_Guarantee}{BOVAG (Dutch dealer network) Guarantee  (Yes=1, No=0)}
+\item{Guarantee_Period}{Guarantee period in months}
+\item{ABS}{Anti-Lock Brake System (Yes=1, No=0)}
+\item{Airbag_1}{Driver_Airbag  (Yes=1, No=0)}
+\item{Airbag_2}{Passenger Airbag  (Yes=1, No=0)}
+\item{Airco}{Airconditioning  (Yes=1, No=0)}
+\item{Automatic_airco}{Automatic Airconditioning  (Yes=1, No=0)}
+\item{Boardcomputer}{Boardcomputer  (Yes=1, No=0)}
+\item{CD_Player}{CD Player  (Yes=1, No=0)}
+\item{Central_Lock}{Central Lock  (Yes=1, No=0)}
+\item{Powered_Windows}{Powered Windows  (Yes=1, No=0)}
+\item{Power_Steering}{Power Steering  (Yes=1, No=0)}
+\item{Radio}{Radio  (Yes=1, No=0)}
+\item{Mistlamps}{Mistlamps  (Yes=1, No=0)}
+\item{Sport_Model}{Sport Model  (Yes=1, No=0)}
+\item{Backseat_Divider}{Backseat Divider  (Yes=1, No=0)}
+\item{Metallic_Rim}{Metallic Rim  (Yes=1, No=0)}
+\item{Radio_cassette}{Radio Cassette  (Yes=1, No=0)}
+\item{Parking_Assistant}{Parking assistance system  (Yes=1, No=0)}
+\item{Tow_Bar}{Tow Bar  (Yes=1, No=0)}
 }
+}
+\source{
+{Copyright 2016 Nitin Patel, Galit Shmueli and Peter Bruce   }
 }
 \usage{
 ToyotaCorolla

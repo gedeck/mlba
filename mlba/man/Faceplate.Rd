@@ -16,11 +16,14 @@ A data frame with 10 observations and 7 variables:
 \item{Yellow}{}
 }
 }
+\source{
+{Copyright 2016 Galit Shmueli and Peter Bruce}
+}
 \usage{
 Faceplate
 }
 \description{
-Data
+Synthetic Data on Purchases of Phone Faceplates.
 }
 \examples{
 Faceplate

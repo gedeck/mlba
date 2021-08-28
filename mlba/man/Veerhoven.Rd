@@ -18,7 +18,7 @@ A data frame with 159 observations and 5 variables:
 Veerhoven
 }
 \description{
-Data
+{Data measuring happiness of countries. according to a 2006 Gallup survey.}
 }
 \examples{
 Veerhoven

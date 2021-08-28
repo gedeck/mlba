@@ -7,31 +7,34 @@
 \format{
 A data frame with 638 observations and 18 variables:
 \describe{
-\item{S_CODE}{}
-\item{S_CITY}{}
-\item{E_CODE}{}
-\item{E_CITY}{}
-\item{COUPON}{}
-\item{NEW}{}
-\item{VACATION}{}
-\item{SW}{}
-\item{HI}{}
-\item{S_INCOME}{}
-\item{E_INCOME}{}
-\item{S_POP}{}
-\item{E_POP}{}
-\item{SLOT}{}
-\item{GATE}{}
-\item{DISTANCE}{}
-\item{PAX}{}
-\item{FARE}{}
+\item{S_CODE}{starting airport's code}
+\item{S_CITY}{starting city}
+\item{E_CODE}{ending airport's code}
+\item{E_CITY}{ending city}
+\item{COUPON}{average number of coupons (a one-coupon flight is a non-stop flight, a two-coupon flight is a one stop flight, etc.) for that route}
+\item{NEW}{number of new carriers entering that route between Q3-96 and Q2-97}
+\item{VACATION}{whether a vacation route (Yes) or not (No); Florida and Las Vegas routes are generally considered vacation routes}
+\item{SW}{whether Southwest Airlines serves that route (Yes) or not (No)}
+\item{HI}{Herfindel Index – measure of market concentration (refer to BMGT 681)}
+\item{S_INCOME}{starting city's average personal income}
+\item{E_INCOME}{ending city's average personal income}
+\item{S_POP}{starting city's population}
+\item{E_POP}{ending city's population}
+\item{SLOT}{whether either endpoint airport is slot controlled or not; this is a measure of airport congestion}
+\item{GATE}{whether either endpoint airport has gate constraints or not; this is another measure of airport congestion}
+\item{DISTANCE}{distance between two endpoint airports in miles}
+\item{PAX}{number of passengers on that route during period of data collection}
+\item{FARE}{average fare on that route}
 }
+}
+\source{
+{Copyright 2016 Galit Shmueli and Peter Bruce}
 }
 \usage{
 Airfares
 }
 \description{
-Data
+Airfares
 }
 \examples{
 head(Airfares)

@@ -3,7 +3,7 @@
 \docType{data}
 \name{accidentsFull}
 \alias{accidentsFull}
-\title{accidents}
+\title{Accidents}
 \format{
 A data frame with 42183 observations and 24 variables:
 \describe{
@@ -35,10 +35,12 @@ Damage From The Crash Scene And No Medium Or Heavy Trucks Are Involved. 0 = not}
 \item{FATALITIES}{1 = yes, 0 = no}
 \item{MAX_SEV_IR}{0 = no injury, 1 = non-fatal inj., 2 = fatal inj.}
 }
-
-Source: US Dept. of Transportation, Bureau of Transportation Statistics,
+}
+\source{
+{US Dept. of Transportation, Bureau of Transportation Statistics,
 "TranStats," (www.transtats.bts.gov -- select "databases" then "General Estimate System (GES))
-http://www.transtats.bts.gov/Fields.asp?Table_ID=1158&SYS_Table_Name=T_GES_ACCIDENT&User_Table_Name=Accident&Year_Info=1&First_Year=1999&Last_Year=2001&Rate_Info=1&Frequency=Annual&Data_Frequency=Annual,Monthly&Map_Info=&Is_Survey=1&Univ_Filter=&Latest_Available_Data=2001
+\url{http://www.transtats.bts.gov/Fields.asp?Table_ID=1158&SYS_Table_Name=T_GES_ACCIDENT&User_Table_Name=Accident&Year_Info=1&First_Year=1999&Last_Year=2001&Rate_Info=1&Frequency=Annual&Data_Frequency=Annual,Monthly&Map_Info=&Is_Survey=1&Univ_Filter=&Latest_Available_Data=2001}}
+
 Note:  TranStats reports both variables with missing data, and their derived
 counterparts with imputed values filled in, denoted by an "I" at the end.
 Only one variant (the original or the derived) is included here. An "R" at the

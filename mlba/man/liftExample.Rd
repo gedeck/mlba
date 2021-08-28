@@ -15,7 +15,7 @@ A data frame with 24 observations and 2 variables:
 liftExample
 }
 \description{
-Data
+{Synthetic dataset to demonstrate lift}
 }
 \examples{
 head(liftExample)

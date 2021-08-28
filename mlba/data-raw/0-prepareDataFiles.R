@@ -74,6 +74,9 @@ gdp = read.csv(file.path('data-raw', 'gdp.csv.gz'), skip = 4, stringsAsFactors =
 names(gdp)[5] <- "GDP2015"
 use_data(gdp, overwrite=TRUE)
 
+GermanCredit = read.csv(file.path('data-raw', 'GermanCredit.csv.gz'), stringsAsFactors = TRUE)
+use_data(FlightDelays, overwrite=TRUE)
+
 HairCareProduct = read.csv(file.path('data-raw', 'Hair-Care-Product.csv.gz'))
 use_data(HairCareProduct, overwrite=TRUE)
 

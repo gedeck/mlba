@@ -16,10 +16,16 @@ A data frame with 180 observations and 7 variables:
 \item{dry.white}{}
 }
 }
+\source{
+{Website}
+}
 \usage{
 AustralianWines
 }
 \description{
+Monthly Australian sales of wine Jan 1980 - Jul 1995
+}
+\details{
 Data
 }
 \examples{

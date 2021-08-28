@@ -11,11 +11,14 @@ A data frame with 36 observations and 2 variables:
 \item{Shampoo.Sales}{}
 }
 }
+\source{
+{Time Series Data Library, \url{https://pkg.yangzhuoranyang.com/tsdl/}}
+}
 \usage{
 ShampooSales
 }
 \description{
-Data
+{Data on the monthly sales of a certain shampoo over a 3-year period.}
 }
 \examples{
 ShampooSales
