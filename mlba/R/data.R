@@ -134,6 +134,45 @@
 "Airfares"
 
 
+#' Bankruptcy
+#'
+#' Data
+#' @format A data frame with 132 observations and 27 variables:
+#' \describe{
+#' \item{NO}{}
+#' \item{D}{}
+#' \item{YR}{}
+#' \item{R1}{}
+#' \item{R2}{}
+#' \item{R3}{}
+#' \item{R4}{}
+#' \item{R5}{}
+#' \item{R6}{}
+#' \item{R7}{}
+#' \item{R8}{}
+#' \item{R9}{}
+#' \item{R10}{}
+#' \item{R11}{}
+#' \item{R12}{}
+#' \item{R13}{}
+#' \item{R14}{}
+#' \item{R15}{}
+#' \item{R16}{}
+#' \item{R17}{}
+#' \item{R18}{}
+#' \item{R19}{}
+#' \item{R20}{}
+#' \item{R21}{}
+#' \item{R22}{}
+#' \item{R23}{}
+#' \item{R24}{}
+#' }
+#'
+#' @examples
+#' head(Bankruptcy)
+"Bankruptcy"
+
+
 #' Banks
 #'
 #' Data
@@ -239,6 +278,28 @@
 #' @examples
 #' BostonHousing
 "BostonHousing"
+
+
+#' CatalogCrossSell
+#'
+#' @format A data frame with 4998 observations and 10 variables:
+#' \describe{
+#' \item{Customer.Number}{}
+#' \item{Clothing.Division}{}
+#' \item{Housewares.Division}{}
+#' \item{Health.Products.Division}{}
+#' \item{Automotive.Division}{}
+#' \item{Personal.Electronics.Division}{}
+#' \item{Computers.Division}{}
+#' \item{Garden.Division}{}
+#' \item{Novelty.Gift.Division}{}
+#' \item{Jewelry.Division}{}
+#' }
+#' @source{}
+#'
+#' @examples
+#' head(CatalogCrossSell)
+"CatalogCrossSell"
 
 
 #' Cereals
@@ -609,6 +670,78 @@
 #' @examples
 #' head(FlightDelays)
 "FlightDelays"
+
+
+#' Fundraising
+#'
+#' Data
+#' @format A data frame with 3120 observations and 24 variables:
+#' \describe{
+#' \item{Row.Id}{}
+#' \item{Row.Id.}{}
+#' \item{zipconvert_2}{}
+#' \item{zipconvert_3}{}
+#' \item{zipconvert_4}{}
+#' \item{zipconvert_5}{}
+#' \item{homeowner.dummy}{}
+#' \item{NUMCHLD}{}
+#' \item{INCOME}{}
+#' \item{gender.dummy}{}
+#' \item{WEALTH}{}
+#' \item{HV}{}
+#' \item{Icmed}{}
+#' \item{Icavg}{}
+#' \item{IC15}{}
+#' \item{NUMPROM}{}
+#' \item{RAMNTALL}{}
+#' \item{MAXRAMNT}{}
+#' \item{LASTGIFT}{}
+#' \item{totalmonths}{}
+#' \item{TIMELAG}{}
+#' \item{AVGGIFT}{}
+#' \item{TARGET_B}{}
+#' \item{TARGET_D}{}
+#' }
+#'
+#' @examples
+#' head(Fundraising)
+"Fundraising"
+
+
+#' FutureFundraising
+#'
+#' Data
+#' @format A data frame with 2000 observations and 24 variables:
+#' \describe{
+#' \item{Row.Id}{}
+#' \item{Row.Id.}{}
+#' \item{zipconvert_2}{}
+#' \item{zipconvert_3}{}
+#' \item{zipconvert_4}{}
+#' \item{zipconvert_5}{}
+#' \item{homeowner.dummy}{}
+#' \item{NUMCHLD}{}
+#' \item{INCOME}{}
+#' \item{gender.dummy}{}
+#' \item{WEALTH}{}
+#' \item{HV}{}
+#' \item{Icmed}{}
+#' \item{Icavg}{}
+#' \item{IC15}{}
+#' \item{NUMPROM}{}
+#' \item{RAMNTALL}{}
+#' \item{MAXRAMNT}{}
+#' \item{LASTGIFT}{}
+#' \item{totalmonths}{}
+#' \item{TIMELAG}{}
+#' \item{AVGGIFT}{}
+#' \item{TARGET_B}{}
+#' \item{TARGET_D}{}
+#' }
+#'
+#' @examples
+#' head(FutureFundraising)
+"FutureFundraising"
 
 
 #' GDP
@@ -1487,6 +1620,22 @@
 #' @examples
 #' AustralianWines
 "AustralianWines"
+
+
+#' bicup2006
+#'
+#' Data
+#' @format A data frame with 1512 observations and 3 variables:
+#' \describe{
+#' \item{DATE}{}
+#' \item{TIME}{}
+#' \item{DEMAND}{}
+#' }
+#' @source{Ken Black (used by permission)}
+#'
+#' @examples
+#' bicup2006
+"bicup2006"
 
 
 #' CanadianWorkHours

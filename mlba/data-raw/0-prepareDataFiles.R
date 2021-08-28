@@ -24,15 +24,24 @@ file.copy(from=file.path('data-raw', 'AutoAndElectronics.zip'),
           to=file.path('inst', 'extdata', 'AutoAndElectronics.zip'),
           overwrite=TRUE, copy.mode=TRUE)
 
+Bankruptcy = read.csv(file.path('data-raw', 'Bankruptcy.csv.gz'))
+use_data(Bankruptcy, overwrite=TRUE)
+
 banks = read.csv(file.path('data-raw', 'banks.csv.gz'))
 use_data(banks, overwrite=TRUE)
 
 BathSoapHousehold = read.csv(file.path('data-raw', 'BathSoapHousehold.csv.gz'))
 use_data(BathSoapHousehold, overwrite=TRUE)
 
+bicup2006 = read.csv(file.path('data-raw', 'bicup2006.csv.gz'))
+use_data(bicup2006, overwrite=TRUE)
+
 BostonHousing = read.csv(file.path('data-raw', 'BostonHousing.csv.gz')) %>%
   rename(CAT.MEDV=CAT..MEDV)
 use_data(BostonHousing, overwrite=TRUE)
+
+CatalogCrossSell = read.csv(file.path('data-raw', 'CatalogCrossSell.csv.gz'))
+use_data(CatalogCrossSell, overwrite=TRUE)
 
 Cereals = read.csv(file.path('data-raw', 'Cereals.csv.gz'))
 use_data(Cereals, overwrite=TRUE)
@@ -76,6 +85,12 @@ use_data(Faceplate, overwrite=TRUE)
 
 FlightDelays = read.csv(file.path('data-raw', 'FlightDelays.csv.gz'), stringsAsFactors = TRUE)
 use_data(FlightDelays, overwrite=TRUE)
+
+Fundraising = read.csv(file.path('data-raw', 'Fundraising.csv.gz'), stringsAsFactors = TRUE)
+use_data(Fundraising, overwrite=TRUE)
+
+FutureFundraising = read.csv(file.path('data-raw', 'FutureFundraising.csv.gz'), stringsAsFactors = TRUE)
+use_data(FutureFundraising, overwrite=TRUE)
 
 gdp = read.csv(file.path('data-raw', 'gdp.csv.gz'), skip = 4, stringsAsFactors = FALSE)
 names(gdp)[5] <- "GDP2015"
