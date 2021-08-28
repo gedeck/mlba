@@ -151,6 +151,64 @@
 "banks"
 
 
+#' BathSoapHousehold
+#'
+#' Data
+#' @format A data frame with 600 observations and 46 variables:
+#' \describe{
+#' \item{Member.id}{}
+#' \item{SEC}{}
+#' \item{FEH}{}
+#' \item{MT}{}
+#' \item{SEX}{}
+#' \item{AGE}{}
+#' \item{EDU}{}
+#' \item{HS}{}
+#' \item{CHILD}{}
+#' \item{CS}{}
+#' \item{Affluence.Index}{}
+#' \item{No..of.Brands}{}
+#' \item{Brand.Runs}{}
+#' \item{Total.Volume}{}
+#' \item{No..of..Trans}{}
+#' \item{Value}{}
+#' \item{Trans...Brand.Runs}{}
+#' \item{Vol.Tran}{}
+#' \item{Avg..Price}{}
+#' \item{Pur.Vol.No.Promo....}{}
+#' \item{Pur.Vol.Promo.6..}{}
+#' \item{Pur.Vol.Other.Promo..}{}
+#' \item{Br..Cd..57..144}{}
+#' \item{Br..Cd..55}{}
+#' \item{Br..Cd..272}{}
+#' \item{Br..Cd..286}{}
+#' \item{Br..Cd..24}{}
+#' \item{Br..Cd..481}{}
+#' \item{Br..Cd..352}{}
+#' \item{Br..Cd..5}{}
+#' \item{Others.999}{}
+#' \item{Pr.Cat.1}{}
+#' \item{Pr.Cat.2}{}
+#' \item{Pr.Cat.3}{}
+#' \item{Pr.Cat.4}{}
+#' \item{PropCat.5}{}
+#' \item{PropCat.6}{}
+#' \item{PropCat.7}{}
+#' \item{PropCat.8}{}
+#' \item{PropCat.9}{}
+#' \item{PropCat.10}{}
+#' \item{PropCat.11}{}
+#' \item{PropCat.12}{}
+#' \item{PropCat.13}{}
+#' \item{PropCat.14}{}
+#' \item{PropCat.15}{}
+#' }
+#'
+#' @examples
+#' head(BathSoapHousehold)
+"BathSoapHousehold"
+
+
 #' Boston Housing
 #'
 #' This dataset contains information collected by the US Census Service concerning housing

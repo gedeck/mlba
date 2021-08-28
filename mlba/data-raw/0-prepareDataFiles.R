@@ -27,6 +27,9 @@ file.copy(from=file.path('data-raw', 'AutoAndElectronics.zip'),
 banks = read.csv(file.path('data-raw', 'banks.csv.gz'))
 use_data(banks, overwrite=TRUE)
 
+BathSoapHousehold = read.csv(file.path('data-raw', 'BathSoapHousehold.csv.gz'))
+use_data(BathSoapHousehold, overwrite=TRUE)
+
 BostonHousing = read.csv(file.path('data-raw', 'BostonHousing.csv.gz')) %>%
   rename(CAT.MEDV=CAT..MEDV)
 use_data(BostonHousing, overwrite=TRUE)
