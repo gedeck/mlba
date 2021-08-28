@@ -8,6 +8,7 @@
 A data frame with 4987 observations and 16 variables:
 \describe{
 \item{ID.}{Unique ID}
+\item{Topflight}{}
 \item{Balance}{Number of miles eligible for award travel}
 \item{Qual_miles}{Number of miles counted as qualifying for Topflight status}
 \item{cc1_miles}{Number of miles earned with freq. flyer credit card in the past 12 months:
@@ -19,9 +20,6 @@ A data frame with 4987 observations and 16 variables:
 \item{Bonus_trans}{Number of non-flight bonus transactions in the past 12 months}
 \item{Flight_miles_12mo}{Number of flight miles in the past 12 months}
 \item{Flight_trans_12}{Number of flight transactions in the past 12 months}
-\item{Days_since_enroll}{Number of days since Enroll_date}
-\item{Award.}{Dummy variable for Last_award (1=not null, 0=null)}
-\item{Topflight}{}
 \item{Online_12}{}
 \item{Email}{E-mail address on file. 1= yes, 0 =no?}
 \item{Club_member}{Member of the airline's club (paid membership), 1=yes, 0=no}

@@ -64,9 +64,6 @@ A data frame with 1000 observations and 32 variables:
 \item{RESPONSE}{Credit rating is good. 0: No, 1: Yes}
 }
 }
-\source{
-{}
-}
 \usage{
 GermanCredit
 }

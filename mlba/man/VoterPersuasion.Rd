@@ -17,73 +17,74 @@ sample of set_no=3 voters}
 \item{HH_NR}{Number of Republicans in this household (Derived)}
 \item{HH_NI}{Number of independents in this household (Derived)}
 \item{MED_AGE}{Census Block Group median age (Census)}
-\item{NH_WHITE}{\% Non-Hispanic Caucasian	(Census)}
-\item{NH_AA}{\% Non-Hispanic African-American	(Census)}
-\item{NH_ASIAN}{\% Non-Hispanic Asian	(Census)}
-\item{NH_MULT}{\% Non-Hispanic multi-race	(Census)}
-\item{HISP}{\% Hispanic	(Census)}
-\item{COMM_LT10}{\% of workers who commute less than 10 minutes each way	(Census)}
-\item{COMM_609P}{\% of workers who commute 60+ minutes each way	(Census)}
-\item{MED_HH_INC}{Median household income	(Census)}
-\item{COMM_CAR}{\% of workers who commute by themselves by car	(Census)}
-\item{COMM_CP}{\% of workers who carpool	(Census)}
-\item{COMM_PT}{\% of workers who take public transportation	(Census)}
-\item{COMM_WALK}{\% of workers who walk to work	(Census)}
-\item{KIDS}{\% of families with children under 18	(Census)}
-\item{M_MAR}{\% of adult men who are married	(Census)}
-\item{F_MAR}{\% of adult females who are married	(Census)}
-\item{ED_4COL}{\% of adult population with at least 4 years of college	(Census)}
-\item{GENDER_F}{Flag - is female	(Voterfile)}
-\item{GENDER_M}{Flag - is male	(Voterfile)}
-\item{H_AFDLN3P}{Flag - household all-female different last names, 3+ members	(Derived)}
-\item{H_F1}{Flag - household single female	(Derived)}
-\item{H_M1}{Flag - Single male	(Derived)}
-\item{H_MFDLN3P}{Flag - household male & female, different last names, 3+ members	(Derived)}
-\item{PARTY_D}{Flag - Democrat	(Voterfile)}
-\item{PARTY_I}{Flag - Independent	(Voterfile)}
-\item{PARTY_R}{Flag - Republican	(Voterfile)}
-\item{VPP_08}{Flag - vote history - voted presidential primary 2008	(Derived)}
-\item{VPP_12}{Flag - vote history - voted presidential primary 2012	(Derived)}
-\item{VPR_08}{Flag - vote history - voted primary 2008	(Derived)}
-\item{VPR_10}{Flag - vote history - voted primary 2010	(Derived)}
-\item{VPR_12}{Flag - vote history - voted primary 2012	(Derived)}
-\item{VG_04}{Flag - vote history - voted general election 2004	(Derived)}
-\item{VG_06}{Flag - vote history - voted general election 2006	(Derived)}
-\item{VG_08}{Flag - vote history - voted general election 2008	(Derived)}
-\item{VG_10}{Flag - vote history - voted general election 2010	(Derived)}
-\item{VG_12}{Flag - vote history - voted general election 2012	(Derived)}
-\item{PP_PELIG}{Voted in \% of presidential primaries in which they were eligible	(Derived)}
-\item{PR_PELIG}{Voted in \% of non-presidential primaries in which they were eligible	(Derived)}
-\item{AP_PELIG}{Voted in \% of any kind of primary in which they were eligible	(Derived)}
-\item{G_PELIG}{Voted in \% of general elections in which they were eligible	(Derived)}
-\item{E_PELIG}{Voted in \% of any kind of election in which they were eligible	(Derived)}
-\item{NL5G}{# of the last 5 elections in which the voter voted	(Derived)}
-\item{NL3PR}{# of last 3 primaries in which the voter voted	(Derived)}
-\item{NL5AP}{# of last 5 primaries of any kind in which the voter voted	(Derived)}
-\item{NL2PP}{# of last 2 presidential primaries in which the voter voted	(Derived)}
-\item{REG_DAYS}{Days since the voter registered to vote at their current address	(Derived)}
-\item{UPSCALEBUY}{Upscale Buyer In Home	(Commercial Data)}
-\item{UPSCALEMAL}{Upscale Male Buyer In Home	(Commercial Data)}
-\item{UPSCALEFEM}{Upscale Female Buyer In Home	(Commercial Data)}
-\item{BOOKBUYERI}{Book Buyer In Home	(Commercial Data)}
-\item{FAMILYMAGA}{Family Magazine In Home	(Commercial Data)}
-\item{FEMALEORIE}{Female Oriented Magazine In Home	(Commercial Data)}
-\item{RELIGIOUSM}{Religious Magazine In Home	(Commercial Data)}
-\item{GARDENINGM}{Gardening Magazine In Home	(Commercial Data)}
-\item{CULINARYIN}{Culinary Interest Magazine In Home	(Commercial Data)}
-\item{HEALTHFITN}{Health Fitness Magazine In Home	(Commercial Data)}
-\item{DOITYOURSE}{Do It Yourselfer Magazine In Home	(Commercial Data)}
-\item{FINANCIALM}{Financial Magazine In Home	(Commercial Data)}
-\item{RELIGIOUSC}{Religious Contributor In Home	(Commercial Data)}
-\item{POLITICALC}{Political Contributer In Home	(Commercial Data)}
-\item{MEDIANEDUC}{Median Education Years	(Commercial Data)}
-\item{CAND1S}{Wave 1 candidate ID with strenght of support.  SD=Strong Democrat,
-      LD=Lean Democrat, U=Undecided, LR=Lean Republican, SR=Strong Republican	(Synthetic)}
-\item{CAND2S}{Wave 2 candidate ID with strenght of support	(Synthetic)}
-\item{MESSAGE_A}{Flag indicating if the voter received message A	(Synthetic)}
-\item{MESSAGE_A_REV}{Flag indicating if the voter received message B	(Synthetic)}
+\item{NH_WHITE}{\% Non-Hispanic Caucasian (Census)}
+\item{NH_AA}{\% Non-Hispanic African-American (Census)}
+\item{NH_ASIAN}{\% Non-Hispanic Asian (Census)}
+\item{NH_MULT}{\% Non-Hispanic multi-race (Census)}
+\item{HISP}{\% Hispanic (Census)}
+\item{COMM_LT10}{\% of workers who commute less than 10 minutes each way (Census)}
+\item{COMM_609P}{\% of workers who commute 60+ minutes each way (Census)}
+\item{MED_HH_INC}{Median household income (Census)}
+\item{COMM_CAR}{\% of workers who commute by themselves by car (Census)}
+\item{COMM_CP}{\% of workers who carpool (Census)}
+\item{COMM_PT}{\% of workers who take public transportation (Census)}
+\item{COMM_WALK}{\% of workers who walk to work (Census)}
+\item{KIDS}{\% of families with children under 18 (Census)}
+\item{M_MAR}{\% of adult men who are married (Census)}
+\item{F_MAR}{\% of adult females who are married (Census)}
+\item{ED_4COL}{\% of adult population with at least 4 years of college (Census)}
+\item{GENDER_F}{Flag - is female (Voterfile)}
+\item{GENDER_M}{Flag - is male (Voterfile)}
+\item{H_AFDLN3P}{Flag - household all-female different last names, 3+ members (Derived)}
+\item{H_F1}{Flag - household single female (Derived)}
+\item{H_M1}{Flag - Single male (Derived)}
+\item{H_MFDLN3P}{Flag - household male & female, different last names, 3+ members (Derived)}
+\item{PARTY_D}{Flag - Democrat (Voterfile)}
+\item{PARTY_I}{Flag - Independent (Voterfile)}
+\item{PARTY_R}{Flag - Republican (Voterfile)}
+\item{VPP_08}{Flag - vote history - voted presidential primary 2008 (Derived)}
+\item{VPP_12}{Flag - vote history - voted presidential primary 2012 (Derived)}
+\item{VPR_08}{Flag - vote history - voted primary 2008 (Derived)}
+\item{VPR_10}{Flag - vote history - voted primary 2010 (Derived)}
+\item{VPR_12}{Flag - vote history - voted primary 2012 (Derived)}
+\item{VG_04}{Flag - vote history - voted general election 2004 (Derived)}
+\item{VG_06}{Flag - vote history - voted general election 2006 (Derived)}
+\item{VG_08}{Flag - vote history - voted general election 2008 (Derived)}
+\item{VG_10}{Flag - vote history - voted general election 2010 (Derived)}
+\item{VG_12}{Flag - vote history - voted general election 2012 (Derived)}
+\item{PP_PELIG}{Voted in \% of presidential primaries in which they were eligible (Derived)}
+\item{PR_PELIG}{Voted in \% of non-presidential primaries in which they were eligible (Derived)}
+\item{AP_PELIG}{Voted in \% of any kind of primary in which they were eligible (Derived)}
+\item{G_PELIG}{Voted in \% of general elections in which they were eligible (Derived)}
+\item{E_PELIG}{Voted in \% of any kind of election in which they were eligible (Derived)}
+\item{NL5G}{# of the last 5 elections in which the voter voted (Derived)}
+\item{NL3PR}{# of last 3 primaries in which the voter voted (Derived)}
+\item{NL5AP}{# of last 5 primaries of any kind in which the voter voted (Derived)}
+\item{NL2PP}{# of last 2 presidential primaries in which the voter voted (Derived)}
+\item{REG_DAYS}{Days since the voter registered to vote at their current address (Derived)}
+\item{UPSCALEBUY}{Upscale Buyer In Home (Commercial Data)}
+\item{UPSCALEMAL}{Upscale Male Buyer In Home (Commercial Data)}
+\item{UPSCALEFEM}{Upscale Female Buyer In Home (Commercial Data)}
+\item{BOOKBUYERI}{Book Buyer In Home (Commercial Data)}
+\item{FAMILYMAGA}{Family Magazine In Home (Commercial Data)}
+\item{FEMALEORIE}{Female Oriented Magazine In Home (Commercial Data)}
+\item{RELIGIOUSM}{Religious Magazine In Home (Commercial Data)}
+\item{GARDENINGM}{Gardening Magazine In Home (Commercial Data)}
+\item{CULINARYIN}{Culinary Interest Magazine In Home (Commercial Data)}
+\item{HEALTHFITN}{Health Fitness Magazine In Home (Commercial Data)}
+\item{DOITYOURSE}{Do It Yourselfer Magazine In Home (Commercial Data)}
+\item{FINANCIALM}{Financial Magazine In Home (Commercial Data)}
+\item{RELIGIOUSC}{Religious Contributor In Home (Commercial Data)}
+\item{POLITICALC}{Political Contributer In Home (Commercial Data)}
+\item{MEDIANEDUC}{Median Education Years (Commercial Data)}
+\item{CAND1S}{Wave 1 candidate ID with strenght of support.
+SD=Strong Democrat, LD=Lean Democrat, U=Undecided,
+LR=Lean Republican, SR=Strong Republican (Synthetic)}
+\item{CAND2S}{Wave 2 candidate ID with strenght of support (Synthetic)}
+\item{MESSAGE_A}{Flag indicating if the voter received message A (Synthetic)}
+\item{MESSAGE_A_REV}{Flag indicating if the voter received message B (Synthetic)}
 \item{I3}{Independent 3-way.  Y if voter is an independent or minor party member.
-     N if Democrat or Republican}
+   N if Democrat or Republican}
 \item{CAND1_UND}{Undecided in wave 1 IDs}
 \item{CAND2_UND}{Undecided in wave 2 IDs}
 \item{MOVED_AD}{Moved to be more supportive of the Democratic candidate.  Stronger support for the Democrat or weaker support for the Republican in wave 2 than in wave 1.}

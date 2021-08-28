@@ -53,6 +53,10 @@ EastWestAirlinesCluster = read.csv(file.path('data-raw', 'EastWestAirlinesCluste
 use_data(EastWestAirlinesCluster, overwrite=TRUE)
 
 EastWestAirlinesNN = read.csv(file.path('data-raw', 'EastWestAirlinesNN.csv.gz'))
+EastWestAirlinesNN = rename(EastWestAirlinesNN,
+                            cc1_miles = cc1_miles.,
+                            cc2_miles = cc2_miles.,
+                            cc3_miles = cc3_miles.)
 use_data(EastWestAirlinesNN, overwrite=TRUE)
 
 eBayAuctions = read.csv(file.path('data-raw', 'eBayAuctions.csv.gz'))
@@ -79,6 +83,9 @@ use_data(GermanCredit, overwrite=TRUE)
 
 HairCareProduct = read.csv(file.path('data-raw', 'Hair-Care-Product.csv.gz'))
 use_data(HairCareProduct, overwrite=TRUE)
+
+LaptopSales = read.csv(file.path('data-raw', 'LaptopSales.csv.gz'), stringsAsFactors = FALSE)
+use_data(LaptopSales, overwrite=TRUE)
 
 LaptopSalesJanuary2008 = read.csv(file.path('data-raw', 'LaptopSalesJanuary2008.csv.gz'), stringsAsFactors = FALSE)
 use_data(LaptopSalesJanuary2008, overwrite=TRUE)
@@ -113,6 +120,9 @@ use_data(SystemAdministrators, overwrite=TRUE)
 
 Tayko = read.csv(file.path('data-raw', 'Tayko.csv.gz'))
 use_data(Tayko, overwrite=TRUE)
+
+TaxiCancellationCase = read.csv(file.path('data-raw', 'Taxi-cancellation-case.csv.gz'))
+use_data(TaxiCancellationCase, overwrite=TRUE)
 
 TinyData = read.csv(file.path('data-raw', 'TinyData.csv.gz'), stringsAsFactors = TRUE)
 use_data(TinyData, overwrite=TRUE)

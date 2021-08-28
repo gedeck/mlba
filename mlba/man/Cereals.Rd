@@ -9,7 +9,7 @@ A data frame with 77 observations and 16 variables:
 \describe{
 \item{name}{Name of cereal}
 \item{mfr}{Manufacturer of cereal where A = American Home Food Products; G = General Mills;
-           K =Kelloggs; N = Nabisco; P = Post; Q = Quaker Oats; R = Ralston Purina}
+     K =Kelloggs; N = Nabisco; P = Post; Q = Quaker Oats; R = Ralston Purina}
 \item{type}{cold or hot}
 \item{calories}{calories per serving}
 \item{protein}{grams of protein}
