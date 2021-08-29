@@ -295,7 +295,6 @@
 #' \item{Novelty.Gift.Division}{}
 #' \item{Jewelry.Division}{}
 #' }
-#' @source{}
 #'
 #' @examples
 #' head(CatalogCrossSell)
@@ -858,41 +857,6 @@
 #' @examples
 #' head(HairCareProduct)
 "HairCareProduct"
-
-#' Laptop Sales
-#'
-#' @description{The laptop sales data were part of the ENBIS 2009 Challenge in
-#' Industrial Statistics.}
-#'
-#' Data
-#' @format A data frame with 7956 observations and 17 variables:
-#' \describe{
-#' \item{Date}{purchase date}
-#' \item{Configuration}{A numerical code representing a combination of screen
-#' size, battery life, RAM, etc. Each code corresponds to a particular combination.}
-#' \item{Retail.Price}{price of laptop in GBP}
-#' \item{Screen.Size..Inches.}{screen size of laptop (Inches)}
-#' \item{Battery.Life..Hours.}{battery life of laptop (Hours)}
-#' \item{RAM..GB.}{RAM size of laptop(GB)}
-#' \item{Processor.Speeds..GHz.}{processor speed of laptop (GHz)}
-#' \item{Integrated.Wireless.}{whether the laptop has integrated wireless or not}
-#' \item{HD.Size..GB.}{HD size of laptop (GB)}
-#' \item{Bundled.Applications.}{whether the laptop comes with bundled applications or not}
-#' \item{Customer.Postcode}{postcode in London of the customer}
-#' \item{Store.Postcode}{postcode in London of the store}
-#' \item{customer.X}{X geo coordinates for customer location.}
-#' \item{customer.Y}{Y geo coordinates for customer location.}
-#' \item{store.X}{X geo coordinates for store location}
-#' \item{store.Y}{Y geo coordinates for store location}
-#' }
-#' @source{The laptop sales data were part of the ENBIS 2009 Challenge
-#' in Industrial Statistics}
-#'
-#' @seealso \code{\link{LaptopSalesJanuary2008}} for a subset of this dataset
-#'
-#' @examples
-#' head(LaptopSales)
-"LaptopSales"
 
 
 #' Laptop Sales January 2008

@@ -19,9 +19,6 @@ A data frame with 4998 observations and 10 variables:
 \item{Jewelry.Division}{}
 }
 }
-\source{
-{}
-}
 \usage{
 CatalogCrossSell
 }
