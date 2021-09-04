@@ -8,24 +8,24 @@
 A data frame with 10000 observations and 19 variables:
 \describe{
 \item{row.}{}
-\item{user_id}{}
-\item{vehicle_model_id}{}
-\item{package_id}{}
-\item{travel_type_id}{}
-\item{from_area_id}{}
-\item{to_area_id}{}
-\item{from_city_id}{}
-\item{to_city_id}{}
-\item{from_date}{}
-\item{to_date}{}
-\item{online_booking}{}
-\item{mobile_site_booking}{}
-\item{booking_created}{}
-\item{from_lat}{}
-\item{from_long}{}
-\item{to_lat}{}
-\item{to_long}{}
-\item{Car_Cancellation}{}
+\item{user_id}{the ID of the customer (based on mobile number)}
+\item{vehicle_model_id}{vehicle model type.}
+\item{package_id}{type of package (1=4hrs & 40kms, 2=8hrs & 80kms, 3=6hrs & 60kms, 4= 10hrs & 100kms, 5=5hrs & 50kms, 6=3hrs & 30kms, 7=12hrs & 120kms)}
+\item{travel_type_id}{type of travel (1=long distance, 2= point to point, 3= hourly rental).}
+\item{from_area_id}{unique identifier of area. Applicable only for point-to-point travel and packages}
+\item{to_area_id}{unique identifier of area. Applicable only for point-to-point travel}
+\item{from_city_id}{unique identifier of city}
+\item{to_city_id}{unique identifier of city (only for intercity)}
+\item{from_date}{time stamp of requested trip start}
+\item{to_date}{time stamp of trip end}
+\item{online_booking}{if booking was done on desktop website}
+\item{mobile_site_booking}{if booking was done on mobile website}
+\item{booking_created}{time stamp of booking}
+\item{from_lat}{latitude of from area}
+\item{from_long}{longitude of from area}
+\item{to_lat}{latitude of to area}
+\item{to_long}{longitude of to area}
+\item{Car_Cancellation}{1=trip cancelled; 0=trip not cancelled}
 }
 }
 \source{

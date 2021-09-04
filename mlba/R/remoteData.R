@@ -57,4 +57,4 @@ LaptopSales <- function() {
 #' @examples
 #' \dontrun{corpus <- Corpus(ZipSource(AutoAndElectronics, recursive=True))}
 #' @export
-AutoAndElectronics <- 'https://github.com/gedeck/dmba/raw/master/src/dmba/csvFiles/AutosAndElectronics.zip'
+AutoAndElectronics <- 'https://github.com/gedeck/dmba/raw/master/src/dmba/csvFiles/AutoAndElectronics.zip'

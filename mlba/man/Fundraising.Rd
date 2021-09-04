@@ -9,28 +9,40 @@ A data frame with 3120 observations and 24 variables:
 \describe{
 \item{Row.Id}{}
 \item{Row.Id.}{}
-\item{zipconvert_2}{}
+\item{zipconvert_2}{Zipcode group (zipcodes were grouped into 5 groups;
+only 4 are needed for analysis since if a potential donor falls into none of
+the four he or she must be in the other group.  Inclusion of all five variables
+would be redundant and cause some modeling techniques to fail. A "1" indicates
+the potential donor belongs to this zip group.)
+00000-19999  =>  1  (omitted for above reason);
+20000-39999  =>  zipconvert_2;
+40000-59999  =>  zipconvert_3;
+60000-79999  =>  zipconvert_4;
+80000-99999  =>  zipconvert_5}
 \item{zipconvert_3}{}
 \item{zipconvert_4}{}
 \item{zipconvert_5}{}
-\item{homeowner.dummy}{}
-\item{NUMCHLD}{}
-\item{INCOME}{}
-\item{gender.dummy}{}
-\item{WEALTH}{}
-\item{HV}{}
-\item{Icmed}{}
-\item{Icavg}{}
-\item{IC15}{}
-\item{NUMPROM}{}
-\item{RAMNTALL}{}
-\item{MAXRAMNT}{}
-\item{LASTGIFT}{}
-\item{totalmonths}{}
-\item{TIMELAG}{}
-\item{AVGGIFT}{}
-\item{TARGET_B}{}
-\item{TARGET_D}{}
+\item{homeowner.dummy}{1 = homeowner, 0 = not a homeowner}
+\item{NUMCHLD}{Number of children }
+\item{INCOME}{Household income}
+\item{gender.dummy}{Gender: 0 = Male 1 = Female}
+\item{WEALTH}{Wealth Rating (Wealth rating uses median family income and
+population statistics from each area to index relative wealth within each state.
+The segments are denoted 0-9, with 9 being the highest wealth group and zero
+being the lowest. Each rating has a different meaning within each state.)}
+\item{HV}{Average Home Value in potential donor's neighborhood   in $ hundreds}
+\item{Icmed}{Median Family Income in potential donor's neighborhood in $ hundreds}
+\item{Icavg}{Average Family Income in potential donor's neighborhood in hundreds}
+\item{IC15}{Percent earning less than 15K in potential donor's neighborhood}
+\item{NUMPROM}{Lifetime number of promotions received to date}
+\item{RAMNTALL}{Dollar amount of lifetime gifts to date}
+\item{MAXRAMNT}{Dollar amount of lifetime gifts to date}
+\item{LASTGIFT}{Dollar amount of most recent gift}
+\item{totalmonths}{Number of months from last donation to July 1998 (the last time the case was updated)}
+\item{TIMELAG}{Number of months between first and second gift}
+\item{AVGGIFT}{Average dollar amount of gifts to date}
+\item{TARGET_B}{1 = Donor; 0 = Non-donor}
+\item{TARGET_D}{Target Variable: Donation Amount (in $).  We will NOT use it.}
 }
 }
 \usage{

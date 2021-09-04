@@ -2,3 +2,5 @@
 
 export(AutoAndElectronics)
 export(LaptopSales)
+export(regressionSummary)
+import(caret)

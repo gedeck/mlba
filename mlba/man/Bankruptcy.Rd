@@ -7,34 +7,40 @@
 \format{
 A data frame with 132 observations and 27 variables:
 \describe{
-\item{NO}{}
-\item{D}{}
-\item{YR}{}
-\item{R1}{}
-\item{R2}{}
-\item{R3}{}
-\item{R4}{}
-\item{R5}{}
-\item{R6}{}
-\item{R7}{}
-\item{R8}{}
-\item{R9}{}
-\item{R10}{}
-\item{R11}{}
-\item{R12}{}
-\item{R13}{}
-\item{R14}{}
-\item{R15}{}
-\item{R16}{}
-\item{R17}{}
-\item{R18}{}
-\item{R19}{}
-\item{R20}{}
-\item{R21}{}
-\item{R22}{}
-\item{R23}{}
-\item{R24}{}
+\item{NO}{Arbitrary ID number for each firm.}
+\item{D}{D=0 for failed firms, D=1 for healthy firms.}
+\item{YR}{Year of Bankruptcy for failed firm in matched pair}
+\item{R1}{CASH/CURDEBT}
+\item{R2}{CASH/SALES}
+\item{R3}{CASH/ASSETS}
+\item{R4}{CASH/DEBTS}
+\item{R5}{CFF0/SALES}
+\item{R6}{CFFO/ASSETS}
+\item{R7}{CFFO/DEBTS}
+\item{R8}{COGS/INV}
+\item{R9}{CURASS/CURDEBT}
+\item{R10}{CURASS/SALES}
+\item{R11}{CURRASS/ASSETS}
+\item{R12}{CURDEBT/DEBTS}
+\item{R13}{INC/SALES}
+\item{R14}{INC/ASSETS}
+\item{R15}{INC/DEBTS}
+\item{R16}{UBCDEP/SALES}
+\item{R17}{INCDEP/ASSETS}
+\item{R18}{INCDEP/DEBTS}
+\item{R19}{SALES/REC}
+\item{R20}{SALES/ASSETS}
+\item{R21}{ASSETS/DEBTS}
+\item{R22}{WCFO/SALES}
+\item{R23}{WCFO/ASSETS}
+\item{R24}{WCFO/DEBTS}
 }
+}
+\source{
+{"Predicting Corporate Bankruptcy"; Darden Business Publishing.
+Case authors Mark E. Haskins (\email{HASKINSM@Darden.virginia.edu}) and
+Phillip E. Pfeifer (\email{PFEIFERP@Darden.virginia.edu}).
+(c) 1988 University of Virginia Darden School Foundation}
 }
 \usage{
 Bankruptcy

@@ -42,4 +42,7 @@ Data
 \examples{
 head(FutureFundraising)
 }
+\seealso{
+{See \code{\link{Fundraising}} for a description of the dataset}
+}
 \keyword{datasets}

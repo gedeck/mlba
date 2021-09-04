@@ -7,7 +7,8 @@
 \format{
 A data frame with 4998 observations and 10 variables:
 \describe{
-\item{Customer.Number}{}
+\item{Customer.Number}{Customer IDs. For each customer, the following columns
+describe if the customer made a purchase in the division}
 \item{Clothing.Division}{}
 \item{Housewares.Division}{}
 \item{Health.Products.Division}{}
@@ -18,6 +19,12 @@ A data frame with 4998 observations and 10 variables:
 \item{Novelty.Gift.Division}{}
 \item{Jewelry.Division}{}
 }
+}
+\source{
+{The data for this case have been adapted from the data in a set
+of cases provided for educational purposes by the Direct Marketing
+Education Foundation (“DMEF Academic Data Set Two, Multi Division Catalog
+Company, Code: 02DMEF”); used with permission.}
 }
 \usage{
 CatalogCrossSell

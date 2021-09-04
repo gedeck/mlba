@@ -7,29 +7,29 @@
 \format{
 A data frame with 600 observations and 46 variables:
 \describe{
-\item{Member.id}{}
-\item{SEC}{}
-\item{FEH}{}
-\item{MT}{}
-\item{SEX}{}
-\item{AGE}{}
-\item{EDU}{}
-\item{HS}{}
-\item{CHILD}{}
-\item{CS}{}
-\item{Affluence.Index}{}
-\item{No..of.Brands}{}
-\item{Brand.Runs}{}
-\item{Total.Volume}{}
-\item{No..of..Trans}{}
-\item{Value}{}
-\item{Trans...Brand.Runs}{}
-\item{Vol.Tran}{}
-\item{Avg..Price}{}
-\item{Pur.Vol.No.Promo....}{}
-\item{Pur.Vol.Promo.6..}{}
-\item{Pur.Vol.Other.Promo..}{}
-\item{Br..Cd..57..144}{}
+\item{Member.id}{Unique identifier for each household}
+\item{SEC}{Socioeconomic class (1 = high, 5 = low)}
+\item{FEH}{Eating habits(1 = vegetarian, 2 = vegetarian but eat eggs, 3 = nonvegetarian, 0 = not specified)}
+\item{MT}{Native language (20 different languages)}
+\item{SEX}{Gender of homemaker (1 = male, 2 = female)}
+\item{AGE}{Age of homemaker}
+\item{EDU}{Education of homemaker (1 = minimum, 9 = maximum)}
+\item{HS}{Number of members in household}
+\item{CHILD}{Presence of children in household (4 categories)}
+\item{CS}{Television availability (1 = available, 2 = unavailable)}
+\item{Affluence.Index}{Weighted value of durables possessed}
+\item{No..of.Brands}{Number of brands purchased}
+\item{Brand.Runs}{Number of instances of consecutive purchase of brands}
+\item{Total.Volume}{Sum of volume}
+\item{No..of..Trans}{Number of purchase transactions (multiple brands purchased in a month are counted as separate transactions)}
+\item{Value}{Sum of value}
+\item{Trans...Brand.Runs}{Average transactions per brand run}
+\item{Vol.Tran}{Average volume per transaction}
+\item{Avg..Price}{Average price of purchase}
+\item{Pur.Vol.No.Promo....}{Percent of volume purchased under no promotion}
+\item{Pur.Vol.Promo.6..}{Percent of volume purchased under promotion code 6}
+\item{Pur.Vol.Other.Promo..}{Percent of volume purchased under other promotions}
+\item{Br..Cd..57..144}{Percent of volume purchased of the brand}
 \item{Br..Cd..55}{}
 \item{Br..Cd..272}{}
 \item{Br..Cd..286}{}
@@ -38,11 +38,11 @@ A data frame with 600 observations and 46 variables:
 \item{Br..Cd..352}{}
 \item{Br..Cd..5}{}
 \item{Others.999}{}
-\item{Pr.Cat.1}{}
+\item{Pr.Cat.1}{Percent of volume purchased under the price category}
 \item{Pr.Cat.2}{}
 \item{Pr.Cat.3}{}
 \item{Pr.Cat.4}{}
-\item{PropCat.5}{}
+\item{PropCat.5}{Percent of volume purchased under the product proposition category}
 \item{PropCat.6}{}
 \item{PropCat.7}{}
 \item{PropCat.8}{}
@@ -54,6 +54,9 @@ A data frame with 600 observations and 46 variables:
 \item{PropCat.14}{}
 \item{PropCat.15}{}
 }
+}
+\source{
+{Copyright 2019, Cytel, Inc. and Datastats, LLC}
 }
 \usage{
 BathSoapHousehold

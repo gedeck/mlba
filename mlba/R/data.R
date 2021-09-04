@@ -139,34 +139,38 @@
 #' Data
 #' @format A data frame with 132 observations and 27 variables:
 #' \describe{
-#' \item{NO}{}
-#' \item{D}{}
-#' \item{YR}{}
-#' \item{R1}{}
-#' \item{R2}{}
-#' \item{R3}{}
-#' \item{R4}{}
-#' \item{R5}{}
-#' \item{R6}{}
-#' \item{R7}{}
-#' \item{R8}{}
-#' \item{R9}{}
-#' \item{R10}{}
-#' \item{R11}{}
-#' \item{R12}{}
-#' \item{R13}{}
-#' \item{R14}{}
-#' \item{R15}{}
-#' \item{R16}{}
-#' \item{R17}{}
-#' \item{R18}{}
-#' \item{R19}{}
-#' \item{R20}{}
-#' \item{R21}{}
-#' \item{R22}{}
-#' \item{R23}{}
-#' \item{R24}{}
+#' \item{NO}{Arbitrary ID number for each firm.}
+#' \item{D}{D=0 for failed firms, D=1 for healthy firms.}
+#' \item{YR}{Year of Bankruptcy for failed firm in matched pair}
+#' \item{R1}{CASH/CURDEBT}
+#' \item{R2}{CASH/SALES}
+#' \item{R3}{CASH/ASSETS}
+#' \item{R4}{CASH/DEBTS}
+#' \item{R5}{CFF0/SALES}
+#' \item{R6}{CFFO/ASSETS}
+#' \item{R7}{CFFO/DEBTS}
+#' \item{R8}{COGS/INV}
+#' \item{R9}{CURASS/CURDEBT}
+#' \item{R10}{CURASS/SALES}
+#' \item{R11}{CURRASS/ASSETS}
+#' \item{R12}{CURDEBT/DEBTS}
+#' \item{R13}{INC/SALES}
+#' \item{R14}{INC/ASSETS}
+#' \item{R15}{INC/DEBTS}
+#' \item{R16}{UBCDEP/SALES}
+#' \item{R17}{INCDEP/ASSETS}
+#' \item{R18}{INCDEP/DEBTS}
+#' \item{R19}{SALES/REC}
+#' \item{R20}{SALES/ASSETS}
+#' \item{R21}{ASSETS/DEBTS}
+#' \item{R22}{WCFO/SALES}
+#' \item{R23}{WCFO/ASSETS}
+#' \item{R24}{WCFO/DEBTS}
 #' }
+#' @source{"Predicting Corporate Bankruptcy"; Darden Business Publishing.
+#' Case authors Mark E. Haskins (\email{HASKINSM@Darden.virginia.edu}) and
+#' Phillip E. Pfeifer (\email{PFEIFERP@Darden.virginia.edu}).
+#' (c) 1988 University of Virginia Darden School Foundation}
 #'
 #' @examples
 #' head(Bankruptcy)
@@ -195,29 +199,29 @@
 #' Data
 #' @format A data frame with 600 observations and 46 variables:
 #' \describe{
-#' \item{Member.id}{}
-#' \item{SEC}{}
-#' \item{FEH}{}
-#' \item{MT}{}
-#' \item{SEX}{}
-#' \item{AGE}{}
-#' \item{EDU}{}
-#' \item{HS}{}
-#' \item{CHILD}{}
-#' \item{CS}{}
-#' \item{Affluence.Index}{}
-#' \item{No..of.Brands}{}
-#' \item{Brand.Runs}{}
-#' \item{Total.Volume}{}
-#' \item{No..of..Trans}{}
-#' \item{Value}{}
-#' \item{Trans...Brand.Runs}{}
-#' \item{Vol.Tran}{}
-#' \item{Avg..Price}{}
-#' \item{Pur.Vol.No.Promo....}{}
-#' \item{Pur.Vol.Promo.6..}{}
-#' \item{Pur.Vol.Other.Promo..}{}
-#' \item{Br..Cd..57..144}{}
+#' \item{Member.id}{Unique identifier for each household}
+#' \item{SEC}{Socioeconomic class (1 = high, 5 = low)}
+#' \item{FEH}{Eating habits(1 = vegetarian, 2 = vegetarian but eat eggs, 3 = nonvegetarian, 0 = not specified)}
+#' \item{MT}{Native language (20 different languages)}
+#' \item{SEX}{Gender of homemaker (1 = male, 2 = female)}
+#' \item{AGE}{Age of homemaker}
+#' \item{EDU}{Education of homemaker (1 = minimum, 9 = maximum)}
+#' \item{HS}{Number of members in household}
+#' \item{CHILD}{Presence of children in household (4 categories)}
+#' \item{CS}{Television availability (1 = available, 2 = unavailable)}
+#' \item{Affluence.Index}{Weighted value of durables possessed}
+#' \item{No..of.Brands}{Number of brands purchased}
+#' \item{Brand.Runs}{Number of instances of consecutive purchase of brands}
+#' \item{Total.Volume}{Sum of volume}
+#' \item{No..of..Trans}{Number of purchase transactions (multiple brands purchased in a month are counted as separate transactions)}
+#' \item{Value}{Sum of value}
+#' \item{Trans...Brand.Runs}{Average transactions per brand run}
+#' \item{Vol.Tran}{Average volume per transaction}
+#' \item{Avg..Price}{Average price of purchase}
+#' \item{Pur.Vol.No.Promo....}{Percent of volume purchased under no promotion}
+#' \item{Pur.Vol.Promo.6..}{Percent of volume purchased under promotion code 6}
+#' \item{Pur.Vol.Other.Promo..}{Percent of volume purchased under other promotions}
+#' \item{Br..Cd..57..144}{Percent of volume purchased of the brand}
 #' \item{Br..Cd..55}{}
 #' \item{Br..Cd..272}{}
 #' \item{Br..Cd..286}{}
@@ -226,11 +230,11 @@
 #' \item{Br..Cd..352}{}
 #' \item{Br..Cd..5}{}
 #' \item{Others.999}{}
-#' \item{Pr.Cat.1}{}
+#' \item{Pr.Cat.1}{Percent of volume purchased under the price category}
 #' \item{Pr.Cat.2}{}
 #' \item{Pr.Cat.3}{}
 #' \item{Pr.Cat.4}{}
-#' \item{PropCat.5}{}
+#' \item{PropCat.5}{Percent of volume purchased under the product proposition category}
 #' \item{PropCat.6}{}
 #' \item{PropCat.7}{}
 #' \item{PropCat.8}{}
@@ -242,6 +246,7 @@
 #' \item{PropCat.14}{}
 #' \item{PropCat.15}{}
 #' }
+#' @source{Copyright 2019, Cytel, Inc. and Datastats, LLC}
 #'
 #' @examples
 #' head(BathSoapHousehold)
@@ -284,7 +289,8 @@
 #'
 #' @format A data frame with 4998 observations and 10 variables:
 #' \describe{
-#' \item{Customer.Number}{}
+#' \item{Customer.Number}{Customer IDs. For each customer, the following columns
+#' describe if the customer made a purchase in the division}
 #' \item{Clothing.Division}{}
 #' \item{Housewares.Division}{}
 #' \item{Health.Products.Division}{}
@@ -295,6 +301,10 @@
 #' \item{Novelty.Gift.Division}{}
 #' \item{Jewelry.Division}{}
 #' }
+#' @source{The data for this case have been adapted from the data in a set
+#' of cases provided for educational purposes by the Direct Marketing
+#' Education Foundation (“DMEF Academic Data Set Two, Multi Division Catalog
+#' Company, Code: 02DMEF”); used with permission.}
 #'
 #' @examples
 #' head(CatalogCrossSell)
@@ -443,7 +453,7 @@
 #' \item{DOE}{}
 #' \item{SW}{}
 #' }
-#' @source{Copyright 2016 statistics.com}
+#' @source{Copyright 2016 Galit Shmueli and Peter Bruce}
 #'
 #' @examples
 #' head(Coursetopics)
@@ -621,14 +631,15 @@
 #'
 #' Data on advertisements posted at a website that caters to the needs of
 #' a specific farming community. Each ad is in a row, and each ad labeled
-#' as either −1 (not relevant) or 1 (relevant). The goal is to develop a
+#' as either -1 (not relevant) or 1 (relevant). The goal is to develop a
 #' predictive model that can classify ads automatically.
 #'
 #' Data
 #' @format A data frame with 4143 observations and 2 variables:
 #' \describe{
 #' \item{label}{1: ad is relevant; -1 ad is not relevant}
-#' \item{text}{}
+#' \item{text}{text of ad pre-processed into a list of words. The location
+#' of the word in the ad is in some cases indicated by a prefix.}
 #' }
 #'
 #' @examples
@@ -678,28 +689,40 @@
 #' \describe{
 #' \item{Row.Id}{}
 #' \item{Row.Id.}{}
-#' \item{zipconvert_2}{}
+#' \item{zipconvert_2}{Zipcode group (zipcodes were grouped into 5 groups;
+#' only 4 are needed for analysis since if a potential donor falls into none of
+#' the four he or she must be in the other group.  Inclusion of all five variables
+#' would be redundant and cause some modeling techniques to fail. A "1" indicates
+#' the potential donor belongs to this zip group.)
+#' 00000-19999  =>  1  (omitted for above reason);
+#' 20000-39999  =>  zipconvert_2;
+#' 40000-59999  =>  zipconvert_3;
+#' 60000-79999  =>  zipconvert_4;
+#' 80000-99999  =>  zipconvert_5}
 #' \item{zipconvert_3}{}
 #' \item{zipconvert_4}{}
 #' \item{zipconvert_5}{}
-#' \item{homeowner.dummy}{}
-#' \item{NUMCHLD}{}
-#' \item{INCOME}{}
-#' \item{gender.dummy}{}
-#' \item{WEALTH}{}
-#' \item{HV}{}
-#' \item{Icmed}{}
-#' \item{Icavg}{}
-#' \item{IC15}{}
-#' \item{NUMPROM}{}
-#' \item{RAMNTALL}{}
-#' \item{MAXRAMNT}{}
-#' \item{LASTGIFT}{}
-#' \item{totalmonths}{}
-#' \item{TIMELAG}{}
-#' \item{AVGGIFT}{}
-#' \item{TARGET_B}{}
-#' \item{TARGET_D}{}
+#' \item{homeowner.dummy}{1 = homeowner, 0 = not a homeowner}
+#' \item{NUMCHLD}{Number of children }
+#' \item{INCOME}{Household income}
+#' \item{gender.dummy}{Gender: 0 = Male 1 = Female}
+#' \item{WEALTH}{Wealth Rating (Wealth rating uses median family income and
+#' population statistics from each area to index relative wealth within each state.
+#' The segments are denoted 0-9, with 9 being the highest wealth group and zero
+#' being the lowest. Each rating has a different meaning within each state.)}
+#' \item{HV}{Average Home Value in potential donor's neighborhood   in $ hundreds}
+#' \item{Icmed}{Median Family Income in potential donor's neighborhood in $ hundreds}
+#' \item{Icavg}{Average Family Income in potential donor's neighborhood in hundreds}
+#' \item{IC15}{Percent earning less than 15K in potential donor's neighborhood}
+#' \item{NUMPROM}{Lifetime number of promotions received to date}
+#' \item{RAMNTALL}{Dollar amount of lifetime gifts to date}
+#' \item{MAXRAMNT}{Dollar amount of lifetime gifts to date}
+#' \item{LASTGIFT}{Dollar amount of most recent gift}
+#' \item{totalmonths}{Number of months from last donation to July 1998 (the last time the case was updated)}
+#' \item{TIMELAG}{Number of months between first and second gift}
+#' \item{AVGGIFT}{Average dollar amount of gifts to date}
+#' \item{TARGET_B}{1 = Donor; 0 = Non-donor}
+#' \item{TARGET_D}{Target Variable: Donation Amount (in $).  We will NOT use it.}
 #' }
 #'
 #' @examples
@@ -737,6 +760,7 @@
 #' \item{TARGET_B}{}
 #' \item{TARGET_D}{}
 #' }
+#' @seealso{See \code{\link{Fundraising}} for a description of the dataset}
 #'
 #' @examples
 #' head(FutureFundraising)
@@ -915,39 +939,46 @@
 
 #' NYPD Motor Vehicle Collisions
 #'
-#' Data
+#' @description{The Motor Vehicle Collisions crash table contains details on
+#' the crash event. Each row represents a crash event. The Motor Vehicle
+#' Collisions data tables contain information from all police reported motor
+#' vehicle collisions in NYC. This dataset is a random subset of 1000 entries
+#' of the NYPD motor vehicle collisions dataset}
+#'
 #' @format A data frame with 1000 observations and 29 variables:
 #' \describe{
-#' \item{DATE}{}
-#' \item{TIME}{}
-#' \item{BOROUGH}{}
-#' \item{ZIP.CODE}{}
-#' \item{LATITUDE}{}
-#' \item{LONGITUDE}{}
-#' \item{LOCATION}{}
-#' \item{ON.STREET.NAME}{}
-#' \item{CROSS.STREET.NAME}{}
-#' \item{OFF.STREET.NAME}{}
-#' \item{NUMBER.OF.PERSONS.INJURED}{}
-#' \item{NUMBER.OF.PERSONS.KILLED}{}
-#' \item{NUMBER.OF.PEDESTRIANS.INJURED}{}
-#' \item{NUMBER.OF.PEDESTRIANS.KILLED}{}
-#' \item{NUMBER.OF.CYCLIST.INJURED}{}
-#' \item{NUMBER.OF.CYCLIST.KILLED}{}
-#' \item{NUMBER.OF.MOTORIST.INJURED}{}
-#' \item{NUMBER.OF.MOTORIST.KILLED}{}
-#' \item{CONTRIBUTING.FACTOR.VEHICLE.1}{}
-#' \item{CONTRIBUTING.FACTOR.VEHICLE.2}{}
-#' \item{CONTRIBUTING.FACTOR.VEHICLE.3}{}
-#' \item{CONTRIBUTING.FACTOR.VEHICLE.4}{}
-#' \item{CONTRIBUTING.FACTOR.VEHICLE.5}{}
-#' \item{UNIQUE.KEY}{}
-#' \item{VEHICLE.TYPE.CODE.1}{}
-#' \item{VEHICLE.TYPE.CODE.2}{}
-#' \item{VEHICLE.TYPE.CODE.3}{}
-#' \item{VEHICLE.TYPE.CODE.4}{}
-#' \item{VEHICLE.TYPE.CODE.5}{}
+#' \item{DATE}{Occurrence date of collision}
+#' \item{TIME}{Occurrence time of collision}
+#' \item{BOROUGH}{Borough where collision occurred}
+#' \item{ZIP.CODE}{Postal code of incident occurrence}
+#' \item{LATITUDE}{Latitude coordinate for Global Coordinate System, WGS 1984, decimal degrees (EPSG 4326)}
+#' \item{LONGITUDE}{Longitude coordinate for Global Coordinate System, WGS 1984, decimal degrees (EPSG 4326)}
+#' \item{LOCATION}{Latitude , Longitude pair}
+#' \item{ON.STREET.NAME}{Street on which the collision occurred}
+#' \item{CROSS.STREET.NAME}{Nearest cross street to the collision}
+#' \item{OFF.STREET.NAME}{Street address if known}
+#' \item{NUMBER.OF.PERSONS.INJURED}{Number of persons injured}
+#' \item{NUMBER.OF.PERSONS.KILLED}{Number of persons killed}
+#' \item{NUMBER.OF.PEDESTRIANS.INJURED}{Number of pedestrians injured}
+#' \item{NUMBER.OF.PEDESTRIANS.KILLED}{Number of pedestrians killed}
+#' \item{NUMBER.OF.CYCLIST.INJURED}{Number of cyclists injured}
+#' \item{NUMBER.OF.CYCLIST.KILLED}{Number of cyclists killed}
+#' \item{NUMBER.OF.MOTORIST.INJURED}{Number of vehicle occupants injured}
+#' \item{NUMBER.OF.MOTORIST.KILLED}{Number of vehicle occupants killed}
+#' \item{CONTRIBUTING.FACTOR.VEHICLE.1}{Factors contributing to the collision for designated vehicle}
+#' \item{CONTRIBUTING.FACTOR.VEHICLE.2}{Factors contributing to the collision for designated vehicle}
+#' \item{CONTRIBUTING.FACTOR.VEHICLE.3}{Factors contributing to the collision for designated vehicle}
+#' \item{CONTRIBUTING.FACTOR.VEHICLE.4}{Factors contributing to the collision for designated vehicle}
+#' \item{CONTRIBUTING.FACTOR.VEHICLE.5}{Factors contributing to the collision for designated vehicle}
+#' \item{UNIQUE.KEY}{Unique record code generated by system. Primary Key for Crash table.}
+#' \item{VEHICLE.TYPE.CODE.1}{Type of vehicle based on the selected vehicle category (ATV, bicycle, car/suv, ebike, escooter, truck/bus, motorcycle, other)}
+#' \item{VEHICLE.TYPE.CODE.2}{Type of vehicle based on the selected vehicle category (ATV, bicycle, car/suv, ebike, escooter, truck/bus, motorcycle, other)}
+#' \item{VEHICLE.TYPE.CODE.3}{Type of vehicle based on the selected vehicle category (ATV, bicycle, car/suv, ebike, escooter, truck/bus, motorcycle, other)}
+#' \item{VEHICLE.TYPE.CODE.4}{Type of vehicle based on the selected vehicle category (ATV, bicycle, car/suv, ebike, escooter, truck/bus, motorcycle, other)}
+#' \item{VEHICLE.TYPE.CODE.5}{Type of vehicle based on the selected vehicle category (ATV, bicycle, car/suv, ebike, escooter, truck/bus, motorcycle, other)}
 #' }
+#' @source{Random sample of the NYPD Motor Vehicle Collisions Dataset.
+#' (\url{https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95})}
 #'
 #' @examples
 #' head(NYPDMotorVehicleCollisions)
@@ -1128,24 +1159,24 @@
 #' @format A data frame with 10000 observations and 19 variables:
 #' \describe{
 #' \item{row.}{}
-#' \item{user_id}{}
-#' \item{vehicle_model_id}{}
-#' \item{package_id}{}
-#' \item{travel_type_id}{}
-#' \item{from_area_id}{}
-#' \item{to_area_id}{}
-#' \item{from_city_id}{}
-#' \item{to_city_id}{}
-#' \item{from_date}{}
-#' \item{to_date}{}
-#' \item{online_booking}{}
-#' \item{mobile_site_booking}{}
-#' \item{booking_created}{}
-#' \item{from_lat}{}
-#' \item{from_long}{}
-#' \item{to_lat}{}
-#' \item{to_long}{}
-#' \item{Car_Cancellation}{}
+#' \item{user_id}{the ID of the customer (based on mobile number)}
+#' \item{vehicle_model_id}{vehicle model type.}
+#' \item{package_id}{type of package (1=4hrs & 40kms, 2=8hrs & 80kms, 3=6hrs & 60kms, 4= 10hrs & 100kms, 5=5hrs & 50kms, 6=3hrs & 30kms, 7=12hrs & 120kms)}
+#' \item{travel_type_id}{type of travel (1=long distance, 2= point to point, 3= hourly rental).}
+#' \item{from_area_id}{unique identifier of area. Applicable only for point-to-point travel and packages}
+#' \item{to_area_id}{unique identifier of area. Applicable only for point-to-point travel}
+#' \item{from_city_id}{unique identifier of city}
+#' \item{to_city_id}{unique identifier of city (only for intercity)}
+#' \item{from_date}{time stamp of requested trip start}
+#' \item{to_date}{time stamp of trip end}
+#' \item{online_booking}{if booking was done on desktop website}
+#' \item{mobile_site_booking}{if booking was done on mobile website}
+#' \item{booking_created}{time stamp of booking}
+#' \item{from_lat}{latitude of from area}
+#' \item{from_long}{longitude of from area}
+#' \item{to_lat}{latitude of to area}
+#' \item{to_long}{longitude of to area}
+#' \item{Car_Cancellation}{1=trip cancelled; 0=trip not cancelled}
 #' }
 #' @source{Copyright 2016 statistics.com}
 #'
@@ -1588,12 +1619,19 @@
 
 #' bicup2006
 #'
+#' @description Data from a 2008 business intelligence competition, which
+#' focused on forecasting demand for public transportation.
+#'
 #' Data
 #' @format A data frame with 1512 observations and 3 variables:
 #' \describe{
-#' \item{DATE}{}
-#' \item{TIME}{}
-#' \item{DEMAND}{}
+#' The file contains the historic information with known demand for a
+#' 3-week period, separated into 15-minute intervals, and dates and times
+#' for a future 3-day period (DEMAND = NaN), for which forecasts should be
+#' generated.
+#' \item{DATE}{date information}
+#' \item{TIME}{time information}
+#' \item{DEMAND}{demand information; NA if missing}
 #' }
 #' @source{Ken Black (used by permission)}
 #'
@@ -1619,11 +1657,12 @@
 
 #' DepartmentStoreSales
 #'
-#' Data
+#' @description{Data on the quarterly sales for a department store over a 6-year period.}
+#'
 #' @format A data frame with 24 observations and 2 variables:
 #' \describe{
 #' \item{Quarter}{}
-#' \item{Sales}{}
+#' \item{Sales}{quarterly sales for the department store}
 #' }
 #'
 #' @examples

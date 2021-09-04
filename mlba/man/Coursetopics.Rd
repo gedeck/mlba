@@ -18,7 +18,7 @@ A data frame with 365 observations and 8 variables:
 }
 }
 \source{
-{Copyright 2016 statistics.com}
+{Copyright 2016 Galit Shmueli and Peter Bruce}
 }
 \usage{
 Coursetopics

@@ -20,9 +20,9 @@ use_data(Airfares, overwrite=TRUE)
 ApplianceShipments = read.csv(file.path('data-raw', 'ApplianceShipments.csv.gz'))
 use_data(ApplianceShipments, overwrite=TRUE)
 
-file.copy(from=file.path('data-raw', 'AutoAndElectronics.zip'),
-          to=file.path('inst', 'extdata', 'AutoAndElectronics.zip'),
-          overwrite=TRUE, copy.mode=TRUE)
+#file.copy(from=file.path('data-raw', 'AutoAndElectronics.zip'),
+#          to=file.path('inst', 'extdata', 'AutoAndElectronics.zip'),
+#          overwrite=TRUE, copy.mode=TRUE)
 
 Bankruptcy = read.csv(file.path('data-raw', 'Bankruptcy.csv.gz'))
 use_data(Bankruptcy, overwrite=TRUE)
