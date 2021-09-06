@@ -58,3 +58,33 @@ LaptopSales <- function() {
 #' \dontrun{corpus <- Corpus(ZipSource(AutoAndElectronics, recursive=True))}
 #' @export
 AutoAndElectronics <- 'https://github.com/gedeck/dmba/raw/master/src/dmba/csvFiles/AutoAndElectronics.zip'
+
+
+#' getMovieLense
+#'
+#' @description{Download Movielense data}
+#'
+#' @return list containing the ratings and movies data
+#'
+#' \describe{
+#' \item{ratings: userId}{Anonymized MovieLens user ID. Each user has rated at least 20 movies.}
+#' \item{ratings: movieId}{Movie ID consistent with that used on the MovieLens website (e.g., information for movie id 1 is available at \url{https://movielens.org/movies/1}).}
+#' \item{ratings: rating}{Movie rating provided by user on a 5-star scale, with half-star increments (0.5 star - 5 stars)}
+#' \item{ratings: timestamp}{Timestamp when rating was recorded. Time is in seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970}
+#' \item{movies: movieId}{Same as ratings data}
+#' \item{movies: title}{Movie titles, including the year of release in parentheses}
+#' \item{movies: genres}{Pipe-separated list of genres for corresponding movie title}
+#' }
+#'
+#' @examples
+#' \dontrun{data <- mlba::getMovieLense()}
+#' @export
+getMovieLense <- function() {
+  url <- "https://files.grouplens.org/datasets/movielens/ml-latest-small.zip"
+  temp <- tempfile()
+  utils::download.file(url, temp)
+  ratings <- utils::read.csv(unz(temp, file.path('ml-latest-small', 'ratings.csv')))
+  movies <- utils::read.csv(unz(temp, file.path('ml-latest-small', 'movies.csv')))
+  unlink(temp)
+  return (list(ratings=ratings, movies=movies))
+}
