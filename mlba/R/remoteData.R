@@ -62,7 +62,7 @@ AutoAndElectronics <- 'https://github.com/gedeck/dmba/raw/master/src/dmba/csvFil
 
 #' getMovieLense
 #'
-#' @description{Download Movielense data}
+#' @description{Download Movielens 10k dataset}
 #'
 #' @return list containing the ratings and movies data
 #'
@@ -75,11 +75,18 @@ AutoAndElectronics <- 'https://github.com/gedeck/dmba/raw/master/src/dmba/csvFil
 #' \item{movies: title}{Movie titles, including the year of release in parentheses}
 #' \item{movies: genres}{Pipe-separated list of genres for corresponding movie title}
 #' }
+#' @source{The Movielens dataset is downloaded from \url{https://grouplens.org/datasets/movielens/}.
+#' Dataset creation date: September 26, 2018). See \url{https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html}
+#' for the usage license.
+#'
+#' F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context.
+#' ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19.
+#' \url{https://doi.org/10.1145/2827872}}
 #'
 #' @examples
-#' \dontrun{data <- mlba::getMovieLense()}
+#' \dontrun{data <- mlba::getMovieLens()}
 #' @export
-getMovieLense <- function() {
+getMovieLens <- function() {
   url <- "https://files.grouplens.org/datasets/movielens/ml-latest-small.zip"
   temp <- tempfile()
   utils::download.file(url, temp)

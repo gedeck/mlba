@@ -2,6 +2,6 @@
 
 export(AutoAndElectronics)
 export(LaptopSales)
-export(getMovieLense)
+export(getMovieLens)
 export(regressionSummary)
 import(caret)
