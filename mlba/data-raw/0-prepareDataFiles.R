@@ -83,7 +83,7 @@ use_data(eBayTreemap, overwrite=TRUE)
 Faceplate = read.csv(file.path('data-raw', 'Faceplate.csv.gz'))
 use_data(Faceplate, overwrite=TRUE)
 
-FlightDelays = read.csv(file.path('data-raw', 'FlightDelays.csv.gz'), stringsAsFactors = TRUE)
+FlightDelays = read.csv(file.path('data-raw', 'FlightDelays.csv.gz'))
 use_data(FlightDelays, overwrite=TRUE)
 
 Fundraising = read.csv(file.path('data-raw', 'Fundraising.csv.gz'), stringsAsFactors = TRUE)
