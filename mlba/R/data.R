@@ -194,6 +194,20 @@
 "banks"
 
 
+#' BareggTunnel
+#'
+#' Data
+#' @format A data frame with 747 observations and 2 variables:
+#' \describe{
+#' \item{Day}{}
+#' \item{Number of vehicles}{}
+#' }
+#'
+#' @examples
+#' BaregtTunnl
+"BareggTunnel"
+
+
 #' BathSoapHousehold
 #'
 #' Data
@@ -376,6 +390,20 @@
 #' head(CharlesBookClub)
 "CharlesBookClub"
 
+
+#' CompasScoresTwoYears
+#'
+#' Dataset from the ProPublica story "Machine Bias."
+#' See https://github.com/propublica/compas-analysis for details
+#'
+#' Data
+#' @format A data frame with 7214 observations and 53 variables
+#'
+#' @source{https://github.com/propublica/compas-analysis/blob/master/compas-scores-two-years.csv}
+#'
+#' @examples
+#' head(CompasScoresTwoYears)
+"CompasScoresTwoYears"
 
 #' Cosmetics
 #'

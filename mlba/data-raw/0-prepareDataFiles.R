@@ -30,6 +30,9 @@ use_data(Bankruptcy, overwrite=TRUE)
 banks = read.csv(file.path('data-raw', 'banks.csv.gz'))
 use_data(banks, overwrite=TRUE)
 
+BareggTunnel = read.csv(file.path('data-raw', 'BareggTunnel.csv.gz'))
+use_data(BareggTunnel, overwrite=TRUE)
+
 BathSoapHousehold = read.csv(file.path('data-raw', 'BathSoapHousehold.csv.gz'))
 use_data(BathSoapHousehold, overwrite=TRUE)
 
@@ -54,6 +57,9 @@ use_data(Coursetopics, overwrite=TRUE)
 
 courserating = read.csv(file.path('data-raw', 'courserating.csv.gz'))
 use_data(courserating, overwrite=TRUE)
+
+CompasScoresTwoYears = read.csv(file.path('data-raw', 'compas-scores-two-years.csv.gz'))
+use_data(CompasScoresTwoYears, overwrite=TRUE)
 
 Cosmetics = read.csv(file.path('data-raw', 'Cosmetics.csv.gz'))
 use_data(Cosmetics, overwrite=TRUE)
