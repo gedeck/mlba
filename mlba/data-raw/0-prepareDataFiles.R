@@ -182,7 +182,7 @@ use_data(ApplianceShipments, overwrite=TRUE)
 AustralianWines = read.csv(file.path('data-raw', 'AustralianWines.csv.gz'),
                            header=FALSE, sep=",", skip=1,
                            col.names=c('month', 'fortified','red', 'rose', 'sparkling','sweet white', 'dry white'),
-                           na.strings='NA', stringsAsFactors=FALSE)
+                           na.strings='*', stringsAsFactors=FALSE)
 use_data(AustralianWines, overwrite=TRUE)
 
 CanadianWorkHours = read.csv(file.path('data-raw', 'CanadianWorkHours.csv.gz'))
