@@ -134,47 +134,34 @@
 "Airfares"
 
 
-#' Bankruptcy
+#' BankBiasData
 #'
 #' Data
-#' @format A data frame with 132 observations and 27 variables:
+#' @format A data frame with 1878 observations and 17 variables:
 #' \describe{
-#' \item{NO}{Arbitrary ID number for each firm.}
-#' \item{D}{D=0 for failed firms, D=1 for healthy firms.}
-#' \item{YR}{Year of Bankruptcy for failed firm in matched pair}
-#' \item{R1}{CASH/CURDEBT}
-#' \item{R2}{CASH/SALES}
-#' \item{R3}{CASH/ASSETS}
-#' \item{R4}{CASH/DEBTS}
-#' \item{R5}{CFF0/SALES}
-#' \item{R6}{CFFO/ASSETS}
-#' \item{R7}{CFFO/DEBTS}
-#' \item{R8}{COGS/INV}
-#' \item{R9}{CURASS/CURDEBT}
-#' \item{R10}{CURASS/SALES}
-#' \item{R11}{CURRASS/ASSETS}
-#' \item{R12}{CURDEBT/DEBTS}
-#' \item{R13}{INC/SALES}
-#' \item{R14}{INC/ASSETS}
-#' \item{R15}{INC/DEBTS}
-#' \item{R16}{UBCDEP/SALES}
-#' \item{R17}{INCDEP/ASSETS}
-#' \item{R18}{INCDEP/DEBTS}
-#' \item{R19}{SALES/REC}
-#' \item{R20}{SALES/ASSETS}
-#' \item{R21}{ASSETS/DEBTS}
-#' \item{R22}{WCFO/SALES}
-#' \item{R23}{WCFO/ASSETS}
-#' \item{R24}{WCFO/DEBTS}
+#' \item{age}{}
+#' \item{job}{type of job (categorical: 'admin.','blue-collar','entrepreneur','housemaid','management','retired','self-employed','services','student','technician','unemployed','unknown')}
+#' \item{marital}{marital status (categorical: 'divorced','married','single','unknown'; note: 'divorced' means divorced or widowed)}
+#' \item{education}{(categorical: 'basic.4y','basic.6y','basic.9y','high.school','illiterate','professional.course','university.degree','unknown')}
+#' \item{default}{has credit in default? (categorical: 'no','yes','unknown')}
+#' \item{balance}{account balance}
+#' \item{housing}{has housing loan? (categorical: 'no','yes','unknown')}
+#' \item{loan}{has personal loan? (categorical: 'no','yes','unknown')}
+#' \item{contact}{related with the last contact of the current campaign: contact communication type (categorical: 'cellular','telephone')}
+#' \item{day}{related with the last contact of the current campaign: last contact day of the week (categorical: 'mon','tue','wed','thu','fri')}
+#' \item{month}{related with the last contact of the current campaign: last contact month of year (categorical: 'jan', 'feb', 'mar', ..., 'nov', 'dec')}
+#' \item{duration}{related with the last contact of the current campaign: last contact duration, in seconds (numeric). Important note: this attribute highly affects the output target (e.g., if duration=0 then y='no'). Yet, the duration is not known before a call is performed. Also, after the end of the call y is obviously known. Thus, this input should only be included for benchmark purposes and should be discarded if the intention is to have a realistic predictive model.}
+#' \item{campaign}{number of contacts performed during this campaign and for this client (numeric, includes last contact)}
+#' \item{pdays}{number of days that passed by after the client was last contacted from a previous campaign (numeric; 999 means client was not previously contacted)}
+#' \item{previous}{number of contacts performed before this campaign and for this client (numeric)}
+#' \item{poutcome}{outcome of the previous marketing campaign (categorical: 'failure','nonexistent','success')}
+#' \item{y}{has the client subscribed a term deposit? (binary: 'yes','no')}
 #' }
-#' @source{"Predicting Corporate Bankruptcy"; Darden Business Publishing.
-#' Case authors Mark E. Haskins (\email{HASKINSM@Darden.virginia.edu}) and
-#' Phillip E. Pfeifer (\email{PFEIFERP@Darden.virginia.edu}).
-#' (c) 1988 University of Virginia Darden School Foundation}
+#' @source{https://archive.ics.uci.edu/ml/datasets/bank+marketing}
 #'
 #' @examples
-#' head(Bankruptcy)
-"Bankruptcy"
+#' head(BankBiasData)
+"BankBiasData"
 
 
 #' Banks

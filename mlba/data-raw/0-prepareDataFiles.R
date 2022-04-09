@@ -30,6 +30,9 @@ use_data(Bankruptcy, overwrite=TRUE)
 banks = read.csv(file.path('data-raw', 'banks.csv.gz'))
 use_data(banks, overwrite=TRUE)
 
+BankBiasData = read.csv(file.path('data-raw', 'Bank-bias-data.csv.gz'))
+use_data(BankBiasData, overwrite=TRUE)
+
 BareggTunnel = read.csv(file.path('data-raw', 'BareggTunnel.csv.gz'))
 use_data(BareggTunnel, overwrite=TRUE)
 
