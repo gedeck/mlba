@@ -391,19 +391,27 @@
 "CharlesBookClub"
 
 
-#' CompasScoresTwoYears
+#' COMPAS clean
 #'
-#' Dataset from the ProPublica story "Machine Bias."
+#' Dataset derived from the ProPublica story "Machine Bias."
 #' See https://github.com/propublica/compas-analysis for details
 #'
 #' Data
-#' @format A data frame with 7214 observations and 53 variables
-#'
+#' @format A data frame with 5304 observations and 7 variables
+#' \describe{
+#' \item{id}{}
+#' \item{age_cat}{categories: Less than 25, 25 - 45, Greater than 45}
+#' \item{c_charge_degree}{}
+#' \item{race}{}
+#' \item{sex}{}
+#' \item{priors_count}{}
+#' \item{two_year_recid}{}
+#' }
 #' @source{https://github.com/propublica/compas-analysis/blob/master/compas-scores-two-years.csv}
 #'
 #' @examples
-#' head(CompasScoresTwoYears)
-"CompasScoresTwoYears"
+#' head(COMPAS_clean)
+"COMPAS_clean"
 
 #' Cosmetics
 #'
