@@ -1,4 +1,17 @@
-
+#' AutosElectronics
+#'
+#' @description{Filename of data set for a classification task—to classify Internet discussion
+#' posts as either auto-related or electronics-related.
+#'
+#' The data set contains two sets of messages; one with 1000 auto-related posts and one with 1000 electronics-related posts.}
+#'
+#' @return the filename of the dataset that is installed with the mlba package
+#' @source{The posts are taken from Internet groups devoted to autos and electronics}
+#'
+#' @examples
+#' \dontrun{corpus <- Corpus(ZipSource(AutosElectronics, recursive=True))}
+#' @export
+AutosElectronics <- system.file("extdata", "AutosElectronics.zip", package = "mlba")
 
 #' regressionSummary
 #'

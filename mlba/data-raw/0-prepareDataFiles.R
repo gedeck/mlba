@@ -120,6 +120,12 @@ use_data(LaptopSalesJanuary2008, overwrite=TRUE)
 liftExample = read.csv(file.path('data-raw', 'liftExample.csv.gz'), stringsAsFactors = TRUE)
 use_data(liftExample, overwrite=TRUE)
 
+MovieLensMovies = read.csv(file.path('data-raw', 'MovieLensMovies.csv.gz'), stringsAsFactors = TRUE)
+use_data(MovieLensMovies, overwrite=TRUE)
+
+MovieLensRatings = read.csv(file.path('data-raw', 'MovieLensRatings.csv.gz'), stringsAsFactors = TRUE)
+use_data(MovieLensRatings, overwrite=TRUE)
+
 NYPDMotorVehicleCollisions = read.csv(file.path('data-raw', 'NYPD_Motor_Vehicle_Collisions_1000.csv.gz'))
 NYPDMotorVehicleCollisions = NYPDMotorVehicleCollisions[order(as.Date(NYPDMotorVehicleCollisions$DATE, format = "%m/%d/%Y")),]
 use_data(NYPDMotorVehicleCollisions, overwrite=TRUE)

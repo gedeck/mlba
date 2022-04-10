@@ -945,6 +945,42 @@
 #' head(LaptopSalesJanuary2008)
 "LaptopSalesJanuary2008"
 
+#' Laptop Sales
+#'
+#' @description{The laptop sales data were part of the ENBIS 2009 Challenge in
+#' Industrial Statistics.
+#'
+#' This is the full Laptop sales dataset. It includes only the Jan 2008
+#' sales (the complete dataset includes the entire 2008 sales).}
+#'
+#' Data
+#' @format A data frame with 297,572 observations and 16 variables:
+#' \describe{
+#' \item{Date}{purchase date}
+#' \item{Configuration}{A numerical code representing a combination of screen
+#' size, battery life, RAM, etc. Each code corresponds to a particular combination.}
+#' \item{Customer.Postcode}{postcode in London of the customer}
+#' \item{Store.Postcode}{postcode in London of the store}
+#' \item{Retail.Price}{price of laptop in GBP}
+#' \item{Screen.Size..Inches.}{screen size of laptop (Inches)}
+#' \item{Battery.Life..Hours.}{battery life of laptop (Hours)}
+#' \item{RAM..GB.}{RAM size of laptop(GB)}
+#' \item{Processor.Speeds..GHz.}{processor speed of laptop (GHz)}
+#' \item{Integrated.Wireless.}{whether the laptop has integrated wireless or not}
+#' \item{HD.Size..GB.}{HD size of laptop (GB)}
+#' \item{Bundled.Applications.}{whether the laptop comes with bundled applications or not}
+#' \item{customer.X}{X geo coordinates for customer location.}
+#' \item{customer.Y}{Y geo coordinates for customer location.}
+#' \item{store.X}{X geo coordinates for store location}
+#' \item{store.Y}{Y geo coordinates for store location}
+#' }
+#' @source{The laptop sales data were part of the ENBIS 2009 Challenge
+#' in Industrial Statistics}
+#'
+#' @examples
+#' head(LaptopSales)
+"LaptopSales"
+
 
 #' Lift example
 #'
@@ -958,6 +994,50 @@
 #' @examples
 #' head(liftExample)
 "liftExample"
+
+#' MovieLenseMovies
+#'
+#' @description{Movies from the Movielens 10k dataset}
+#'
+#' @format A data frame with 9,742 observations and 3 variables:
+#' \describe{
+#' \item{movieId}{Same as ratings data}
+#' \item{title}{Movie titles, including the year of release in parentheses}
+#' \item{genres}{Pipe-separated list of genres for corresponding movie title}
+#' }
+#' @source{The Movielens dataset is downloaded from \url{https://grouplens.org/datasets/movielens/}.
+#' Dataset creation date: September 26, 2018). See \url{https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html}
+#' for the usage license.
+#'
+#' F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context.
+#' ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19.
+#' \url{https://doi.org/10.1145/2827872}}
+#'
+#' @examples
+#' \dontrun{head(MovieLenseMovies)}
+
+
+#' MovieLenseRatings
+#'
+#' @description{Ratings from the Movielens 10k dataset}
+#'
+#' @format A data frame with 100,836 observations and 4 variables:
+#' \describe{
+#' \item{userId}{Anonymized MovieLens user ID. Each user has rated at least 20 movies.}
+#' \item{movieId}{Movie ID consistent with that used on the MovieLens website (e.g., information for movie id 1 is available at \url{https://movielens.org/movies/1}).}
+#' \item{rating}{Movie rating provided by user on a 5-star scale, with half-star increments (0.5 star - 5 stars)}
+#' \item{timestamp}{Timestamp when rating was recorded. Time is in seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970}
+#' }
+#' @source{The Movielens dataset is downloaded from \url{https://grouplens.org/datasets/movielens/}.
+#' Dataset creation date: September 26, 2018). See \url{https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html}
+#' for the usage license.
+#'
+#' F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context.
+#' ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19.
+#' \url{https://doi.org/10.1145/2827872}}
+#'
+#' @examples
+#' \dontrun{head(MovieLenseRatings)}
 
 
 #' NYPD Motor Vehicle Collisions
