@@ -1,8 +1,8 @@
 # Run devtools::document()
 
-#' accidents
+#' Accidents
 #'
-#' Cleaned up and reduced version of the \code{\link{accidentsFull}} dataset
+#' Cleaned up and reduced version of the \code{\link{AccidentsFull}} dataset
 #' to facilitate model building.
 #'
 #' Data
@@ -21,11 +21,11 @@
 #' \item{MAX_SEV}{one of: "no-injury", "non-fatal", 2 = "fatal"}
 #' }
 #'
-#' @seealso \code{\link{accidentsFull}} for the original dataset
+#' @seealso \code{\link{AccidentsFull}} for the original dataset
 #'
 #' @examples
-#' accidents
-"accidents"
+#' Accidents
+"Accidents"
 
 
 #' Accidents
@@ -79,13 +79,13 @@
 #' collapsed into fewer categories for analysis purposes.
 #'
 #' @examples
-#' accidentsFull
-"accidentsFull"
+#' AccidentsFull
+"AccidentsFull"
 
 
-#' accidentsnn
+#' AccidentsNN
 #'
-#' Subset of the `accidents` dataset
+#' Subset of the `Accidents` dataset
 #'
 #' Data
 #' @format A data frame with 999 observations and 5 variables:
@@ -97,11 +97,11 @@
 #' \item{MAX_SEV_IR}{0 = no injury, 1 = non-fatal inj., 2 = fatal inj.}
 #' }
 #'
-#' @seealso \code{\link{accidentsFull}} for the full dataset
+#' @seealso \code{\link{AccidentsFull}} for the full dataset
 #'
 #' @examples
-#' head(accidentsnn)
-"accidentsnn"
+#' head(AccidentsNN)
+"AccidentsNN"
 
 
 #' Airfares
@@ -177,8 +177,8 @@
 #' }
 #'
 #' @examples
-#' banks
-"banks"
+#' Banks
+"Banks"
 
 
 #' BareggTunnel
@@ -436,7 +436,7 @@
 "Cosmetics"
 
 
-#' Course Rating
+#' CourseRating
 #'
 #' Student ratings of online statistics courses at Statistics.com
 #'
@@ -456,11 +456,11 @@
 #' @source{Copyright 2016 statistics.com}
 #'
 #' @examples
-#' head(courserating)
-"courserating"
+#' head(CourseRating)
+"CourseRating"
 
 
-#' Coursetopics
+#' CourseTopics
 #'
 #' Course topics at statistics.com (each row is a customer, column heads are
 #' topics taken [1] or not taken [0] by that customer)
@@ -479,11 +479,11 @@
 #' @source{Copyright 2016 Galit Shmueli and Peter Bruce}
 #'
 #' @examples
-#' head(Coursetopics)
-"Coursetopics"
+#' head(CourseTopics)
+"CourseTopics"
 
 
-#' drug
+#' Drug
 #'
 #' Data
 #' @format A data frame with 60 observations and 7 variables:
@@ -498,8 +498,8 @@
 #' }
 #'
 #' @examples
-#' drug
-"drug"
+#' Drug
+"Drug"
 
 
 #' EastWestAirlinesCluster
@@ -627,6 +627,21 @@
 #' @examples
 #' head(eBayTreemap)
 "eBayTreemap"
+
+
+#' EmailABtest
+#'
+#' Data
+#' @format A data frame with 426 observations and 3 variables:
+#' \describe{
+#' \item{Customer}{}
+#' \item{Message}{}
+#' \item{Open.}{}
+#' }
+#'
+#' @examples
+#' head(EmailABtest)
+"EmailABtest"
 
 
 #' Faceplate
@@ -806,8 +821,8 @@
 #' World Development Indicators.  }
 #'
 #' @examples
-#' head(gdp)
-"gdp"
+#' head(GDP)
+"GDP"
 
 
 #' German credit
@@ -982,7 +997,7 @@
 "LaptopSales"
 
 
-#' Lift example
+#' LiftExample
 #'
 #' @description{Synthetic dataset to demonstrate lift}
 #' @format A data frame with 24 observations and 2 variables:
@@ -992,8 +1007,8 @@
 #' }
 #'
 #' @examples
-#' head(liftExample)
-"liftExample"
+#' head(LiftExample)
+"LiftExample"
 
 #' MovieLenseMovies
 #'
@@ -1088,7 +1103,7 @@
 "NYPDMotorVehicleCollisions"
 
 
-#' Owner example
+#' OwnerExample
 #'
 #' Data
 #' @format A data frame with 24 observations and 2 variables:
@@ -1098,8 +1113,8 @@
 #' }
 #'
 #' @examples
-#' head(ownerExample)
-"ownerExample"
+#' head(OwnerExample)
+"OwnerExample"
 
 
 #' Pharmaceuticals
@@ -1228,8 +1243,8 @@
 #' }
 #'
 #' @examples
-#' head(spambase)
-"spambase"
+#' head(Spambase)
+"Spambase"
 
 
 #' System Administrator
@@ -1720,7 +1735,7 @@
 "AustralianWines"
 
 
-#' bicup2006
+#' Bicup2006
 #'
 #' @description Data from a 2008 business intelligence competition, which
 #' focused on forecasting demand for public transportation.
@@ -1739,8 +1754,8 @@
 #' @source{Ken Black (used by permission)}
 #'
 #' @examples
-#' bicup2006
-"bicup2006"
+#' Bicup2006
+"Bicup2006"
 
 
 #' CanadianWorkHours

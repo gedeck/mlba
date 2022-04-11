@@ -2,14 +2,14 @@ library(dplyr)
 library(devtools)
 
 
-accidents = read.csv(file.path('data-raw', 'accidents.csv.gz'))
-use_data(accidents, overwrite=TRUE)
+Accidents = read.csv(file.path('data-raw', 'accidents.csv.gz'))
+use_data(Accidents, overwrite=TRUE)
 
-accidentsFull = read.csv(file.path('data-raw', 'accidentsFull.csv.gz'))
-use_data(accidentsFull, overwrite=TRUE)
+AccidentsFull = read.csv(file.path('data-raw', 'accidentsFull.csv.gz'))
+use_data(AccidentsFull, overwrite=TRUE)
 
-accidentsnn = read.csv(file.path('data-raw', 'accidentsnn.csv.gz'))
-use_data(accidentsnn, overwrite=TRUE)
+AccidentsNN = read.csv(file.path('data-raw', 'accidentsnn.csv.gz'))
+use_data(AccidentsNN, overwrite=TRUE)
 
 Amtrak = read.csv(file.path('data-raw', 'Amtrak.csv.gz'))
 use_data(Amtrak, overwrite=TRUE)
@@ -24,11 +24,12 @@ use_data(ApplianceShipments, overwrite=TRUE)
 #          to=file.path('inst', 'extdata', 'AutoAndElectronics.zip'),
 #          overwrite=TRUE, copy.mode=TRUE)
 
-Bankruptcy = read.csv(file.path('data-raw', 'Bankruptcy.csv.gz'))
-use_data(Bankruptcy, overwrite=TRUE)
+# Dataset no longer used
+#Bankruptcy = read.csv(file.path('data-raw', 'Bankruptcy.csv.gz'))
+#use_data(Bankruptcy, overwrite=TRUE)
 
-banks = read.csv(file.path('data-raw', 'banks.csv.gz'))
-use_data(banks, overwrite=TRUE)
+Banks = read.csv(file.path('data-raw', 'banks.csv.gz'))
+use_data(Banks, overwrite=TRUE)
 
 BankBiasData = read.csv(file.path('data-raw', 'Bank-bias-data.csv.gz'))
 use_data(BankBiasData, overwrite=TRUE)
@@ -39,8 +40,8 @@ use_data(BareggTunnel, overwrite=TRUE)
 BathSoapHousehold = read.csv(file.path('data-raw', 'BathSoapHousehold.csv.gz'))
 use_data(BathSoapHousehold, overwrite=TRUE)
 
-bicup2006 = read.csv(file.path('data-raw', 'bicup2006.csv.gz'))
-use_data(bicup2006, overwrite=TRUE)
+Bicup2006 = read.csv(file.path('data-raw', 'bicup2006.csv.gz'))
+use_data(Bicup2006, overwrite=TRUE)
 
 BostonHousing = read.csv(file.path('data-raw', 'BostonHousing.csv.gz')) %>%
   rename(CAT.MEDV=CAT..MEDV)
@@ -58,17 +59,17 @@ use_data(CharlesBookClub, overwrite=TRUE)
 COMPAS_clean = read.csv(file.path('data-raw', 'COMPAS-clean.csv.gz'))
 use_data(COMPAS_clean, overwrite=TRUE)
 
-Coursetopics = read.csv(file.path('data-raw', 'Coursetopics.csv.gz'))
-use_data(Coursetopics, overwrite=TRUE)
+CourseTopics = read.csv(file.path('data-raw', 'Coursetopics.csv.gz'))
+use_data(CourseTopics, overwrite=TRUE)
 
-courserating = read.csv(file.path('data-raw', 'courserating.csv.gz'))
-use_data(courserating, overwrite=TRUE)
+CourseRating = read.csv(file.path('data-raw', 'courserating.csv.gz'))
+use_data(CourseRating, overwrite=TRUE)
 
 Cosmetics = read.csv(file.path('data-raw', 'Cosmetics.csv.gz'))
 use_data(Cosmetics, overwrite=TRUE)
 
-drug = read.csv(file.path('data-raw', 'drug.csv.gz'))
-use_data(drug, overwrite=TRUE)
+Drug = read.csv(file.path('data-raw', 'drug.csv.gz'))
+use_data(Drug, overwrite=TRUE)
 
 EastWestAirlinesCluster = read.csv(file.path('data-raw', 'EastWestAirlinesCluster.csv.gz'))
 use_data(EastWestAirlinesCluster, overwrite=TRUE)
@@ -89,6 +90,9 @@ use_data(eBayNetwork, overwrite=TRUE)
 eBayTreemap = read.csv(file.path('data-raw', 'EbayTreemap.csv.gz'))
 use_data(eBayTreemap, overwrite=TRUE)
 
+EmailABtest = read.csv(file.path('data-raw', 'email-A-B-test.csv.gz'))
+use_data(EmailABtest, overwrite=TRUE)
+
 Faceplate = read.csv(file.path('data-raw', 'Faceplate.csv.gz'))
 use_data(Faceplate, overwrite=TRUE)
 
@@ -101,9 +105,9 @@ use_data(Fundraising, overwrite=TRUE)
 FutureFundraising = read.csv(file.path('data-raw', 'FutureFundraising.csv.gz'), stringsAsFactors = TRUE)
 use_data(FutureFundraising, overwrite=TRUE)
 
-gdp = read.csv(file.path('data-raw', 'gdp.csv.gz'), skip = 4, stringsAsFactors = FALSE)
-names(gdp)[5] <- "GDP2015"
-use_data(gdp, overwrite=TRUE)
+GDP = read.csv(file.path('data-raw', 'gdp.csv.gz'), skip = 4, stringsAsFactors = FALSE)
+names(GDP)[5] <- "GDP2015"
+use_data(GDP, overwrite=TRUE)
 
 GermanCredit = read.csv(file.path('data-raw', 'GermanCredit.csv.gz'), stringsAsFactors = TRUE)
 use_data(GermanCredit, overwrite=TRUE)
@@ -117,8 +121,8 @@ use_data(LaptopSales, overwrite=TRUE)
 LaptopSalesJanuary2008 = read.csv(file.path('data-raw', 'LaptopSalesJanuary2008.csv.gz'), stringsAsFactors = FALSE)
 use_data(LaptopSalesJanuary2008, overwrite=TRUE)
 
-liftExample = read.csv(file.path('data-raw', 'liftExample.csv.gz'), stringsAsFactors = TRUE)
-use_data(liftExample, overwrite=TRUE)
+LiftExample = read.csv(file.path('data-raw', 'liftExample.csv.gz'), stringsAsFactors = TRUE)
+use_data(LiftExample, overwrite=TRUE)
 
 MovieLensMovies = read.csv(file.path('data-raw', 'MovieLensMovies.csv.gz'), stringsAsFactors = TRUE)
 use_data(MovieLensMovies, overwrite=TRUE)
@@ -130,8 +134,8 @@ NYPDMotorVehicleCollisions = read.csv(file.path('data-raw', 'NYPD_Motor_Vehicle_
 NYPDMotorVehicleCollisions = NYPDMotorVehicleCollisions[order(as.Date(NYPDMotorVehicleCollisions$DATE, format = "%m/%d/%Y")),]
 use_data(NYPDMotorVehicleCollisions, overwrite=TRUE)
 
-ownerExample = read.csv(file.path('data-raw', 'ownerExample.csv.gz'),stringsAsFactors = TRUE)
-use_data(ownerExample, overwrite=TRUE)
+OwnerExample = read.csv(file.path('data-raw', 'ownerExample.csv.gz'),stringsAsFactors = TRUE)
+use_data(OwnerExample, overwrite=TRUE)
 
 Pharmaceuticals = read.csv(file.path('data-raw', 'Pharmaceuticals.csv.gz'))
 use_data(Pharmaceuticals, overwrite=TRUE)
@@ -145,8 +149,8 @@ use_data(SCstudents, overwrite=TRUE)
 SP500 = read.csv(file.path('data-raw', 'SP500.csv.gz'))
 use_data(SP500, overwrite=TRUE)
 
-spambase = read.csv(file.path('data-raw', 'spambase.csv.gz'))
-use_data(spambase, overwrite=TRUE)
+Spambase = read.csv(file.path('data-raw', 'spambase.csv.gz'))
+use_data(Spambase, overwrite=TRUE)
 
 SystemAdministrators = read.csv(file.path('data-raw', 'SystemAdministrators.csv.gz'))
 use_data(SystemAdministrators, overwrite=TRUE)
