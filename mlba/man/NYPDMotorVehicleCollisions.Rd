@@ -3,23 +3,8 @@
 \docType{data}
 \name{NYPDMotorVehicleCollisions}
 \alias{NYPDMotorVehicleCollisions}
-\title{MovieLenseMovies}
+\title{NYPD Motor Vehicle Collisions}
 \format{
-A data frame with 9,742 observations and 3 variables:
-\describe{
-\item{movieId}{Same as ratings data}
-\item{title}{Movie titles, including the year of release in parentheses}
-\item{genres}{Pipe-separated list of genres for corresponding movie title}
-}
-
-A data frame with 100,836 observations and 4 variables:
-\describe{
-\item{userId}{Anonymized MovieLens user ID. Each user has rated at least 20 movies.}
-\item{movieId}{Movie ID consistent with that used on the MovieLens website (e.g., information for movie id 1 is available at \url{https://movielens.org/movies/1}).}
-\item{rating}{Movie rating provided by user on a 5-star scale, with half-star increments (0.5 star - 5 stars)}
-\item{timestamp}{Timestamp when rating was recorded. Time is in seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970}
-}
-
 A data frame with 1000 observations and 29 variables:
 \describe{
 \item{DATE}{Occurrence date of collision}
@@ -54,22 +39,6 @@ A data frame with 1000 observations and 29 variables:
 }
 }
 \source{
-{The Movielens dataset is downloaded from \url{https://grouplens.org/datasets/movielens/}.
-Dataset creation date: September 26, 2018). See \url{https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html}
-for the usage license.
-
-F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context.
-ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19.
-\url{https://doi.org/10.1145/2827872}}
-
-{The Movielens dataset is downloaded from \url{https://grouplens.org/datasets/movielens/}.
-Dataset creation date: September 26, 2018). See \url{https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html}
-for the usage license.
-
-F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context.
-ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19.
-\url{https://doi.org/10.1145/2827872}}
-
 {Random sample of the NYPD Motor Vehicle Collisions Dataset.
 (\url{https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95})}
 }
@@ -77,10 +46,6 @@ ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19.
 NYPDMotorVehicleCollisions
 }
 \description{
-{Movies from the Movielens 10k dataset}
-
-{Ratings from the Movielens 10k dataset}
-
 {The Motor Vehicle Collisions crash table contains details on
 the crash event. Each row represents a crash event. The Motor Vehicle
 Collisions data tables contain information from all police reported motor
@@ -88,12 +53,6 @@ vehicle collisions in NYC. This dataset is a random subset of 1000 entries
 of the NYPD motor vehicle collisions dataset}
 }
 \examples{
-\dontrun{head(MovieLenseMovies)}
-MovieLenseRatings
-
-\dontrun{head(MovieLenseRatings)}
-NYPD Motor Vehicle Collisions
-
 head(NYPDMotorVehicleCollisions)
 }
 \keyword{datasets}

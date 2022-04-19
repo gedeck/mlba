@@ -8,7 +8,7 @@
 A data frame with 747 observations and 2 variables:
 \describe{
 \item{Day}{}
-\item{Number of vehicles}{}
+\item{Number.of.vehicles}{}
 }
 }
 \usage{
@@ -18,6 +18,6 @@ BareggTunnel
 Data
 }
 \examples{
-BaregtTunnl
+BareggTunnel
 }
 \keyword{datasets}

@@ -8,6 +8,24 @@ use_data(Accidents, overwrite=TRUE)
 AccidentsFull = read.csv(file.path('data-raw', 'accidentsFull.csv.gz'))
 use_data(AccidentsFull, overwrite=TRUE)
 
+set.seed(1)
+Accidents1000 = AccidentsFull %>%
+  rename(
+    RushHour=HOUR_I_R,
+    WKDY=WKDY_I_R,
+    LEVEL=PROFIL_I_R
+  ) %>%
+  mutate(
+    LGTCON_day=ifelse(AccidentsFull$LGTCON_I_R == 1, 1, 0),
+    SUR_COND_dry=ifelse(AccidentsFull$SUR_COND == 1, 1, 0),
+    TRAF_two_way=ifelse(AccidentsFull$TRAF_WAY == 1, 1, 0),
+    WEATHER_adverse=ifelse(AccidentsFull$WEATHER_R == 1, 0, 1),
+    MAX_SEV=ifelse(AccidentsFull$MAX_SEV_IR==0, "no-injury", ifelse(AccidentsFull$MAX_SEV_IR==2, "non-fatal", "fatal"))
+  )  %>%
+  slice_sample(n=1000) %>%
+  select(all_of(colnames(Accidents)))
+use_data(Accidents1000, overwrite=TRUE)
+
 AccidentsNN = read.csv(file.path('data-raw', 'accidentsnn.csv.gz'))
 use_data(AccidentsNN, overwrite=TRUE)
 
@@ -124,10 +142,10 @@ use_data(LaptopSalesJanuary2008, overwrite=TRUE)
 LiftExample = read.csv(file.path('data-raw', 'liftExample.csv.gz'), stringsAsFactors = TRUE)
 use_data(LiftExample, overwrite=TRUE)
 
-MovieLensMovies = read.csv(file.path('data-raw', 'MovieLensMovies.csv.gz'), stringsAsFactors = TRUE)
+MovieLensMovies = read.csv(file.path('data-raw', 'MovieLensMovies.csv.gz'), stringsAsFactors = TRUE, encoding="UTF-8")
 use_data(MovieLensMovies, overwrite=TRUE)
 
-MovieLensRatings = read.csv(file.path('data-raw', 'MovieLensRatings.csv.gz'), stringsAsFactors = TRUE)
+MovieLensRatings = read.csv(file.path('data-raw', 'MovieLensRatings.csv.gz'), stringsAsFactors = TRUE, encoding="UTF-8")
 use_data(MovieLensRatings, overwrite=TRUE)
 
 NYPDMotorVehicleCollisions = read.csv(file.path('data-raw', 'NYPD_Motor_Vehicle_Collisions_1000.csv.gz'))
