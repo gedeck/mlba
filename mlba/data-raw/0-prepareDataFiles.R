@@ -20,7 +20,7 @@ Accidents1000 = AccidentsFull %>%
     SUR_COND_dry=ifelse(AccidentsFull$SUR_COND == 1, 1, 0),
     TRAF_two_way=ifelse(AccidentsFull$TRAF_WAY == 1, 1, 0),
     WEATHER_adverse=ifelse(AccidentsFull$WEATHER_R == 1, 0, 1),
-    MAX_SEV=ifelse(AccidentsFull$MAX_SEV_IR==0, "no-injury", ifelse(AccidentsFull$MAX_SEV_IR==2, "non-fatal", "fatal"))
+    MAX_SEV=ifelse(AccidentsFull$MAX_SEV_IR==0, "no-injury", ifelse(AccidentsFull$MAX_SEV_IR==1, "non-fatal", "fatal"))
   )  %>%
   slice_sample(n=1000) %>%
   select(all_of(colnames(Accidents)))

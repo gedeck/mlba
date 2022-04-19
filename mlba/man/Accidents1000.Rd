@@ -5,7 +5,7 @@
 \alias{Accidents1000}
 \title{Accidents1000}
 \format{
-A data frame with 600 observations and 11 variables:
+A data frame with 1000 observations and 11 variables:
 \describe{
 \item{RushHour}{1 = rush hour, 0 = not (rush = 6-9 am, 4-7 pm)}
 \item{WRK_ZONE}{1 = yes, 0 = no}
@@ -17,7 +17,7 @@ A data frame with 600 observations and 11 variables:
 \item{SUR_COND_dry}{Surface conditions (1 = dry, 0 = other)}
 \item{TRAF_two_way}{1 = two-way traffic, 0 = other}
 \item{WEATHER_adverse}{0 = no adverse conditions, 1 = adverse condition}
-\item{MAX_SEV}{one of: "no-injury", "non-fatal", 2 = "fatal"}
+\item{MAX_SEV}{one of: "no-injury", "non-fatal", "fatal"}
 }
 }
 \usage{
