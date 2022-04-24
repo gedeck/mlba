@@ -13,3 +13,4 @@ Depends:
     R (>= 2.10), caret
 RoxygenNote: 7.1.2
 StagedInstall: no
+LazyDataCompression: bzip2

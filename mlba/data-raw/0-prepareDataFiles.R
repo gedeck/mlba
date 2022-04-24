@@ -188,6 +188,9 @@ use_data(ToyotaCorolla, overwrite=TRUE)
 UniversalBank = read.csv(file.path('data-raw', 'UniversalBank.csv.gz'))
 use_data(UniversalBank, overwrite=TRUE)
 
+UniversalBankCase = read.csv(file.path('data-raw', 'UniversalBankCase.csv.gz'))
+use_data(UniversalBankCase, overwrite=TRUE)
+
 Utilities = read.csv(file.path('data-raw', 'Utilities.csv.gz'))
 use_data(Utilities, overwrite=TRUE)
 
