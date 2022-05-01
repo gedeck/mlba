@@ -12,7 +12,7 @@ regressionSummary(predicted, actual)
 \item{actual}{actual values}
 }
 \value{
-list containing the following regression metrics RMSE and MAE
+list containing the regression metrics ME, RMSE and MAE
 }
 \description{
 Convenience function to calculate a variety of regression

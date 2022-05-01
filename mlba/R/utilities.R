@@ -21,7 +21,7 @@ AutosElectronics <- system.file("extdata", "AutosElectronics.zip", package = "ml
 #' @param predicted predicted values
 #' @param actual actual values
 #'
-#' @return list containing the following regression metrics RMSE and MAE
+#' @return list containing the regression metrics ME, RMSE and MAE
 #' @import caret
 #' @export
 #'
@@ -30,6 +30,7 @@ AutosElectronics <- system.file("extdata", "AutosElectronics.zip", package = "ml
 #' regressionSummary(predict(lm.SR, LifeCycleSavings), LifeCycleSavings$sr)
 regressionSummary <- function(predicted, actual) {
   return (list(
+    ME = mean(actual - predicted),
     RMSE = caret::RMSE(predicted, actual),
     MAE = caret::MAE(predicted, actual)
   ))
