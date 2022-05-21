@@ -133,6 +133,9 @@ use_data(GermanCredit, overwrite=TRUE)
 HairCareProduct = read.csv(file.path('data-raw', 'Hair-Care-Product.csv.gz'))
 use_data(HairCareProduct, overwrite=TRUE)
 
+IMDBdataset10K = read.csv(file.path('data-raw', 'IMDB-Dataset-10K.csv.gz'))
+use_data(IMDBdataset10K, overwrite=TRUE)
+
 LaptopSales = read.csv(file.path('data-raw', 'LaptopSales.csv.gz'), stringsAsFactors = FALSE)
 use_data(LaptopSales, overwrite=TRUE)
 

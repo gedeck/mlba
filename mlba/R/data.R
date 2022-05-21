@@ -948,6 +948,28 @@
 #' head(HairCareProduct)
 "HairCareProduct"
 
+#' IMDBdataset10K
+#'
+#' @description{Collection of movie reviews from the Internet Movie Database (IMDB)
+#'
+#' The dataset contains 5,000 positive and 5,000 negative movie reviews collected
+#' from the Internet Movie Database (IMDB) (Maas et al. 2011). The original large
+#' movie dataset 25K positive and 25K negative movie reviews. This dataset is a
+#' stratified sample of 10K records from this dataset.}
+#'
+#' Data
+#' @format A data frame with 10,000 observations and 2 variables:
+#' \describe{
+#' \item{review}{Movie review}
+#' \item{sentiment}{Sentiment of the movie review categorized as "positive" or "negative"}
+#' }
+#' @source{Original large movie dataset is published at \url{http://ai.stanford.edu/~amaas/data/sentiment/}}
+#'
+#' @examples
+#' head(IMDBdataset10K)
+"IMDBdataset10K"
+
+
 
 #' Laptop Sales January 2008
 #'
