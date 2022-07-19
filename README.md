@@ -3,8 +3,8 @@
 <tr>
 <td><img src="img/mlba-bookcover.png" width=300></td>
 <td>
-Machine Learning for Business Analytics<br>
-Concepts, Techniques, and Applications in R
+<h1>Machine Learning for Business Analytics<br>
+<small>Concepts, Techniques, and Applications in R</small></h1>
 
 by Galit Shmueli, Peter C. Bruce, Peter Gedeck, Inbal Yahav, Nitin R. Patel
 
