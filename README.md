@@ -23,17 +23,17 @@ Machine learning —also known as data mining or data analytics— is a fundamen
 
 Machine Learning for Business Analytics: Concepts, Techniques, and Applications in R provides a comprehensive introduction and an overview of this methodology. This best-selling textbook covers both statistical and machine learning algorithms for prediction, classification, visualization, dimension reduction, rule mining, recommendations, clustering, text mining, experimentation and network analytics. Along with hands-on exercises and real-life case studies, it also discusses managerial and ethical issues for responsible use of machine learning techniques.
 
-# Source code
-To access the source code go to [www.dataminingbook.com](https://www.dataminingbook.com/book/r-2nd-edition-2022).
+# Source code and instructors material
+To access the source code of chapters and to find instructors material go to [www.dataminingbook.com](https://www.dataminingbook.com/book/r-2nd-edition-2022). 
 
 # Code and data repository
-R code for "Machine Learning for Business Analytics. Concepts, Techniques, and Applications in R"
+This repository contains datasets used in this book 
 
-# Installation of required package
+# Installation of R packages used in the book
 Most packages can be installed directly from CRAN. 
 
 ## MLBA
-The accompanying source code and datasets are available in the `mlba` package. You can install this package using the following commands:
+The source code and datasets of this repository are available in the `mlba` package. You can install this package using the following commands:
 ```
 if (!require(mlba)) {
   library(devtools)
