@@ -1,8 +1,8 @@
 
 <table>
 <tr>
-<td style="border-color: white;"><img src="img/mlba-bookcover.png" width=300></td>
-<td style="border-color: white;">
+<td><img src="img/mlba-bookcover.png" width=300></td>
+<td>
 <h1>Machine Learning for Business Analytics<br>
 <small>Concepts, Techniques, and Applications in R</small></h1>
 
