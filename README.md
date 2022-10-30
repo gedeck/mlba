@@ -32,7 +32,7 @@ This repository contains datasets used in this book
 # Installation of R packages used in the book
 Most packages can be installed directly from CRAN. 
 
-## MLBA
+### MLBA
 The source code and datasets of this repository are available in the `mlba` package. You can install this package using the following commands:
 ```
 if (!require(mlba)) {
@@ -42,7 +42,7 @@ if (!require(mlba)) {
 ```
 Note that this requires the installation of the `devtools` package
 
-## DiscriMiner
+### DiscriMiner
 The `DiscriMiner` package is currently not available from CRAN. You can install it directly from Github as described in https://github.com/gastonstat/DiscriMiner
 ```
 if (!require(DiscriMiner)) {
