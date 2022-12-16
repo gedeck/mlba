@@ -1,16 +1,18 @@
 Package: mlba
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
+Title: MLBA - Machine Learning for Business Analytics Concepts, Techniques, and Applications in R
+Version: 2.0.0
 Author: Peter Gedeck
 Maintainer: Peter Gedeck <peter.gedeck@gmail.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Source code and datasets for 
+    "Machine Learning for Business Analytics Concepts, Techniques, and Applications in R"
+    by Galit Shmueli, Peter C. Bruce, Peter Gedeck, Inbal Yahav, Nitin R. Patel. 
+    Publisher: Wiley; 2nd edition (February, 2023) ISBN: 978-1-118-83517-2
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 Depends: 
     R (>= 2.10), caret, forecast
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 StagedInstall: no
 LazyDataCompression: bzip2
