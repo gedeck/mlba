@@ -26,7 +26,7 @@ Machine learning —also known as data mining or data analytics— is a fundamen
 
 Machine Learning for Business Analytics: Concepts, Techniques, and Applications in R provides a comprehensive introduction and an overview of this methodology. This best-selling textbook covers both statistical and machine learning algorithms for prediction, classification, visualization, dimension reduction, rule mining, recommendations, clustering, text mining, experimentation and network analytics. Along with hands-on exercises and real-life case studies, it also discusses managerial and ethical issues for responsible use of machine learning techniques.
 
-# Code and data repository
+# Data repository
 This repository contains datasets used in the book. The datasets are described in [mlba_2.0.0.pdf](mlba_2.0.0.pdf).
 
 The R code used in individual chapters is available from [https://gedeck.github.io/mlba-R-code/](https://gedeck.github.io/mlba-R-code/)
