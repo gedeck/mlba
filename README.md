@@ -10,10 +10,10 @@ by Galit Shmueli, Peter C. Bruce, Peter Gedeck, Inbal Yahav, Nitin R. Patel
 
 Publisher: Wiley; 2nd edition (February, 2023)
 ISBN: 978-1-118-83517-2
-Preorder on 
-<a href="https://www.wiley.com/en-us/Machine+Learning+for+Business+Analytics%3A+Concepts%2C+Techniques%2C+and+Applications+in+R%2C+2nd+Edition-p-9781119835172">Wiley</a>
+Buy on 
+<a href="https://www.amazon.com/Machine-Learning-Business-Analytics-Applications/dp/1119835178/?&_encoding=UTF8&tag=petergedeck-20&linkCode=ur2&linkId=f1a3be1c1268e4f052d7bd10e23bfa6f&camp=1789&creative=9325">Amazon</a>
 or
-<a href="https://www.amazon.com/Machine-Learning-Business-Analytics-Applications/dp/1119835178/">Amazon</a>
+<a href="https://www.wiley.com/en-us/Machine+Learning+for+Business+Analytics%3A+Concepts%2C+Techniques%2C+and+Applications+in+R%2C+2nd+Edition-p-9781119835172">Wiley</a>
 
 
 <!-- Errata: http://oreilly.com/catalog/errata.csp?isbn=9781492072942 -->
