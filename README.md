@@ -40,4 +40,4 @@ if (!require(mlba)) {
   install_github("gedeck/mlba/mlba", force=TRUE)
 }
 ```
-Note that this requires the installation of the `devtools` package
+Note that this requires the installation of the `devtools` package. On Windows, you may also need to install [RTools](https://cran.r-project.org/bin/windows/Rtools/).
